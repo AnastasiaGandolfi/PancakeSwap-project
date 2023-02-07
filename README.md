@@ -15,6 +15,6 @@ A collection of guidelines for writing file names, branches, commits, css classe
 - [Francesco](https://github.com/Francesco170)
 - [Simone](https://github.com/Chebaz)
 - [Caterina](https://github.com/Katilina88)
-- [Valentyna](https://github.com/ValentynaHnatyuk)
+- [Valentyna](https://github.com/ValentinaHnatyuk)
 
 ## [Design system](https://github.com/AnastasiaGandolfi/PancakeSwap-project/blob/develop/PancakeSwap.pdf)
