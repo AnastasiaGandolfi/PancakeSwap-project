@@ -6,7 +6,7 @@ Pancakeswap website clone for Develhope.
 
 ## Naming Conventions
 
-A collection of guidelines for writing file names, branches, commits, css classes, etc. [View Rules](https://github.com/AndreaPossidente/team-project-nintendo/blob/main/naming-conventions.md)
+A collection of guidelines for writing file names, branches, commits, css classes, etc. [View Rules](https://github.com/AnastasiaGandolfi/PancakeSwap-project/blob/develop/naming-conventions.md)
 
 ## Contributors
 
