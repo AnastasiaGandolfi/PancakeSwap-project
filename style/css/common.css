@@ -22,3 +22,6 @@
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
   font-weight: 200; }
+
+:root {
+  font-family: Kanit; }
