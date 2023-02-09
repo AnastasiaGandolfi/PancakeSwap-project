@@ -1,0 +1,23 @@
+{
+  "name": "pancakeswap-project",
+  "version": "1.0.0",
+  "description": "clone of website Pancakeswap.finance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass -w style/scss/components.scss style/css/components.css style/scss/common.scss style/css/common.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiaGandolfi/PancakeSwap-project.git"
+  },
+  "author": "team 3",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiaGandolfi/PancakeSwap-project/issues"
+  },
+  "homepage": "https://github.com/AnastasiaGandolfi/PancakeSwap-project#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
