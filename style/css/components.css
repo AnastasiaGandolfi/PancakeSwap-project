@@ -1,8 +1,42 @@
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
+  font-weight: 200;
+}
+:root {
+  font-family: Kanit;
+}
+
+h1 {
+  text-align: center;
+}
+
 .container-components {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; }
+  gap: 20px;
+}
 
 .component {
   display: flex;
@@ -10,11 +44,65 @@
   justify-content: center;
   border-bottom: 2px dashed #673BB1;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+}
 
 .multiple-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: 2px dashed #673BB1;
-  padding: 30px; }
+  padding: 30px;
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.color-container div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.color-container div .rgb-code, .color-container div .rgb-name {
+  text-align: center;
+}
+.color-container div .square {
+  border-radius: 7px;
+  height: 45px;
+  width: 45px;
+  align-self: center;
+  margin: 10px;
+}
+.color-container div .white {
+  background-color: #ffffff;
+  border: 1px solid #eff4f5;
+}
+.color-container div .lightgray {
+  background-color: #eff4f5;
+}
+.color-container div .violet {
+  background-color: #280d5f;
+}
+.color-container div .purple {
+  background-color: #7645d9;
+}
+.color-container div .mauve {
+  background-color: #7a6eaa;
+}
+.color-container div .lightmauve {
+  background-color: #b8add2;
+}
+.color-container div .cyan {
+  background-color: #1fc7d4;
+}
+.color-container div .orange {
+  background-color: #ffb237;
+}
+.color-container div .pink {
+  background-color: #ed4b9e;
+}
+
+/*# sourceMappingURL=components.css.map */
