@@ -23,6 +23,30 @@
   src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
   font-weight: 200;
 }
+h1 {
+  font-family: Kanit;
+  font-size: 64px;
+  color: #7645d9;
+}
+
+h2 {
+  font-family: Kanit;
+  font-size: 40px;
+  color: #eff4f5;
+}
+
+h3 {
+  font-family: Kanit;
+  font-size: 20px;
+  color: #280d5f;
+}
+
+p {
+  font-family: Kanit;
+  font-size: 16px;
+  color: #b8add2;
+}
+
 :root {
   font-family: Kanit;
 }
@@ -42,16 +66,21 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 2px dashed #673BB1;
+  border-bottom: 2px dashed #673bb1;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.component .component-title {
+  font-family: Kanit;
+  color: black;
+  font-size: 32px;
 }
 
 .multiple-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 2px dashed #673BB1;
+  border-bottom: 2px dashed #673bb1;
   padding: 30px;
 }
 
