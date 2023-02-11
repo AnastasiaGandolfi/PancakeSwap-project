@@ -1,31 +1,31 @@
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Regular.ttf');
-    font-weight: 300;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Bold.ttf');
-    font-weight: 700;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-ExtraBold.ttf');
-    font-weight: 800;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
+  font-weight: 800;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-ExtraLight.ttf');
-    font-weight: 100;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Light.ttf');
-    font-weight: 200;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
+  font-weight: 200;
 }
 
 // Palette colori
@@ -40,7 +40,27 @@ $cyan: #1fc7d4;
 $orange: #ffb237;
 $pink: #ed4b9e;
 
-
+//tipografia
+h1 {
+  font-family: Kanit;
+  font-size: 64px;
+  color: $purple;
+}
+h2 {
+  font-family: Kanit;
+  font-size: 40px;
+  color: $lightgray;
+}
+h3 {
+  font-family: Kanit;
+  font-size: 20px;
+  color: $violet;
+}
+p {
+  font-family: Kanit;
+  font-size: 16px;
+  color: $lightmauve;
+}
 :root {
-    font-family: Kanit;
+  font-family: Kanit;
 }
