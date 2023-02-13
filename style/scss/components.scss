@@ -1,101 +1,263 @@
 @import "base";
 
-h1 {
-  text-align: center;
-}
+body {
+  font-family: Kanit;
 
-.container-components {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.component {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom: 2px dashed #673bb1;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  .component-title {
-    font-family: Kanit;
-    color: #ddd;
-    font-size: 32px;
+  h1 {
+    text-align: center;
   }
-}
 
-.multiple-component {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  border-bottom: 2px dashed #673bb1;
-  padding: 30px;
-}
-
-.color-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-
-  div {
+  .container-components {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    align-items: center;
+    gap: 20px;
+  }
 
-    .rgb-code {
-      text-align: center;
+  .component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #673bb1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .component-title {
+      font-family: Kanit;
+      color: #ddd;
+      font-size: 32px;
     }
+  }
 
-    .rgb-name {
-      @extend .rgb-code;
-    }
+  .multiple-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px dashed #673bb1;
+    padding: 30px;
+  }
 
-    .square {
-      border-radius: 7px;
-      height: 45px;
-      width: 45px;
-      align-self: center;
-      margin: 10px;
-    }
+  .color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
 
-    .white {
-      background-color: $white;
-      border: 1px solid $lightgray;
-    }
+    div {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      width: 100px;
 
-    .lightgray {
-      background-color: $lightgray;
-    }
+      .rgb-code {
+        text-align: center;
+      }
 
-    .violet {
-      background-color: $violet;
-    }
+      .rgb-name {
+        @extend .rgb-code;
+      }
 
-    .purple {
-      background-color: $purple;
-    }
+      .square {
+        border-radius: 7px;
+        height: 45px;
+        width: 45px;
+        align-self: center;
+        margin: 10px;
+      }
 
-    .mauve {
-      background-color: $mauve;
-    }
+      .white {
+        background-color: $white;
+        border: 1px solid $lightgray;
+      }
 
-    .lightmauve {
-      background-color: $lightmauve;
-    }
+      .crystal {
+        background-color: $crystal;
+      }
 
-    .cyan {
-      background-color: $cyan;
-    }
+      .lightgray {
+        background-color: $lightgray;
+      }
 
-    .orange {
-      background-color: $orange;
-    }
+      .violet {
+        background-color: $violet;
+      }
 
-    .pink {
-      background-color: $pink;
+      .purple {
+        background-color: $purple;
+      }
+
+      .mauve {
+        background-color: $mauve;
+      }
+
+      .lightmauve {
+        background-color: $lightmauve;
+      }
+
+      .cyan {
+        background-color: $cyan;
+      }
+
+      .orange {
+        background-color: $orange;
+      }
+
+      .pink {
+        background-color: $pink;
+      }
+
+      .failure33 {
+        background-color: $failure33;
+      }
+
+      .primary0f {
+        background-color: $primary0f;
+      }
+
+      .primary3D {
+        background-color: $primary3D;
+      }
+
+      .primaryDark {
+        background-color: $primaryDark;
+      }
+
+      .success {
+        background-color: $success;
+      }
+
+      .success19 {
+        background-color: $success19;
+      }
+
+      .warning2D {
+        background-color: $warning2D;
+      }
+
+      .warning33 {
+        background-color: $warning33;
+      }
+
+      .binance {
+        background-color: $binance;
+      }
+
+      .overlay {
+        background-color: $overlay;
+      }
+
+      .gold {
+        background-color: $gold;
+      }
+
+      .silver {
+        background-color: $silver;
+      }
+
+      .bronze {
+        background-color: $bronze;
+      }
+
+      .secondary {
+        background-color: $secondary;
+      }
+
+      .secondary80 {
+        background-color: $secondary80;
+      }
+
+      .background {
+        background-color: $background;
+      }
+
+      .backgroundDisabled {
+        background-color: $backgroundDisabled;
+      }
+
+      .backgroundAlt {
+        background-color: $backgroundAlt;
+      }
+
+      .backgroundAlt2 {
+        background-color: $backgroundAlt2;
+      }
+
+      .cardBorder {
+        background-color: $cardBorder;
+      }
+
+      .dropdown {
+        background-color: $dropdown;
+      }
+
+      .dropdownDeep {
+        background-color: $dropdownDeep;
+      }
+
+      .invertedContrast {
+        background-color: $invertedContrast;
+      }
+
+      .input {
+        background-color: $input;
+      }
+
+      .inputSecondary {
+        background-color: $inputSecondary;
+      }
+
+      .tertiary {
+        background-color: $tertiary;
+      }
+
+      .text99 {
+        background-color: $text99;
+      }
+
+      .textDisabled {
+        background-color: $textDisabled;
+      }
+
+      .disabled {
+        background-color: $disabled;
+      }
+
+      .gradientBubblegum {
+        background: $gradientBubblegum;
+      }
+
+      .gradientInverseBubblegum {
+        background: $gradientInverseBubblegum;
+      }
+
+      .gradientCardHeader {
+        background: $gradientCardHeader;
+      }
+
+      .gradientBlue {
+        background: $gradientBlue;
+      }
+
+      .gradientViolet {
+        background: $gradientViolet;
+      }
+
+      .gradientVioletAlt {
+        background: $gradientVioletAlt;
+      }
+
+      .gradientGold {
+        background: $gradientGold;
+      }
+
+      .gradientBold {
+        background: $gradientBold;
+      }
     }
   }
 }

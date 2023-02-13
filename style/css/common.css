@@ -17,7 +17,6 @@ body {
   src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
   font-weight: 200; }
 
-<<<<<<< HEAD
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
@@ -42,7 +41,7 @@ body {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
   font-weight: 800; }
-=======
+
 h1 {
   font-size: 64px;
   font-weight: 600; }
@@ -126,4 +125,3 @@ a {
   padding: 0px 8px;
   border-radius: 8px;
   font-size: 16px; }
->>>>>>> 125dd62f6734bf4747b507124d45475d8196a919
