@@ -3,7 +3,10 @@ async function copyTextContent(el) {
   let lowerCase = el.textContent.toLowerCase();
   try {
     await navigator.clipboard.writeText(lowerCase);
-    alert("Content copied to clipboard");
+    document.getElementById("tooltip").style.visibility = "visible";
+    setTimeout(() =>{
+      document.getElementById("tooltip").style.visibility = "hidden";
+    }, 500)
   } catch (err) {
     alert("Failed to copy: ", err);
   }
@@ -54,10 +57,14 @@ function replaceltgt(str) {
 }
 
 async function copyHtml(el) {
-  let lowerCase = el.innerHTML;
+  let html = el.outerHTML;
+  console.log(el);
   try {
-    await navigator.clipboard.writeText(lowerCase);
-    alert("Content copied to clipboard");
+    await navigator.clipboard.writeText(html);
+    document.getElementById("tooltip").style.visibility = "visible";
+    setTimeout(() =>{
+      document.getElementById("tooltip").style.visibility = "hidden";
+    }, 500)
   } catch (err) {
     alert("Failed to copy: ", err);
   }

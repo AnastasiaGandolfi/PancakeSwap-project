@@ -126,7 +126,7 @@ a {
 :root {
   font-family: "Kanit"; }
 
-.button-two-icons {
+.button-two-icons-dark {
   display: flex;
   flex-direction: row;
   background-color: #1fc7d4;
@@ -141,12 +141,43 @@ a {
   transition: opacity 0.2s ease 0s;
   opacity: 1;
   cursor: pointer; }
-  .button-two-icons:hover {
+  .button-two-icons-dark:hover {
     transition: opacity 0.2s ease 0s;
     opacity: 0.65; }
-  .button-two-icons p {
+  .button-two-icons-dark p {
     color: #191326;
     margin-right: 4px;
     font-weight: 550;
     font-size: 16px;
     letter-spacing: 0.04em; }
+  .button-two-icons-dark p {
+    color: #191326; }
+
+.button-two-icons-light {
+  display: flex;
+  flex-direction: row;
+  background-color: #1fc7d4;
+  border: 0px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 0px 24px;
+  line-height: 1;
+  outline: 0px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  cursor: pointer; }
+  .button-two-icons-light:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .button-two-icons-light p {
+    color: #191326;
+    margin-right: 4px;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.04em; }
+  .button-two-icons-light p {
+    color: #ffffff; }
+  .button-two-icons-light img {
+    filter: invert(100%); }

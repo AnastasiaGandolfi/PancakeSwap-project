@@ -1,27 +1,44 @@
 .button-two-icons {
-  display: flex;
-  flex-direction: row;
-  background-color: $cyan;
-  border: 0px;
-  border-radius: 16px;
-  justify-content: center;
-  align-items: center;
-  height: 46px;
-  padding: 0px 24px;
-  line-height: 1;
-  outline: 0px;
-  transition: opacity 0.2s ease 0s;
-  opacity: 1;
-  cursor: pointer;
-  &:hover {
+  @mixin common-button{
+    display: flex;
+    flex-direction: row;
+    background-color: $cyan;
+    border: 0px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 0px 24px;
+    line-height: 1;
+    outline: 0px;
     transition: opacity 0.2s ease 0s;
-    opacity: 0.65;
+    opacity: 1;
+    cursor: pointer;
+    &:hover {
+      transition: opacity 0.2s ease 0s;
+      opacity: 0.65;
+    }
+    p {
+      color: #191326;
+      margin-right: 4px;
+      font-weight: 550;
+      font-size: 16px;
+      letter-spacing:0.04em;
+    }
   }
-  p {
-    color: #191326;
-    margin-right: 4px;
-    font-weight: 550;
-    font-size: 16px;
-    letter-spacing:0.04em;
+  &-dark{
+    @include common-button;
+    p {
+      color: #191326;
+    }
+  }
+  &-light{
+    @include common-button;
+    p{
+      color:  $white;
+    }
+    img{
+      filter: invert(100%);
+    }
   }
 }
