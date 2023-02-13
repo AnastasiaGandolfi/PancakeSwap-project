@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #DDD;
+}
+
+// Palette colori
+
+$white: #ffffff;
+$lightgray: #eff4f5;
+$violet: #280d5f;
+$purple: #7645d9;
+$mauve: #7a6eaa;
+$lightmauve: #b8add2;
+$cyan: #1fc7d4;
+$orange: #ffb237;
+$pink: #ed4b9e;
+
+body {
+  background-color: #0B406D;
+}
+
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
@@ -28,39 +51,31 @@
   font-weight: 200;
 }
 
-// Palette colori
-
-$white: #ffffff;
-$lightgray: #eff4f5;
-$violet: #280d5f;
-$purple: #7645d9;
-$mauve: #7a6eaa;
-$lightmauve: #b8add2;
-$cyan: #1fc7d4;
-$orange: #ffb237;
-$pink: #ed4b9e;
-
-//tipografia
+// Tipografia
 h1 {
   font-family: Kanit;
   font-size: 64px;
   color: $purple;
 }
+
 h2 {
   font-family: Kanit;
   font-size: 40px;
   color: $lightgray;
 }
+
 h3 {
   font-family: Kanit;
   font-size: 20px;
   color: $violet;
 }
+
 p {
   font-family: Kanit;
   font-size: 16px;
   color: $lightmauve;
 }
+
 :root {
   font-family: Kanit;
 }
