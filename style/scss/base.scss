@@ -1,13 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ddd;
+}
+
+// Palette colori
+
+$white: #ffffff;
+$crystal: #f4eeff;
+$lightgray: #eff4f5;
+$violet: #280d5f;
+$purple: #7645d9;
+$mauve: #7a6eaa;
+$lightmauve: #b8add2;
+$cyan: #1fc7d4;
+$orange: #ffb237;
+$pink: #ed4b9e;
+
+body {
+    background-color: #0b406d;
+}
+
 // Font Kanit
+
 @font-face {
     font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-ExtraLight.ttf');
+    src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
     font-weight: 100;
 }
 
 @font-face {
     font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Light.ttf');
+    src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
     font-weight: 200;
 }
 
@@ -35,9 +60,117 @@
     font-weight: 700;
 }
 
-
 @font-face {
     font-family: Kanit;
     src: url('/assets/fonts/Kanit/Kanit-ExtraBold.ttf');
     font-weight: 800;
+}
+
+// Tipografia
+
+h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+// Colori Tipografia
+
+.text-orange {
+    color: $orange;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+.text-cyan {
+    color: $cyan;
+}
+
+.text-pink {
+    color: $pink;
+}
+
+.text-violet {
+    color: $violet;
+}
+
+.text-lightmauve {
+    color: $lightmauve;
+}
+
+.text-crystal {
+    color: $crystal;
+}
+
+.text-mauve {
+    color: $mauve;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-lightgray {
+    color: $lightgray;
+}
+
+.button-text-violet {
+    font-size: 16px;
+    font-weight: 600;
+    color: $violet;
+}
+
+.button-text-cyan {
+    font-size: 16px;
+    font-weight: 600;
+    color: $cyan;
+}
+
+.text-trading-information {
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: $purple;
+}
+
+.number-information-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    color: $crystal;
+}
+
+.apr-text {
+    color: $lightmauve;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.option-lenguage-text {
+    color: $crystal;
+    padding: 0px 8px;
+    border-radius: 8px;
+    font-size: 16px;
 }
