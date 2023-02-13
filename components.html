@@ -1,90 +1,148 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PancakeSwap | Components</title>
-    <link rel="stylesheet" href="./style/css/components.css" />
-    <link rel="stylesheet" href="./style/css/common.css" />
-    <meta name="description" content="List of components used in the website" />
-    <meta name="author" content="Fullstack Team 3" />
-  </head>
 
-  <body>
-    <main class="container-components">
-      <!-- Tipografia -->
-      <section class="component">
-        <h1 class="component-title">Typography</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PancakeSwap | Components</title>
+  <link rel="stylesheet" href="./style/css/components.css" />
+  <link rel="stylesheet" href="./style/css/common.css" />
+  <meta name="description" content="List of components used in the website" />
+  <meta name="author" content="Fullstack Team 3" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css" />
+</head>
+
+<body>
+  <main class="container-components">
+    <!-- Tipografia -->
+    <section class="component">
+      <h1 class="component-title">Typography</h1>
+      <div class="component-code">
         <h1>h1: lorem ipsum</h1>
         <h2>h2: lorem ipsum</h2>
         <h3>h3: lorem ipsum</h3>
         <p>p: lorem ipsum</p>
-        <div></div>
-      </section>
-      <!-- Palette colori -->
-      <section class="component">
-        <h1 class="component-title">Color palettes</h1>
-        <div class="color-container">
-          <div>
-            <div class="square white"></div>
-            <span class="rgb-code">#FFFFFF</span>
-            <span class="rgb-name">White</span>
-          </div>
-          <div>
-            <div class="square lightgray"></div>
-            <span class="rgb-code">#EFF4FS</span>
-            <span class="rgb-name">Lightgray</span>
-          </div>
-          <div>
-            <div class="square violet"></div>
-            <span class="rgb-code">#280D5F</span>
-            <span class="rgb-name">Violet</span>
-          </div>
-          <div>
-            <div class="square purple"></div>
-            <span class="rgb-code">#7645D9</span>
-            <span class="rgb-name">Purple</span>
-          </div>
-          <div>
-            <div class="square mauve"></div>
-            <span class="rgb-code">#7A6EAA</span>
-            <span class="rgb-name">Mauve</span>
-          </div>
-          <div>
-            <div class="square lightmauve"></div>
-            <span class="rgb-code">#B8ADD2</span>
-            <span class="rgb-name">Lightmauve</span>
-          </div>
-          <div>
-            <div class="square cyan"></div>
-            <span class="rgb-code">#1FC7D4</span>
-            <span class="rgb-name">Cyan</span>
-          </div>
-          <div>
-            <div class="square orange"></div>
-            <span class="rgb-code">#FFB237</span>
-            <span class="rgb-name">Orange</span>
-          </div>
-          <div>
-            <div class="square pink"></div>
-            <span class="rgb-code">#ED4B9E</span>
-            <span class="rgb-name">Pink</span>
-          </div>
+      </div>
+    </section>
+    <!-- Palette colori -->
+    <section class="component">
+      <h1 class="component-title">Color palettes</h1>
+      <div class="color-container">
+        <div>
+          <div class="square white"></div>
+          <span class="rgb-code">#FFFFFF</span>
+          <span class="rgb-name">White</span>
         </div>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">COMPONENT_NAME</h1>
-        <div>COMPONENT_CODE</div>
-        <div></div>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">COMPONENT_NAME</h1>
-        <div>COMPONENT_CODE</div>
-        <div></div>
-      </section>
-    </main>
-  </body>
+        <div>
+          <div class="square lightgray"></div>
+          <span class="rgb-code">#EFF4FS</span>
+          <span class="rgb-name">Lightgray</span>
+        </div>
+        <div>
+          <div class="square violet"></div>
+          <span class="rgb-code">#280D5F</span>
+          <span class="rgb-name">Violet</span>
+        </div>
+        <div>
+          <div class="square purple"></div>
+          <span class="rgb-code">#7645D9</span>
+          <span class="rgb-name">Purple</span>
+        </div>
+        <div>
+          <div class="square mauve"></div>
+          <span class="rgb-code">#7A6EAA</span>
+          <span class="rgb-name">Mauve</span>
+        </div>
+        <div>
+          <div class="square lightmauve"></div>
+          <span class="rgb-code">#B8ADD2</span>
+          <span class="rgb-name">Lightmauve</span>
+        </div>
+        <div>
+          <div class="square cyan"></div>
+          <span class="rgb-code">#1FC7D4</span>
+          <span class="rgb-name">Cyan</span>
+        </div>
+        <div>
+          <div class="square orange"></div>
+          <span class="rgb-code">#FFB237</span>
+          <span class="rgb-name">Orange</span>
+        </div>
+        <div>
+          <div class="square pink"></div>
+          <span class="rgb-code">#ED4B9E</span>
+          <span class="rgb-name">Pink</span>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <pre>
+        <code class="language-html">
+          COMPONENT_CODE
+        </code>
+      </pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <div></div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+  <script>
+    const copyButtonLabel = "Copy Code";
+
+    // use a class selector if available
+    let blocks = document.querySelectorAll("pre");
+
+    blocks.forEach((block) => {
+      // only add button if browser supports Clipboard API
+      if (navigator.clipboard) {
+        let button = document.createElement("button");
+
+        button.innerText = copyButtonLabel;
+        block.appendChild(button);
+
+        button.addEventListener("click", async () => {
+          await copyCode(block, button);
+        });
+      }
+    });
+    
+
+
+    async function copyCode(block, button) {
+      let code = block.querySelector("code");
+      let text = code.innerText;
+
+      await navigator.clipboard.writeText(text);
+
+      // visual feedback that task is completed
+      button.innerText = "Code Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+
+    // replace < and > with html entities
+    function replaceAllCode(){
+      let codeBlocks = document.querySelectorAll("code");
+      codeBlocks.forEach((codeBlock) => {
+        codeBlock.innerHTML = replaceltgt(codeBlock.innerHTML);
+      });
+    }
+
+    function replaceltgt(str) {
+      return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    replaceAllCode();
+  </script>
+</body>
 </html>
