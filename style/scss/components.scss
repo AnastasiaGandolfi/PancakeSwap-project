@@ -2,9 +2,38 @@
 
 body {
   font-family: Kanit;
+  background: -webkit-linear-gradient(top, #09070c 22%, #201335 100%);
 
   h1 {
     text-align: center;
+  }
+
+  .container-components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #fff;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    gap: 30px;
+
+    .component-title {
+      font-family: Kanit;
+      color: $orange;
+      font-size: 32px;
+    }
+
+    div {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .container-components {
@@ -52,7 +81,7 @@ body {
       display: flex;
       flex-direction: column;
       cursor: pointer;
-      width: 100px;
+      width: 150px;
 
       .rgb-code {
         text-align: center;
@@ -121,6 +150,10 @@ body {
 
       .primary3D {
         background-color: $primary3D;
+      }
+
+      .primaryBright {
+        background-color: $primaryBright;
       }
 
       .primaryDark {

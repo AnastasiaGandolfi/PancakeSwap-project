@@ -5,10 +5,6 @@
   color: #ddd;
 }
 
-body {
-  background-color: #0b406d;
-}
-
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
@@ -46,7 +42,7 @@ body {
 }
 h1 {
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 {
@@ -149,11 +145,40 @@ a {
   font-size: 16px;
 }
 
+:root {
+  font-family: "Kanit";
+}
+
 body {
   font-family: Kanit;
+  background: -webkit-linear-gradient(top, #09070c 22%, #201335 100%);
 }
 body h1 {
   text-align: center;
+}
+body .container-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body .component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px dashed #fff;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  gap: 30px;
+}
+body .component .component-title {
+  font-family: Kanit;
+  color: #ffb237;
+  font-size: 32px;
+}
+body .component div {
+  margin-left: auto;
+  margin-right: auto;
 }
 body .container-components {
   display: flex;
@@ -196,7 +221,7 @@ body .color-container div {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
 }
 body .color-container div .rgb-code, body .color-container div .rgb-name {
   text-align: center;
@@ -247,6 +272,9 @@ body .color-container div .primary0f {
 }
 body .color-container div .primary3D {
   background-color: rgba(31, 199, 212, 0.2392156863);
+}
+body .color-container div .primaryBright {
+  background-color: #53dee9;
 }
 body .color-container div .primaryDark {
   background-color: #0098a1;

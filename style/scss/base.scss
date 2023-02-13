@@ -57,10 +57,6 @@ $gradientVioletAlt: linear-gradient(180deg,#434575,#66578d);
 $gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
 $gradientBold: linear-gradient(#53dee9,#9a6aff);
 
-body {
-    background-color: #0b406d;
-}
-
 // Font Kanit
 
 @font-face {
@@ -109,7 +105,7 @@ body {
 
 h1 {
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h2 {
@@ -212,4 +208,8 @@ a {
     padding: 0px 8px;
     border-radius: 8px;
     font-size: 16px;
+}
+
+:root{
+  font-family: "Kanit";
 }

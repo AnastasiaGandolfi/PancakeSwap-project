@@ -4,9 +4,6 @@
   box-sizing: border-box;
   color: #ddd; }
 
-body {
-  background-color: #0b406d; }
-
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
@@ -44,7 +41,7 @@ body {
 
 h1 {
   font-size: 64px;
-  font-weight: 600; }
+  font-weight: 500; }
 
 h2 {
   font-size: 40px; }
@@ -125,3 +122,31 @@ a {
   padding: 0px 8px;
   border-radius: 8px;
   font-size: 16px; }
+
+:root {
+  font-family: "Kanit"; }
+
+.button-two-icons {
+  display: flex;
+  flex-direction: row;
+  background-color: #1fc7d4;
+  border: 0px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 0px 24px;
+  line-height: 1;
+  outline: 0px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  cursor: pointer; }
+  .button-two-icons:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .button-two-icons p {
+    color: #191326;
+    margin-right: 4px;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.04em; }
