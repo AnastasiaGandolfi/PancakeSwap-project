@@ -1,117 +1,131 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PancakeSwap | Components</title>
-    <link rel="stylesheet" href="./style/css/components.css" />
-    <link rel="stylesheet" href="./style/css/common.css" />
-    <meta name="description" content="List of components used in the website" />
-    <meta name="author" content="Fullstack Team 3" />
-    <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css"
-    />
-  </head>
 
-  <body>
-    <main class="container-components">
-      <!-- Tipografia -->
-      <section class="component">
-        <h1 class="component-title">Typography</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PancakeSwap | Components</title>
+  <link rel="stylesheet" href="./style/css/components.css" />
+  <link rel="stylesheet" href="./style/css/common.css" />
+  <meta name="description" content="List of components used in the website" />
+  <meta name="author" content="Fullstack Team 3" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css" />
+</head>
+
+<body>
+  <main class="container-components">
+    <!-- Tipografia -->
+    <section class="component">
+      <h1 class="component-title">Typography</h1>
+      <div>
+        <h1 class="text-purple">h1: la luna è fatta di pancake</h1>
+        <h2 class="text-lightgray">h2: lorem ipsum-lightgray</h2>
+        <h2 class="text-orange">h2: lorem ipsum-orange</h2>
+        <h2 class="text-purple">h2: lorem ipsum-purple</h2>
+        <h2 class="text-cyan">h2: lorem ipsum-cyan</h2>
+        <h2 class="text-pink">h2: lorem ipsum-pink</h2>
+        <h3 class="text-violet">h3: lorem ipsum</h3>
+        <p class="text-lightmauve">p: lorem ipsum</p>
+        <p class="text-orange">p: PHISHING WARNING</p>
+        <p class="text-white">p: https://pancakeswap.finance</p>
+        <a href="#" class="text-mauve">anchor-text: Scambia</a>
+        <a href="#" class="text-cyan">anchor-text: Scambia</a>
+        <p class="button-text-violet">Button-text-violet: Scambia ora</p>
+        <p class="button-text-cyan">Button-text-cyan: Scambia ora</p>
+        <div class="text-trading-information">
+          Stake CAKE - Guadagno SQUAD
+        </div>
+        <div class="number-information-text">48.130%</div>
+        <div class="apr-text">APR</div>
+        <div class="option-lenguage-text">italiano</div>
+      </div>
+    </section>
+    <!-- Palette colori -->
+    <section class="component">
+      <h1 class="component-title">Color palettes</h1>
+      <div class="color-container">
         <div>
-          <h1 class="text-purple">h1: la luna è fatta di pancake</h1>
-          <h2 class="text-lightgray">h2: lorem ipsum-lightgray</h2>
-          <h2 class="text-orange">h2: lorem ipsum-orange</h2>
-          <h2 class="text-purple">h2: lorem ipsum-purple</h2>
-          <h2 class="text-cyan">h2: lorem ipsum-cyan</h2>
-          <h2 class="text-pink">h2: lorem ipsum-pink</h2>
-          <h3 class="text-violet">h3: lorem ipsum</h3>
-          <p class="text-lightmauve">p: lorem ipsum</p>
-          <p class="text-orange">p: PHISHING WARNING</p>
-          <p class="text-white">p: https://pancakeswap.finance</p>
-          <a href="#" class="text-mauve">anchor-text: Scambia</a>
-          <a href="#" class="text-cyan">anchor-text: Scambia</a>
-          <p class="button-text-violet">Button-text-violet: Scambia ora</p>
-          <p class="button-text-cyan">Button-text-cyan: Scambia ora</p>
-          <div class="text-trading-information">
-            Stake CAKE - Guadagno SQUAD
-          </div>
-          <div class="number-information-text">48.130%</div>
-          <div class="apr-text">APR</div>
-          <div class="option-lenguage-text">italiano</div>
+          <div class="square white"></div>
+          <span class="rgb-code">#FFFFFF</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">White</span>
         </div>
-      </section>
-      <!-- Palette colori -->
-      <section class="component">
-        <h1 class="component-title">Color palettes</h1>
-        <div class="color-container">
-          <div>
-            <div class="square white"></div>
-            <span class="rgb-code">#FFFFFF</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">White</span>
-          </div>
-          <div>
-            <div class="square lightgray"></div>
-            <span class="rgb-code">#EFF4FS</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >Lightgray</span
-            >
-          </div>
-          <div>
-            <div class="square violet"></div>
-            <span class="rgb-code">#280D5F</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Violet</span>
-          </div>
-          <div>
-            <div class="square purple"></div>
-            <span class="rgb-code">#7645D9</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Purple</span>
-          </div>
-          <div>
-            <div class="square mauve"></div>
-            <span class="rgb-code">#7A6EAA</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Mauve</span>
-          </div>
-          <div>
-            <div class="square lightmauve"></div>
-            <span class="rgb-code">#B8ADD2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >Lightmauve</span
-            >
-          </div>
-          <div>
-            <div class="square cyan"></div>
-            <span class="rgb-code">#1FC7D4</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Cyan</span>
-          </div>
-          <div>
-            <div class="square orange"></div>
-            <span class="rgb-code">#FFB237</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Orange</span>
-          </div>
-          <div>
-            <div class="square pink"></div>
-            <span class="rgb-code">#ED4B9E</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">Pink</span>
-          </div>
+        <div>
+          <div class="square lightgray"></div>
+          <span class="rgb-code">#EFF4FS</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Lightgray</span>
         </div>
-      </section>
+        <div>
+          <div class="square violet"></div>
+          <span class="rgb-code">#280D5F</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Violet</span>
+        </div>
+        <div>
+          <div class="square purple"></div>
+          <span class="rgb-code">#7645D9</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Purple</span>
+        </div>
+        <div>
+          <div class="square mauve"></div>
+          <span class="rgb-code">#7A6EAA</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Mauve</span>
+        </div>
+        <div>
+          <div class="square lightmauve"></div>
+          <span class="rgb-code">#B8ADD2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Lightmauve</span>
+        </div>
+        <div>
+          <div class="square cyan"></div>
+          <span class="rgb-code">#1FC7D4</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Cyan</span>
+        </div>
+        <div>
+          <div class="square orange"></div>
+          <span class="rgb-code">#FFB237</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Orange</span>
+        </div>
+        <div>
+          <div class="square pink"></div>
+          <span class="rgb-code">#ED4B9E</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">Pink</span>
+        </div>
+      </div>
+    </section>
 
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">COMPONENT_NAME</h1>
-        <div>COMPONENT_CODE</div>
-        <pre>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">Two Icons Button</h1>
+      <div>
+        <button class="button-two-icons">
+          <p>👋 Mettiti in contatto</p>
+          <img src="assets/icons/svgexport-13.svg" width="20" height="20"  alt="icon">
+        </button>
+      </div>
+      </button></div>
+      <pre>
+        <code class="language-html">
+<button class="button-two-icons">
+  <p>👋 Mettiti in contatto</p>
+  <img src="assets/icons/svgexport-13.svg" width="20" height="20"  alt="icon">
+</button>
+        </code>
+      </pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <pre>
         <code class="language-html">
           COMPONENT_CODE
         </code>
       </pre>
-      </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
-    <script src="assets/js/components.js"></script>
-  </body>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+
 </html>

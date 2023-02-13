@@ -4,6 +4,9 @@ h1 {
   text-align: center;
 }
 
+body {
+  background: -webkit-linear-gradient(top,#09070c 22%,#201335 100%);}
+
 .container-components {
   display: flex;
   flex-direction: column;
@@ -15,14 +18,20 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 2px dashed #673bb1;
+  border-bottom: 2px dashed #fff;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  gap:30px;
 
   .component-title {
     font-family: Kanit;
-    color: #ddd;
+    color: $orange;
     font-size: 32px;
+  }
+
+  div{
+    margin-left:auto;
+    margin-right: auto;
   }
 }
 
