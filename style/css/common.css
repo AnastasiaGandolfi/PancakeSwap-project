@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #DDD; }
+  color: #ddd; }
 
 body {
-  background-color: #0B406D; }
+  background-color: #0b406d; }
 
 @font-face {
   font-family: Kanit;
@@ -33,24 +33,85 @@ body {
   font-weight: 200; }
 
 h1 {
-  font-family: Kanit;
   font-size: 64px;
-  color: #7645d9; }
+  font-weight: 600; }
 
 h2 {
-  font-family: Kanit;
-  font-size: 40px;
-  color: #eff4f5; }
+  font-size: 40px; }
 
 h3 {
-  font-family: Kanit;
-  font-size: 20px;
-  color: #280d5f; }
+  font-size: 20px; }
 
 p {
-  font-family: Kanit;
   font-size: 16px;
+  font-weight: 600; }
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none; }
+
+.text-orange {
+  color: #ffb237; }
+
+.text-purple {
+  color: #7645d9; }
+
+.text-cyan {
+  color: #1fc7d4; }
+
+.text-pink {
+  color: #ed4b9e; }
+
+.text-violet {
+  color: #280d5f; }
+
+.text-lightmauve {
   color: #b8add2; }
 
-:root {
-  font-family: Kanit; }
+.text-crystal {
+  color: #f4eeff; }
+
+.text-mauve {
+  color: #7a6eaa; }
+
+.text-white {
+  color: #ffffff; }
+
+.text-lightgray {
+  color: #eff4f5; }
+
+.button-text-violet {
+  font-size: 16px;
+  font-weight: 600;
+  color: #280d5f; }
+
+.button-text-cyan {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1fc7d4; }
+
+.text-trading-information {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #7645d9; }
+
+.number-information-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #f4eeff; }
+
+.apr-text {
+  color: #b8add2;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px; }
+
+.option-lenguage-text {
+  color: #f4eeff;
+  padding: 0px 8px;
+  border-radius: 8px;
+  font-size: 16px; }

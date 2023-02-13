@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #DDD;
+  color: #ddd;
 }
 
 // Palette colori
 
 $white: #ffffff;
+$crystal: #f4eeff;
 $lightgray: #eff4f5;
 $violet: #280d5f;
 $purple: #7645d9;
@@ -18,7 +19,7 @@ $orange: #ffb237;
 $pink: #ed4b9e;
 
 body {
-  background-color: #0B406D;
+  background-color: #0b406d;
 }
 
 @font-face {
@@ -53,25 +54,87 @@ body {
 
 // Tipografia
 h1 {
-  font-family: Kanit;
   font-size: 64px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 20px;
+}
+p {
+  font-size: 16px;
+  font-weight: 600;
+}
+a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+// Colori Tipografia
+.text-orange {
+  color: $orange;
+}
+.text-purple {
   color: $purple;
 }
-
-h2 {
-  font-family: Kanit;
-  font-size: 40px;
-  color: $lightgray;
+.text-cyan {
+  color: $cyan;
 }
-
-h3 {
-  font-family: Kanit;
-  font-size: 20px;
+.text-pink {
+  color: $pink;
+}
+.text-violet {
   color: $violet;
 }
-
-p {
-  font-family: Kanit;
-  font-size: 16px;
+.text-lightmauve {
   color: $lightmauve;
+}
+.text-crystal {
+  color: $crystal;
+}
+.text-mauve {
+  color: $mauve;
+}
+.text-white {
+  color: $white;
+}
+.text-lightgray {
+  color: $lightgray;
+}
+.button-text-violet {
+  font-size: 16px;
+  font-weight: 600;
+  color: $violet;
+}
+.button-text-cyan {
+  font-size: 16px;
+  font-weight: 600;
+  color: $cyan;
+}
+.text-trading-information {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: $purple;
+}
+.number-information-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  color: $crystal;
+}
+.apr-text {
+  color: $lightmauve;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.option-lenguage-text {
+  color: $crystal;
+  padding: 0px 8px;
+  border-radius: 8px;
+  font-size: 16px;
 }
