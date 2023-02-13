@@ -2,216 +2,399 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #ddd; }
+  color: #ddd;
+}
 
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
-  font-weight: 100; }
-
+  font-weight: 100;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
-  font-weight: 200; }
-
+  font-weight: 200;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
-  font-weight: 300; }
-
+  font-weight: 300;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Medium.ttf");
-  font-weight: 500; }
-
+  font-weight: 500;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-SemiBold.ttf");
-  font-weight: 600; }
-
+  font-weight: 600;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
-  font-weight: 700; }
-
+  font-weight: 700;
+}
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
-  font-weight: 800; }
-
+  font-weight: 800;
+}
 h1 {
   font-size: 64px;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 h2 {
-  font-size: 40px; }
+  font-size: 40px;
+}
 
 h3 {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 p {
   font-size: 16px;
-  font-weight: 600; }
+  font-weight: 600;
+}
 
 a {
   font-size: 16px;
   font-weight: 400;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .text-orange {
-  color: #ffb237; }
+  color: #ffb237;
+}
 
 .text-purple {
-  color: #7645d9; }
+  color: #7645d9;
+}
 
 .text-cyan {
-  color: #1fc7d4; }
+  color: #1fc7d4;
+}
 
 .text-pink {
-  color: #ed4b9e; }
+  color: #ed4b9e;
+}
 
 .text-violet {
-  color: #280d5f; }
+  color: #280d5f;
+}
 
 .text-lightmauve {
-  color: #b8add2; }
+  color: #b8add2;
+}
 
 .text-crystal {
-  color: #f4eeff; }
+  color: #f4eeff;
+}
 
 .text-mauve {
-  color: #7a6eaa; }
+  color: #7a6eaa;
+}
 
 .text-white {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .text-lightgray {
-  color: #eff4f5; }
+  color: #eff4f5;
+}
 
 .button-text-violet {
   font-size: 16px;
   font-weight: 600;
-  color: #280d5f; }
+  color: #280d5f;
+}
 
 .button-text-cyan {
   font-size: 16px;
   font-weight: 600;
-  color: #1fc7d4; }
+  color: #1fc7d4;
+}
 
 .text-trading-information {
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
-  color: #7645d9; }
+  color: #7645d9;
+}
 
 .number-information-text {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.1;
-  color: #f4eeff; }
+  color: #f4eeff;
+}
 
 .apr-text {
   color: #b8add2;
   font-weight: 400;
   line-height: 1.5;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 .option-lenguage-text {
   color: #f4eeff;
   padding: 0px 8px;
   border-radius: 8px;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 :root {
-  font-family: "Kanit"; }
-
-h1 {
-  text-align: center; }
+  font-family: "Kanit";
+}
 
 body {
-  background: -webkit-linear-gradient(top, #09070c 22%, #201335 100%); }
-
-.container-components {
+  font-family: Kanit;
+  background: -webkit-linear-gradient(top, #09070c 22%, #201335 100%);
+}
+body h1 {
+  text-align: center;
+}
+body .container-components {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; }
-
-.component {
+  gap: 20px;
+}
+body .component {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-bottom: 2px dashed #fff;
   padding-top: 30px;
   padding-bottom: 60px;
-  gap: 30px; }
-  .component .component-title {
-    font-family: Kanit;
-    color: #ffb237;
-    font-size: 32px; }
-  .component div {
-    margin-left: auto;
-    margin-right: auto; }
-
-.multiple-component {
+  gap: 30px;
+}
+body .component .component-title {
+  font-family: Kanit;
+  color: #ffb237;
+  font-size: 32px;
+}
+body .component div {
+  margin-left: auto;
+  margin-right: auto;
+}
+body .container-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+body .component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px dashed #673bb1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+body .component .component-title {
+  font-family: Kanit;
+  color: #ddd;
+  font-size: 32px;
+}
+body .multiple-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: 2px dashed #673bb1;
-  padding: 30px; }
-
-.color-container {
+  padding: 30px;
+}
+body .color-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px; }
-  .color-container div {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer; }
-    .color-container div .rgb-code, .color-container div .rgb-name {
-      text-align: center; }
-    .color-container div .square {
-      border-radius: 7px;
-      height: 45px;
-      width: 45px;
-      align-self: center;
-      margin: 10px; }
-    .color-container div .white {
-      background-color: #ffffff;
-      border: 1px solid #eff4f5; }
-    .color-container div .lightgray {
-      background-color: #eff4f5; }
-    .color-container div .violet {
-      background-color: #280d5f; }
-    .color-container div .purple {
-      background-color: #7645d9; }
-    .color-container div .mauve {
-      background-color: #7a6eaa; }
-    .color-container div .lightmauve {
-      background-color: #b8add2; }
-    .color-container div .cyan {
-      background-color: #1fc7d4; }
-    .color-container div .orange {
-      background-color: #ffb237; }
-    .color-container div .pink {
-      background-color: #ed4b9e; }
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 83%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+body .color-container div {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 150px;
+}
+body .color-container div .rgb-code, body .color-container div .rgb-name {
+  text-align: center;
+}
+body .color-container div .square {
+  border-radius: 7px;
+  height: 45px;
+  width: 45px;
+  align-self: center;
+  margin: 10px;
+}
+body .color-container div .white {
+  background-color: #ffffff;
+  border: 1px solid #eff4f5;
+}
+body .color-container div .crystal {
+  background-color: #f4eeff;
+}
+body .color-container div .lightgray {
+  background-color: #eff4f5;
+}
+body .color-container div .violet {
+  background-color: #280d5f;
+}
+body .color-container div .purple {
+  background-color: #7645d9;
+}
+body .color-container div .mauve {
+  background-color: #7a6eaa;
+}
+body .color-container div .lightmauve {
+  background-color: #b8add2;
+}
+body .color-container div .cyan {
+  background-color: #1fc7d4;
+}
+body .color-container div .orange {
+  background-color: #ffb237;
+}
+body .color-container div .pink {
+  background-color: #ed4b9e;
+}
+body .color-container div .failure33 {
+  background-color: rgba(237, 75, 158, 0.2);
+}
+body .color-container div .primary0f {
+  background-color: rgba(31, 199, 212, 0.0588235294);
+}
+body .color-container div .primary3D {
+  background-color: rgba(31, 199, 212, 0.2392156863);
+}
+body .color-container div .primaryBright {
+  background-color: #53dee9;
+}
+body .color-container div .primaryDark {
+  background-color: #0098a1;
+}
+body .color-container div .success {
+  background-color: #31d0aa;
+}
+body .color-container div .success19 {
+  background-color: rgba(49, 208, 170, 0.0980392157);
+}
+body .color-container div .warning2D {
+  background-color: rgba(237, 75, 158, 0.1764705882);
+}
+body .color-container div .warning33 {
+  background-color: rgba(237, 75, 158, 0.2);
+}
+body .color-container div .binance {
+  background-color: #f0b90b;
+}
+body .color-container div .overlay {
+  background-color: #452a7a;
+}
+body .color-container div .gold {
+  background-color: #ffc700;
+}
+body .color-container div .silver {
+  background-color: #b2b2b2;
+}
+body .color-container div .bronze {
+  background-color: #e7974d;
+}
+body .color-container div .secondary {
+  background-color: #9a6aff;
+}
+body .color-container div .secondary80 {
+  background-color: rgba(154, 106, 255, 0.5019607843);
+}
+body .color-container div .background {
+  background-color: #08060b;
+}
+body .color-container div .backgroundDisabled {
+  background-color: #3c3742;
+}
+body .color-container div .backgroundAlt {
+  background-color: #27262c;
+}
+body .color-container div .backgroundAlt2 {
+  background-color: rgba(39, 38, 44, 0.7);
+}
+body .color-container div .cardBorder {
+  background-color: #383241;
+}
+body .color-container div .dropdown {
+  background-color: #1e1d20;
+}
+body .color-container div .dropdownDeep {
+  background-color: #100c18;
+}
+body .color-container div .invertedContrast {
+  background-color: #191326;
+}
+body .color-container div .input {
+  background-color: #372f47;
+}
+body .color-container div .inputSecondary {
+  background-color: #262130;
+}
+body .color-container div .tertiary {
+  background-color: #353547;
+}
+body .color-container div .text99 {
+  background-color: rgba(244, 238, 255, 0.6);
+}
+body .color-container div .textDisabled {
+  background-color: #666171;
+}
+body .color-container div .disabled {
+  background-color: #524b63;
+}
+body .color-container div .gradientBubblegum {
+  background: linear-gradient(139.73deg, #313d5c, #3d2a54);
+}
+body .color-container div .gradientInverseBubblegum {
+  background: linear-gradient(139.73deg, #3d2a54, #313d5c);
+}
+body .color-container div .gradientCardHeader {
+  background: linear-gradient(166.77deg, #3b4155, #3a3045);
+}
+body .color-container div .gradientBlue {
+  background: linear-gradient(180deg, #00707f, #19778c);
+}
+body .color-container div .gradientViolet {
+  background: linear-gradient(180deg, #6c4999, #6d4db2);
+}
+body .color-container div .gradientVioletAlt {
+  background: linear-gradient(180deg, #434575, #66578d);
+}
+body .color-container div .gradientGold {
+  background: linear-gradient(180deg, #ffd800, #fdab32);
+}
+body .color-container div .gradientBold {
+  background: linear-gradient(#53dee9, #9a6aff);
+}
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
-pre[class*="language-"] {
+pre[class*=language-] {
   position: relative;
   overflow: auto;
   /* make space  */
   margin: 5px 0;
   padding: 1.75rem 0 1.75rem 1rem;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
-pre[class*="language-"] button {
+pre[class*=language-] button {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -220,8 +403,12 @@ pre[class*="language-"] button {
   background-color: #828282;
   border: ridge 1px #7b7b7c;
   border-radius: 5px;
-  text-shadow: #c4c4c4 0 0 2px; }
+  text-shadow: #c4c4c4 0 0 2px;
+}
 
-pre[class*="language-"] button:hover {
+pre[class*=language-] button:hover {
   cursor: pointer;
-  background-color: #bcbabb; }
+  background-color: #bcbabb;
+}
+
+/*# sourceMappingURL=components.css.map */
