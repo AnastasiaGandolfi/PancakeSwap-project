@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #ddd;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ddd;
 }
 
 // Palette colori
@@ -19,122 +19,158 @@ $orange: #ffb237;
 $pink: #ed4b9e;
 
 body {
-  background-color: #0b406d;
+    background-color: #0b406d;
+}
+
+// Font Kanit
+
+@font-face {
+    font-family: Kanit;
+    src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+    font-weight: 100;
 }
 
 @font-face {
-  font-family: Kanit;
-  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
-  font-weight: 300;
+    font-family: Kanit;
+    src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
+    font-weight: 200;
 }
 
 @font-face {
-  font-family: Kanit;
-  src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
-  font-weight: 700;
+    font-family: Kanit;
+    src: url('/assets/fonts/Kanit/Kanit-Regular.ttf');
+    font-weight: 300;
 }
 
 @font-face {
-  font-family: Kanit;
-  src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
-  font-weight: 800;
+    font-family: Kanit;
+    src: url('/assets/fonts/Kanit/Kanit-Medium.ttf');
+    font-weight: 500;
 }
 
 @font-face {
-  font-family: Kanit;
-  src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
-  font-weight: 100;
+    font-family: Kanit;
+    src: url('/assets/fonts/Kanit/Kanit-SemiBold.ttf');
+    font-weight: 600;
 }
 
 @font-face {
-  font-family: Kanit;
-  src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
-  font-weight: 200;
+    font-family: Kanit;
+    src: url('/assets/fonts/Kanit/Kanit-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Kanit;
+    src: url('/assets/fonts/Kanit/Kanit-ExtraBold.ttf');
+    font-weight: 800;
 }
 
 // Tipografia
+
 h1 {
-  font-size: 64px;
-  font-weight: 600;
+    font-size: 64px;
+    font-weight: 600;
 }
+
 h2 {
-  font-size: 40px;
+    font-size: 40px;
 }
+
 h3 {
-  font-size: 20px;
+    font-size: 20px;
 }
+
 p {
-  font-size: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
 }
+
 a {
-  font-size: 16px;
-  font-weight: 400;
-  text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
 }
+
 // Colori Tipografia
+
 .text-orange {
-  color: $orange;
+    color: $orange;
 }
+
 .text-purple {
-  color: $purple;
+    color: $purple;
 }
+
 .text-cyan {
-  color: $cyan;
+    color: $cyan;
 }
+
 .text-pink {
-  color: $pink;
+    color: $pink;
 }
+
 .text-violet {
-  color: $violet;
+    color: $violet;
 }
+
 .text-lightmauve {
-  color: $lightmauve;
+    color: $lightmauve;
 }
+
 .text-crystal {
-  color: $crystal;
+    color: $crystal;
 }
+
 .text-mauve {
-  color: $mauve;
+    color: $mauve;
 }
+
 .text-white {
-  color: $white;
+    color: $white;
 }
+
 .text-lightgray {
-  color: $lightgray;
+    color: $lightgray;
 }
+
 .button-text-violet {
-  font-size: 16px;
-  font-weight: 600;
-  color: $violet;
+    font-size: 16px;
+    font-weight: 600;
+    color: $violet;
 }
+
 .button-text-cyan {
-  font-size: 16px;
-  font-weight: 600;
-  color: $cyan;
+    font-size: 16px;
+    font-weight: 600;
+    color: $cyan;
 }
+
 .text-trading-information {
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 8px;
-  font-size: 12px;
-  color: $purple;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: $purple;
 }
+
 .number-information-text {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.1;
-  color: $crystal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    color: $crystal;
 }
+
 .apr-text {
-  color: $lightmauve;
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 16px;
+    color: $lightmauve;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 16px;
 }
+
 .option-lenguage-text {
-  color: $crystal;
-  padding: 0px 8px;
-  border-radius: 8px;
-  font-size: 16px;
+    color: $crystal;
+    padding: 0px 8px;
+    border-radius: 8px;
+    font-size: 16px;
 }
