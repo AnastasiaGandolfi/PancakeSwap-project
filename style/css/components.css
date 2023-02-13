@@ -1,66 +1,59 @@
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
-  font-weight: 300;
-}
+  font-weight: 300; }
+
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
-  font-weight: 700;
-}
+  font-weight: 700; }
+
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
-  font-weight: 800;
-}
+  font-weight: 800; }
+
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
-  font-weight: 100;
-}
+  font-weight: 100; }
+
 @font-face {
   font-family: Kanit;
   src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
-  font-weight: 200;
-}
+  font-weight: 200; }
+
 h1 {
   font-family: Kanit;
   font-size: 64px;
-  color: #7645d9;
-}
+  color: #7645d9; }
 
 h2 {
   font-family: Kanit;
   font-size: 40px;
-  color: #eff4f5;
-}
+  color: #eff4f5; }
 
 h3 {
   font-family: Kanit;
   font-size: 20px;
-  color: #280d5f;
-}
+  color: #280d5f; }
 
 p {
   font-family: Kanit;
   font-size: 16px;
-  color: #b8add2;
-}
+  color: #b8add2; }
 
 :root {
-  font-family: Kanit;
-}
+  font-family: Kanit; }
 
 h1 {
-  text-align: center;
-}
+  text-align: center; }
 
 .container-components {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-}
+  gap: 20px; }
 
 .component {
   display: flex;
@@ -68,70 +61,80 @@ h1 {
   justify-content: center;
   border-bottom: 2px dashed #673bb1;
   padding-top: 30px;
-  padding-bottom: 30px;
-}
-.component .component-title {
-  font-family: Kanit;
-  color: black;
-  font-size: 32px;
-}
+  padding-bottom: 30px; }
+  .component .component-title {
+    font-family: Kanit;
+    color: black;
+    font-size: 32px; }
 
 .multiple-component {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border-bottom: 2px dashed #673bb1;
-  padding: 30px;
-}
+  padding: 30px; }
 
 .color-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-}
-.color-container div {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-.color-container div .rgb-code, .color-container div .rgb-name {
-  text-align: center;
-}
-.color-container div .square {
-  border-radius: 7px;
-  height: 45px;
-  width: 45px;
-  align-self: center;
-  margin: 10px;
-}
-.color-container div .white {
-  background-color: #ffffff;
-  border: 1px solid #eff4f5;
-}
-.color-container div .lightgray {
-  background-color: #eff4f5;
-}
-.color-container div .violet {
-  background-color: #280d5f;
-}
-.color-container div .purple {
-  background-color: #7645d9;
-}
-.color-container div .mauve {
-  background-color: #7a6eaa;
-}
-.color-container div .lightmauve {
-  background-color: #b8add2;
-}
-.color-container div .cyan {
-  background-color: #1fc7d4;
-}
-.color-container div .orange {
-  background-color: #ffb237;
-}
-.color-container div .pink {
-  background-color: #ed4b9e;
-}
+  gap: 15px; }
+  .color-container div {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; }
+    .color-container div .rgb-code, .color-container div .rgb-name {
+      text-align: center; }
+    .color-container div .square {
+      border-radius: 7px;
+      height: 45px;
+      width: 45px;
+      align-self: center;
+      margin: 10px; }
+    .color-container div .white {
+      background-color: #ffffff;
+      border: 1px solid #eff4f5; }
+    .color-container div .lightgray {
+      background-color: #eff4f5; }
+    .color-container div .violet {
+      background-color: #280d5f; }
+    .color-container div .purple {
+      background-color: #7645d9; }
+    .color-container div .mauve {
+      background-color: #7a6eaa; }
+    .color-container div .lightmauve {
+      background-color: #b8add2; }
+    .color-container div .cyan {
+      background-color: #1fc7d4; }
+    .color-container div .orange {
+      background-color: #ffb237; }
+    .color-container div .pink {
+      background-color: #ed4b9e; }
 
-/*# sourceMappingURL=components.css.map */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+pre[class*="language-"] {
+  position: relative;
+  overflow: auto;
+  /* make space  */
+  margin: 5px 0;
+  padding: 1.75rem 0 1.75rem 1rem;
+  border-radius: 10px; }
+
+pre[class*="language-"] button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.9rem;
+  padding: 0.15rem;
+  background-color: #828282;
+  border: ridge 1px #7b7b7c;
+  border-radius: 5px;
+  text-shadow: #c4c4c4 0 0 2px; }
+
+pre[class*="language-"] button:hover {
+  cursor: pointer;
+  background-color: #bcbabb; }
