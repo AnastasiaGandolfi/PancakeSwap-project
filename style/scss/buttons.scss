@@ -1,5 +1,6 @@
+@import "base";
 .button-two-icons {
-  @mixin common-button{
+  @mixin common-button {
     display: flex;
     flex-direction: row;
     background-color: $cyan;
@@ -23,22 +24,49 @@
       margin-right: 4px;
       font-weight: 550;
       font-size: 16px;
-      letter-spacing:0.04em;
+      letter-spacing: 0.04em;
     }
   }
-  &-dark{
+  &-dark {
     @include common-button;
     p {
       color: #191326;
     }
   }
-  &-light{
+  &-light {
     @include common-button;
-    p{
-      color:  $white;
+    p {
+      color: $white;
     }
-    img{
+    img {
       filter: invert(100%);
     }
+  }
+}
+.trade-now-button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  height: 48px;
+  padding: 0 24px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $cyan;
+  box-shadow: none;
+  cursor: pointer;
+  &:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65;
+  }
+  p {
+    letter-spacing: 0.03em;
+    font-family: Kanit;
   }
 }

@@ -126,6 +126,134 @@ a {
 :root {
   font-family: "Kanit"; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ddd; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+  font-weight: 100; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-SemiBold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
+  font-weight: 800; }
+
+h1 {
+  font-size: 64px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 20px; }
+
+p {
+  font-size: 16px;
+  font-weight: 600; }
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none; }
+
+.text-orange {
+  color: #ffb237; }
+
+.text-purple {
+  color: #7645d9; }
+
+.text-cyan {
+  color: #1fc7d4; }
+
+.text-pink {
+  color: #ed4b9e; }
+
+.text-violet {
+  color: #280d5f; }
+
+.text-lightmauve {
+  color: #b8add2; }
+
+.text-crystal {
+  color: #f4eeff; }
+
+.text-mauve {
+  color: #7a6eaa; }
+
+.text-white {
+  color: #ffffff; }
+
+.text-lightgray {
+  color: #eff4f5; }
+
+.button-text-violet {
+  font-size: 16px;
+  font-weight: 600;
+  color: #280d5f; }
+
+.button-text-cyan {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1fc7d4; }
+
+.text-trading-information {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #7645d9; }
+
+.number-information-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #f4eeff; }
+
+.apr-text {
+  color: #b8add2;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px; }
+
+.option-lenguage-text {
+  color: #f4eeff;
+  padding: 0px 8px;
+  border-radius: 8px;
+  font-size: 16px; }
+
+:root {
+  font-family: "Kanit"; }
+
 .button-two-icons-dark {
   display: flex;
   flex-direction: row;
@@ -181,3 +309,28 @@ a {
     color: #ffffff; }
   .button-two-icons-light img {
     filter: invert(100%); }
+
+.trade-now-button {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  height: 48px;
+  padding: 0 24px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #1fc7d4;
+  box-shadow: none;
+  cursor: pointer; }
+  .trade-now-button:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .trade-now-button p {
+    letter-spacing: 0.03em;
+    font-family: Kanit; }
