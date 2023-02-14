@@ -438,3 +438,28 @@ a {
       letter-spacing: 0.03em; }
     .button-sm-light p {
       color: #ffffff; }
+
+.Primary-button {
+  display: flex;
+  flex-direction: row;
+  background-color: #1fc7d4;
+  border: 0px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 0px 24px;
+  line-height: 1;
+  outline: 0px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  cursor: pointer; }
+  .Primary-button:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .Primary-button p {
+    color: #191326;
+    margin-right: 4px;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.03em; }

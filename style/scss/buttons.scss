@@ -105,3 +105,6 @@
     }
   }
 }
+.Primary-button{
+  @include common-button;
+}
