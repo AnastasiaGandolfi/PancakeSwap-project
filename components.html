@@ -1,387 +1,324 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PancakeSwap | Components</title>
-    <link rel="stylesheet" href="./style/css/components.css" />
-    <link rel="stylesheet" href="./style/css/common.css" />
-    <meta name="description" content="List of components used in the website" />
-    <meta name="author" content="Fullstack Team 3" />
-    <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="tooltip"><h1>Content copied</h1></div>
-    <main class="container-components">
-      <!-- Tipografia -->
-      <section class="component">
-        <h1 class="component-title">Typography</h1>
-        <div>
-          <h1 class="text-purple">h1: la luna è fatta di pancake</h1>
-          <h2 class="text-lightgray">h2: lorem ipsum-lightgray</h2>
-          <h2 class="text-orange">h2: lorem ipsum-orange</h2>
-          <h2 class="text-purple">h2: lorem ipsum-purple</h2>
-          <h2 class="text-cyan">h2: lorem ipsum-cyan</h2>
-          <h2 class="text-pink">h2: lorem ipsum-pink</h2>
-          <h3 class="text-violet">h3: lorem ipsum</h3>
-          <p class="text-lightmauve">p: lorem ipsum</p>
-          <p class="text-orange">p: PHISHING WARNING</p>
-          <p class="text-white">p: https://pancakeswap.finance</p>
-          <a href="#" class="text-mauve">anchor-text: Scambia</a><br />
-          <a href="#" class="text-cyan">anchor-text: Scambia</a>
-          <p class="button-text-violet">Button-text-violet: Scambia ora</p>
-          <p class="button-text-cyan">Button-text-cyan: Scambia ora</p>
-          <div class="text-trading-information">
-            Stake CAKE - Guadagno SQUAD
-          </div>
-          <div class="number-information-text">48.130%</div>
-          <div class="apr-text">APR</div>
-          <div class="option-lenguage-text">italiano</div>
-        </div>
-      </section>
-      <!-- Palette colori -->
-      <section class="component">
-        <h1 class="component-title">Color palettes</h1>
-        <div class="color-container">
-          <div>
-            <div class="square white"></div>
-            <span class="rgb-code">#fff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">white</span>
-          </div>
-          <div>
-            <div class="square crystal"></div>
-            <span class="rgb-code">#f4eeff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >crystal</span
-            >
-          </div>
-          <div>
-            <div class="square lightgray"></div>
-            <span class="rgb-code">#eff4fs</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >lightgray</span
-            >
-          </div>
-          <div>
-            <div class="square violet"></div>
-            <span class="rgb-code">#280d5f</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">violet</span>
-          </div>
-          <div>
-            <div class="square purple"></div>
-            <span class="rgb-code">#7645d9</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">purple</span>
-          </div>
-          <div>
-            <div class="square mauve"></div>
-            <span class="rgb-code">#7a6eaa</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">mauve</span>
-          </div>
-          <div>
-            <div class="square lightmauve"></div>
-            <span class="rgb-code">#b8add2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >lightmauve</span
-            >
-          </div>
-          <div>
-            <div class="square cyan"></div>
-            <span class="rgb-code">#1fc7d4</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">cyan</span>
-          </div>
-          <div>
-            <div class="square orange"></div>
-            <span class="rgb-code">#ffb237</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">orange</span>
-          </div>
-          <div>
-            <div class="square pink"></div>
-            <span class="rgb-code">#ed4b9e</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">pink</span>
-          </div>
-          <div>
-            <div class="square failure33"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >failure33</span
-            >
-          </div>
-          <div>
-            <div class="square primary0f"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primary0f</span
-            >
-          </div>
-          <div>
-            <div class="square primary3D"></div>
-            <span class="rgb-code">#1fc7d43d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primary3D</span
-            >
-          </div>
-          <div>
-            <div class="square primaryBright"></div>
-            <span class="rgb-code">#53dee9</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primaryBright</span
-            >
-          </div>
-          <div>
-            <div class="square primaryDark"></div>
-            <span class="rgb-code">#0098a1</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primaryDark</span
-            >
-          </div>
-          <div>
-            <div class="square success"></div>
-            <span class="rgb-code">#31d0aa</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >success</span
-            >
-          </div>
-          <div>
-            <div class="square success19"></div>
-            <span class="rgb-code">#31d0aa19</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >success19</span
-            >
-          </div>
-          <div>
-            <div class="square warning2D"></div>
-            <span class="rgb-code">#ed4b9e2d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >warning2D</span
-            >
-          </div>
-          <div>
-            <div class="square warning33"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >warning33</span
-            >
-          </div>
-          <div>
-            <div class="square binance"></div>
-            <span class="rgb-code">#f0b90b</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >binance</span
-            >
-          </div>
-          <div>
-            <div class="square overlay"></div>
-            <span class="rgb-code">#452a7a</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >overlay</span
-            >
-          </div>
-          <div>
-            <div class="square gold"></div>
-            <span class="rgb-code">#ffc700</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">gold</span>
-          </div>
-          <div>
-            <div class="square silver"></div>
-            <span class="rgb-code">#b2b2b2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">silver</span>
-          </div>
-          <div>
-            <div class="square bronze"></div>
-            <span class="rgb-code">#e7974d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">bronze</span>
-          </div>
-          <div>
-            <div class="square secondary"></div>
-            <span class="rgb-code">#9a6aff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >secondary</span
-            >
-          </div>
-          <div>
-            <div class="square secondary80"></div>
-            <span class="rgb-code">#9a6aff80</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >secondary80</span
-            >
-          </div>
-          <div>
-            <div class="square background"></div>
-            <span class="rgb-code">#08060b</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >background</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundDisabled"></div>
-            <span class="rgb-code">#3c3742</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundDisabled</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundAlt"></div>
-            <span class="rgb-code">#27262c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundAlt</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundAlt2"></div>
-            <span class="rgb-code">rgba(39,38,44,.7);</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundAlt2</span
-            >
-          </div>
-          <div>
-            <div class="square cardBorder"></div>
-            <span class="rgb-code">#383241</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >cardBorder</span
-            >
-          </div>
-          <div>
-            <div class="square dropdown"></div>
-            <span class="rgb-code">#1e1d20</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >dropdown</span
-            >
-          </div>
-          <div>
-            <div class="square dropdownDeep"></div>
-            <span class="rgb-code">#100c18</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >dropdownDeep</span
-            >
-          </div>
-          <div>
-            <div class="square invertedContrast"></div>
-            <span class="rgb-code">#191326</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >invertedContrast</span
-            >
-          </div>
-          <div>
-            <div class="square input"></div>
-            <span class="rgb-code">#372f47</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">input</span>
-          </div>
-          <div>
-            <div class="square inputSecondary"></div>
-            <span class="rgb-code">#262130</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >inputSecondary</span
-            >
-          </div>
-          <div>
-            <div class="square tertiary"></div>
-            <span class="rgb-code">#353547</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >tertiary</span
-            >
-          </div>
-          <div>
-            <div class="square text99"></div>
-            <span class="rgb-code">#f4eeff99</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">text99</span>
-          </div>
-          <div>
-            <div class="square textDisabled"></div>
-            <span class="rgb-code">#666171</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >textDisabled</span
-            >
-          </div>
-          <div>
-            <div class="square disabled"></div>
-            <span class="rgb-code">#372f47</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >disabled</span
-            >
-          </div>
-        </div>
-        <div class="color-container" style="margin-top: -95px">
-          <div style="width: 200px">
-            <div class="square gradientBubblegum"></div>
-            <span class="rgb-code">#313d5c #3d2a54</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBubblegum</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientInverseBubblegum"></div>
-            <span class="rgb-code">#3d2a54 #313d5c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientInverseBubblegum</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientCardHeader"></div>
-            <span class="rgb-code">#3b4155 #3a3045</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientCardHeader</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientBlue"></div>
-            <span class="rgb-code">#00707f #19778c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBlue</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientViolet"></div>
-            <span class="rgb-code">#6c4999 #6d4db2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientViolet</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientVioletAlt"></div>
-            <span class="rgb-code">#434575 #66578d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientVioletAlt</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientGold"></div>
-            <span class="rgb-code">#ffd800 #fdab32</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientGold</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientBold"></div>
-            <span class="rgb-code">#53dee9 #9a6aff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBold</span
-            >
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PancakeSwap | Components</title>
+  <link rel="stylesheet" href="./style/css/components.css" />
+  <link rel="stylesheet" href="./style/css/common.css" />
+  <meta name="description" content="List of components used in the website" />
+  <meta name="author" content="Fullstack Team 3" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css" />
+</head>
 
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">Two Icons Button</h1>
-        <div>
-          <button class="button-two-icons-dark">
-            <p>👋 Mettiti in contatto</p>
-            <img
-              src="assets/icons/svgexport-13.svg"
-              width="20"
-              height="20"
-              alt="icon"
-              fill="currentColor"
-            />
-          </button>
+<body>
+  <div id="tooltip">
+    <h1>Content copied</h1>
+  </div>
+  <main class="container-components">
+    <!-- Tipografia -->
+    <section class="component">
+      <h1 class="component-title">Typography</h1>
+      <div>
+        <h1 class="text-purple">h1: la luna è fatta di pancake</h1>
+        <h2 class="text-lightgray">h2: lorem ipsum-lightgray</h2>
+        <h2 class="text-orange">h2: lorem ipsum-orange</h2>
+        <h2 class="text-purple">h2: lorem ipsum-purple</h2>
+        <h2 class="text-cyan">h2: lorem ipsum-cyan</h2>
+        <h2 class="text-pink">h2: lorem ipsum-pink</h2>
+        <h3 class="text-violet">h3: lorem ipsum</h3>
+        <p class="text-lightmauve">p: lorem ipsum</p>
+        <p class="text-orange">p: PHISHING WARNING</p>
+        <p class="text-white">p: https://pancakeswap.finance</p>
+        <a href="#" class="text-mauve">anchor-text: Scambia</a><br />
+        <a href="#" class="text-cyan">anchor-text: Scambia</a>
+        <p class="button-text-violet">Button-text-violet: Scambia ora</p>
+        <p class="button-text-cyan">Button-text-cyan: Scambia ora</p>
+        <div class="text-trading-information">
+          Stake CAKE - Guadagno SQUAD
         </div>
-        <pre>
+        <div class="number-information-text">48.130%</div>
+        <div class="apr-text">APR</div>
+        <div class="option-lenguage-text">italiano</div>
+      </div>
+    </section>
+    <!-- Palette colori -->
+    <section class="component">
+      <h1 class="component-title">Color palettes</h1>
+      <div class="color-container">
+        <div>
+          <div class="square white"></div>
+          <span class="rgb-code">#fff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">white</span>
+        </div>
+        <div>
+          <div class="square crystal"></div>
+          <span class="rgb-code">#f4eeff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">crystal</span>
+        </div>
+        <div>
+          <div class="square lightgray"></div>
+          <span class="rgb-code">#eff4fs</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">lightgray</span>
+        </div>
+        <div>
+          <div class="square violet"></div>
+          <span class="rgb-code">#280d5f</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">violet</span>
+        </div>
+        <div>
+          <div class="square purple"></div>
+          <span class="rgb-code">#7645d9</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">purple</span>
+        </div>
+        <div>
+          <div class="square mauve"></div>
+          <span class="rgb-code">#7a6eaa</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">mauve</span>
+        </div>
+        <div>
+          <div class="square lightmauve"></div>
+          <span class="rgb-code">#b8add2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">lightmauve</span>
+        </div>
+        <div>
+          <div class="square cyan"></div>
+          <span class="rgb-code">#1fc7d4</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">cyan</span>
+        </div>
+        <div>
+          <div class="square orange"></div>
+          <span class="rgb-code">#ffb237</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">orange</span>
+        </div>
+        <div>
+          <div class="square pink"></div>
+          <span class="rgb-code">#ed4b9e</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">pink</span>
+        </div>
+        <div>
+          <div class="square failure33"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">failure33</span>
+        </div>
+        <div>
+          <div class="square primary0f"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary0f</span>
+        </div>
+        <div>
+          <div class="square primary3D"></div>
+          <span class="rgb-code">#1fc7d43d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary3D</span>
+        </div>
+        <div>
+          <div class="square primaryBright"></div>
+          <span class="rgb-code">#53dee9</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primaryBright</span>
+        </div>
+        <div>
+          <div class="square primaryDark"></div>
+          <span class="rgb-code">#0098a1</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primaryDark</span>
+        </div>
+        <div>
+          <div class="square success"></div>
+          <span class="rgb-code">#31d0aa</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">success</span>
+        </div>
+        <div>
+          <div class="square success19"></div>
+          <span class="rgb-code">#31d0aa19</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">success19</span>
+        </div>
+        <div>
+          <div class="square warning2D"></div>
+          <span class="rgb-code">#ed4b9e2d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning2D</span>
+        </div>
+        <div>
+          <div class="square warning33"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning33</span>
+        </div>
+        <div>
+          <div class="square binance"></div>
+          <span class="rgb-code">#f0b90b</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">binance</span>
+        </div>
+        <div>
+          <div class="square overlay"></div>
+          <span class="rgb-code">#452a7a</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">overlay</span>
+        </div>
+        <div>
+          <div class="square gold"></div>
+          <span class="rgb-code">#ffc700</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gold</span>
+        </div>
+        <div>
+          <div class="square silver"></div>
+          <span class="rgb-code">#b2b2b2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">silver</span>
+        </div>
+        <div>
+          <div class="square bronze"></div>
+          <span class="rgb-code">#e7974d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">bronze</span>
+        </div>
+        <div>
+          <div class="square secondary"></div>
+          <span class="rgb-code">#9a6aff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary</span>
+        </div>
+        <div>
+          <div class="square secondary80"></div>
+          <span class="rgb-code">#9a6aff80</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary80</span>
+        </div>
+        <div>
+          <div class="square background"></div>
+          <span class="rgb-code">#08060b</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">background</span>
+        </div>
+        <div>
+          <div class="square backgroundDisabled"></div>
+          <span class="rgb-code">#3c3742</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundDisabled</span>
+        </div>
+        <div>
+          <div class="square backgroundAlt"></div>
+          <span class="rgb-code">#27262c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundAlt</span>
+        </div>
+        <div>
+          <div class="square backgroundAlt2"></div>
+          <span class="rgb-code">rgba(39,38,44,.7);</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundAlt2</span>
+        </div>
+        <div>
+          <div class="square cardBorder"></div>
+          <span class="rgb-code">#383241</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">cardBorder</span>
+        </div>
+        <div>
+          <div class="square dropdown"></div>
+          <span class="rgb-code">#1e1d20</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">dropdown</span>
+        </div>
+        <div>
+          <div class="square dropdownDeep"></div>
+          <span class="rgb-code">#100c18</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">dropdownDeep</span>
+        </div>
+        <div>
+          <div class="square invertedContrast"></div>
+          <span class="rgb-code">#191326</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">invertedContrast</span>
+        </div>
+        <div>
+          <div class="square input"></div>
+          <span class="rgb-code">#372f47</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">input</span>
+        </div>
+        <div>
+          <div class="square inputSecondary"></div>
+          <span class="rgb-code">#262130</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">inputSecondary</span>
+        </div>
+        <div>
+          <div class="square tertiary"></div>
+          <span class="rgb-code">#353547</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">tertiary</span>
+        </div>
+        <div>
+          <div class="square text99"></div>
+          <span class="rgb-code">#f4eeff99</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">text99</span>
+        </div>
+        <div>
+          <div class="square textDisabled"></div>
+          <span class="rgb-code">#666171</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">textDisabled</span>
+        </div>
+        <div>
+          <div class="square disabled"></div>
+          <span class="rgb-code">#372f47</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">disabled</span>
+        </div>
+      </div>
+      <div class="color-container" style="margin-top: -95px">
+        <div style="width: 200px">
+          <div class="square gradientBubblegum"></div>
+          <span class="rgb-code">#313d5c #3d2a54</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBubblegum</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientInverseBubblegum"></div>
+          <span class="rgb-code">#3d2a54 #313d5c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientInverseBubblegum</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientCardHeader"></div>
+          <span class="rgb-code">#3b4155 #3a3045</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientCardHeader</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientBlue"></div>
+          <span class="rgb-code">#00707f #19778c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBlue</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientViolet"></div>
+          <span class="rgb-code">#6c4999 #6d4db2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientViolet</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientVioletAlt"></div>
+          <span class="rgb-code">#434575 #66578d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientVioletAlt</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientGold"></div>
+          <span class="rgb-code">#ffd800 #fdab32</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientGold</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientBold"></div>
+          <span class="rgb-code">#53dee9 #9a6aff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBold</span>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">Button sm</h1>
+      <div>
+        <button class="button-sm">
+          <p>Connetti wallet</p>
+        </button>
+      </div>
+      <pre>
+    <code class="language-html">
+<button class="button-sm">
+<p>Connetti wallet</p>
+</button>
+    </code>
+  </pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">Two Icons Button</h1>
+      <div>
+        <button class="button-two-icons-dark">
+          <p>👋 Mettiti in contatto</p>
+          <img src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
   <button class="button-two-icons-dark">
     <p>👋 Mettiti in contatto</p>
@@ -389,128 +326,103 @@
   </button>
         </code>
       </pre>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">Trade Now Button</h1>
-        <div>
-          <button class="trade-now-button">
-            <p class="text-cyan">Scambia ora</p>
-          </button>
-        </div>
-        <pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">Trade Now Button</h1>
+      <div>
+        <button class="trade-now-button">
+          <p class="text-cyan">Scambia ora</p>
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
     <button class="trade-now-button">
        <p class="text-cyan">Scambia ora</p>
     </button>
         </code>
         </pre>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">ICONS</h1>
-        <div
-          style="
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">ICONS</h1>
+      <div style="
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             column-gap: 10px;
-          "
-        >
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-7.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-8.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-9.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-10.svg"
-            style="background-color: white"
-          />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-13.svg"
-            style="background-color: white"
-          />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-19.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-20.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-21.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-23.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-25.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-26.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-27.svg"
-            style="background-color: white"
-          />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-28.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-32.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-33.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-34.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-35.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-36.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-37.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-38.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-39.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-40.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-41.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-42.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-43.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-44.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-45.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-46.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-47.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-48.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-49.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-50.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-51.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-52.svg" />
-        </div>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">LOGOS</h1>
-        <div
-          style="
+          ">
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-7.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-8.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-9.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-10.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-13.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-19.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-20.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-21.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-23.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-25.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-26.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-27.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-28.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-32.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-33.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-34.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-35.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-36.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-37.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-38.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-39.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-40.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-41.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-42.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-43.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-44.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-45.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-46.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-47.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-48.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-49.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-50.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-51.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-52.svg" />
+      </div>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">LOGOS</h1>
+      <div style="
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             column-gap: 10px;
-          "
-        >
-          <img
-            onclick="copyHtml(this)"
-            src="assets/icons/svgexport-2.svg"
-            width="96px"
-            height="96px"
-          />
-          <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
-          <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="assets/icons/svgexport-30.svg"
-            width="256px"
-            height="64px"
-          />
-        </div>
-      </section>
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">COMPONENT_NAME</h1>
-        <div>COMPONENT_CODE</div>
-        <pre>
+          ">
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-2.svg" width="96px" height="96px" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-30.svg" width="256px" height="64px" />
+      </div>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <pre>
         <code class="language-html">
           COMPONENT_CODE
         </code>
       </pre>
-      </section>
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
-    <script src="assets/js/components.js"></script>
-  </body>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+  <script src="assets/js/components.js"></script>
+</body>
+
 </html>
