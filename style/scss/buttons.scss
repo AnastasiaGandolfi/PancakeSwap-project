@@ -109,8 +109,31 @@
 .primary-square-icon-button {
   @include common-button;
   width: 50px;
+
+  &:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65;
+  }
 }
-&:hover {
-  transition: opacity 0.2s ease 0s;
-  opacity: 0.65;
+
+.primary-icon-button-sm {
+  @include common-button;
+  height: 32px;
+  padding: 0px 16px;
+
+  &-dark {
+    @include common-button;
+
+    p {
+      color: #191326;
+    }
+  }
+
+  &-light {
+    @include common-button;
+
+    p {
+      color: $white;
+    }
+  }
 }
