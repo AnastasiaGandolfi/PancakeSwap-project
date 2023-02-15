@@ -1,0 +1,98 @@
+//Dark mode colors
+$dark-white: #fff;
+$dark-failure: #ed4b9e;
+$dark-failure33: #ed4b9e33;
+$dark-primary: #1fc7d4;
+$dark-primary0f: #1fc7d40f;
+$dark-primary3D: #1fc7d43d;
+$dark-primaryBright: #53dee9;
+$dark-primaryDark: #0098a1;
+$dark-success: #31d0aa;
+$dark-success19: #31d0aa19;
+$dark-warning: #ffb237;
+$dark-warning2D: #ed4b9e2d;
+$dark-warning33: #ed4b9e33;
+$dark-binance: #f0b90b;
+$dark-overlay: #452a7a;
+$dark-gold: #ffc700;
+$dark-silver: #b2b2b2;
+$dark-bronze: #e7974d;
+$dark-secondary: #9a6aff;
+$dark-secondary80: #9a6aff80;
+$dark-background: #08060b;
+$dark-backgroundDisabled: #3c3742;
+$dark-backgroundAlt: #27262c;
+$dark-backgroundAlt2: rgba(39, 38, 44, 0.7);
+$dark-cardBorder: #383241;
+$dark-contrast: #fff;
+$dark-dropdown: #1e1d20;
+$dark-dropdownDeep: #100c18;
+$dark-invertedContrast: #191326;
+$dark-input: #372f47;
+$dark-inputSecondary: #262130;
+$dark-tertiary: #353547;
+$dark-text: #f4eeff;
+$dark-text99: #f4eeff99;
+$dark-textDisabled: #666171;
+$dark-textSubtle: #b8add2;
+$dark-disabled: #524b63;
+$dark-gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
+$dark-gradientInverseBubblegum: linear-gradient(
+  139.73deg,
+  #3d2a54,
+  #313d5c
+);
+$dark-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
+$dark-gradientBlue: linear-gradient(180deg, #00707f, #19778c);
+$dark-gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
+$dark-gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
+$dark-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
+$dark-gradientBold: linear-gradient(#53dee9, #9a6aff);
+
+//Light mode colors
+$light-white: #fff;
+$light-failure: #ed4b9e;
+$light-failure33: #ed4b9e33;
+$light-primary: #1fc7d4;
+$light-primary0f: #1fc7d40f;
+$light-primary3D: #1fc7d43d;
+$light-primaryBright: #53dee9;
+$light-primaryDark: #0098a1;
+$light-success: #31d0aa;
+$light-success19: #31d0aa19;
+$light-warning: #ffb237;
+$light-warning2D: #ed4b9e2d;
+$light-warning33: #ed4b9e33;
+$light-binance: #f0b90b;
+$light-overlay: #452a7a;
+$light-gold: #ffc700;
+$light-silver: #b2b2b2;
+$light-bronze: #e7974d;
+$light-secondary: #7645d9;
+$light-secondary80: #7645d980;
+$light-background: #faf9fa;
+$light-backgroundDisabled: #e9eaeb;
+$light-backgroundAlt: #fff;
+$light-backgroundAlt2: hsla(0, 0%, 100%, 0.7);
+$light-cardBorder: #e7e3eb;
+$light-contrast: #191326;
+$light-dropdown: #f6f6f6;
+$light-dropdownDeep: #eee;
+$light-invertedContrast: #fff;
+$light-input: #eeeaf4;
+$light-inputSecondary: #d7caec;
+$light-tertiary: #eff4f5;
+$light-text: #280d5f;
+$light-text99: #280d5f99;
+$light-textDisabled: #bdc2c4;
+$light-textSubtle: #7a6eaa;
+$light-disabled: #e9eaeb;
+$light-gradientBubblegum: linear-gradient(139.73deg, #e5fdff, #f3efff);
+$light-gradientInverseBubblegum: linear-gradient(139.73deg,#f3efff,#e5fdff
+);
+$light-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
+$light-gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+$light-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
+$light-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
+$light-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
+$light-gradientBold: linear-gradient(#53dee9, #7645d9);

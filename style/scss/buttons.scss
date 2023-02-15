@@ -3,7 +3,7 @@
 @mixin common-button {
   display: flex;
   flex-direction: row;
-  background-color: $cyan;
+  background-color: var(--primary);
   border: 0px;
   border-radius: 16px;
   justify-content: center;
@@ -22,7 +22,7 @@
   }
 
   p {
-    color: #191326;
+    color: var(--invertedContrast);
     margin-right: 4px;
     font-weight: 550;
     font-size: 16px;
@@ -33,25 +33,9 @@
 .button-two-icons {
   @include common-button;
 
-  &-dark {
-    @include common-button;
-
     p {
-      color: #191326;
+      color: var(--invertedContrast);
     }
-  }
-
-  &-light {
-    @include common-button;
-
-    p {
-      color: $white;
-    }
-
-    img {
-      filter: invert(100%);
-    }
-  }
 }
 
 .trade-now-button {
@@ -69,7 +53,7 @@
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: $cyan;
+  border-color: var(--primary);
   box-shadow: none;
   cursor: pointer;
 
@@ -89,28 +73,16 @@
   height: 32px;
   padding: 0px 16px;
 
-  &-dark {
-    @include common-button;
-
-    p {
-      color: #191326;
-    }
-  }
-
-  &-light {
-    @include common-button;
-
-    p {
-      color: $white;
-    }
+  p {
+    color: var(--invertedContrast);
   }
 }
 
 .primary-square-icon-button {
   @include common-button;
   width: 50px;
-}
-&:hover {
-  transition: opacity 0.2s ease 0s;
-  opacity: 0.65;
+  &:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65;
+  }
 }
