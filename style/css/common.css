@@ -438,3 +438,27 @@ a {
       letter-spacing: 0.03em; }
     .button-sm-light p {
       color: #ffffff; }
+
+/* PRIMARY SQUARE ICON BUTTON */
+ .primary-square-icon-button {
+        display: flex;
+        flex-direction: row;
+        background-color: #1fc7d4;
+        border: 0px;
+        border-radius: 16px;
+        justify-content: center;
+        align-items: center;
+        height: 46px;
+        width: 50px;
+        padding: 0px 24px;
+        line-height: 1;
+        outline: 0px;
+        transition: opacity 0.2s ease 0s;
+        opacity: 1;
+        cursor: pointer;
+
+      }
+      .primary-square-icon-button:hover {
+        transition: opacity 0.2s ease 0s;
+         opacity: 0.65; }
+

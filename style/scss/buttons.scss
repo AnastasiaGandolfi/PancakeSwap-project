@@ -105,3 +105,12 @@
     }
   }
 }
+
+.primary-square-icon-button {
+  @include common-button;
+  width: 50px;
+}
+&:hover {
+  transition: opacity 0.2s ease 0s;
+  opacity: 0.65;
+}
