@@ -2,7 +2,17 @@
 
 body {
   font-family: Kanit;
-  background: -webkit-linear-gradient(top, #09070c 22%, #201335 100%);
+  background: var(--background);
+  padding:0;
+  margin:0;
+  .switch{
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .fixedBG{
+    background: #08060b;
+  }
 
   h1 {
     text-align: center;
@@ -22,7 +32,7 @@ body {
     color:white;
     background-color: #673bb1;
     visibility: hidden;
-    position:sticky;
+    position:fixed;
     top:0;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -36,14 +46,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 2px dashed #fff;
-    padding-top: 30px;
+    border-bottom: 1px dashed #fff;
+    padding-top: 60px;
     padding-bottom: 60px;
     gap: 30px;
 
     .component-title {
       font-family: Kanit;
-      color: $orange;
+      color: var(--warning);
       font-size: 32px;
     }
 
@@ -57,7 +67,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 0px;
   }
 
   .component {
@@ -70,8 +80,10 @@ body {
 
     .component-title {
       font-family: Kanit;
-      color: #ddd;
-      font-size: 32px;
+      color: var(--warning);
+      font-size: 50px;
+      margin-left:auto;
+      margin-right: auto;
     }
   }
 
@@ -117,196 +129,192 @@ body {
       }
 
       .white {
-        background-color: $white;
-        border: 1px solid $lightgray;
+        background-color: var(--white);
+        border: 1px solid var(--tertiary);
       }
 
       .crystal {
-        background-color: $crystal;
+        background-color: var(--text);
       }
 
       .lightgray {
-        background-color: $lightgray;
+        background-color: var(--tertiary);
       }
 
-      .violet {
-        background-color: $violet;
-      }
-
-      .purple {
-        background-color: $purple;
-      }
-
-      .mauve {
-        background-color: $mauve;
-      }
-
-      .lightmauve {
-        background-color: $lightmauve;
-      }
-
-      .cyan {
-        background-color: $cyan;
-      }
-
-      .orange {
-        background-color: $orange;
-      }
-
-      .pink {
-        background-color: $pink;
-      }
-
-      .failure33 {
-        background-color: $failure33;
-      }
-
-      .primary0f {
-        background-color: $primary0f;
-      }
-
-      .primary3D {
-        background-color: $primary3D;
-      }
-
-      .primaryBright {
-        background-color: $primaryBright;
-      }
-
-      .primaryDark {
-        background-color: $primaryDark;
-      }
-
-      .success {
-        background-color: $success;
-      }
-
-      .success19 {
-        background-color: $success19;
-      }
-
-      .warning2D {
-        background-color: $warning2D;
-      }
-
-      .warning33 {
-        background-color: $warning33;
-      }
-
-      .binance {
-        background-color: $binance;
-      }
-
-      .overlay {
-        background-color: $overlay;
-      }
-
-      .gold {
-        background-color: $gold;
-      }
-
-      .silver {
-        background-color: $silver;
-      }
-
-      .bronze {
-        background-color: $bronze;
+      .text {
+        background-color: var(--text);
       }
 
       .secondary {
-        background-color: $secondary;
+        background-color: var(--secondary);
+      }
+
+      .textSubtle {
+        background-color: var(--textSubtle);
+      }
+
+      .primary {
+        background-color: var(--primary);
+      }
+
+      .warning {
+        background-color: var(--warning);
+      }
+
+      .failure {
+        background-color: var(--failure);
+      }
+
+      .failure33 {
+        background-color: var(--failure33);
+      }
+
+      .primary0f {
+        background-color: var(--primary0f);
+      }
+
+      .primary3D {
+        background-color: var(--primary3D);
+      }
+
+      .primaryBright {
+        background-color: var(--primaryBright);
+      }
+
+      .primaryDark {
+        background-color: var(--primaryDark);
+      }
+
+      .success {
+        background-color: var(--success);
+      }
+
+      .success19 {
+        background-color: var(--success19);
+      }
+
+      .warning2D {
+        background-color: var(--warning2D);
+      }
+
+      .warning33 {
+        background-color: var(--warning33);
+      }
+
+      .binance {
+        background-color: var(--binance);
+      }
+
+      .overlay {
+        background-color: var(--overlay);
+      }
+
+      .gold {
+        background-color: var(--gold);
+      }
+
+      .silver {
+        background-color: var(--silver);
+      }
+
+      .bronze {
+        background-color: var(--bronze);
+      }
+
+      .secondary {
+        background-color: var(--secondary);
       }
 
       .secondary80 {
-        background-color: $secondary80;
+        background-color: var(--secondary80);
       }
 
       .background {
-        background-color: $background;
+        background-color: var(--background);
       }
 
       .backgroundDisabled {
-        background-color: $backgroundDisabled;
+        background-color: var(--backgroundDisabled);
       }
 
       .backgroundAlt {
-        background-color: $backgroundAlt;
+        background-color: var(--backgroundAlt);
       }
 
       .backgroundAlt2 {
-        background-color: $backgroundAlt2;
+        background-color: var(--backgroundAlt2);
       }
 
       .cardBorder {
-        background-color: $cardBorder;
+        background-color: var(--cardBorder);
       }
 
       .dropdown {
-        background-color: $dropdown;
+        background-color: var(--dropdown);
       }
 
       .dropdownDeep {
-        background-color: $dropdownDeep;
+        background-color: var(--dropdownDeep);
       }
 
       .invertedContrast {
-        background-color: $invertedContrast;
+        background-color: var(--invertedContrast);
       }
 
       .input {
-        background-color: $input;
+        background-color: var(--input);
       }
 
       .inputSecondary {
-        background-color: $inputSecondary;
+        background-color: var(--inputSecondary);
       }
 
       .tertiary {
-        background-color: $tertiary;
+        background-color: var(--tertiary);
       }
 
       .text99 {
-        background-color: $text99;
+        background-color: var(--text99);
       }
 
       .textDisabled {
-        background-color: $textDisabled;
+        background-color: var(--textDisabled);
       }
 
       .disabled {
-        background-color: $disabled;
+        background-color: var(--disabled);
       }
 
       .gradientBubblegum {
-        background: $gradientBubblegum;
+        background: var(--gradientBubblegum);
       }
 
       .gradientInverseBubblegum {
-        background: $gradientInverseBubblegum;
+        background: var(--gradientInverseBubblegum);
       }
 
       .gradientCardHeader {
-        background: $gradientCardHeader;
+        background: var(--gradientCardHeader);
       }
 
       .gradientBlue {
-        background: $gradientBlue;
+        background: var(--gradientBlue);
       }
 
       .gradientViolet {
-        background: $gradientViolet;
+        background: var(--gradientViolet);
       }
 
       .gradientVioletAlt {
-        background: $gradientVioletAlt;
+        background: var(--gradientVioletAlt);
       }
 
       .gradientGold {
-        background: $gradientGold;
+        background: var(--gradientGold);
       }
 
       .gradientBold {
-        background: $gradientBold;
+        background: var(--gradientBold);
       }
     }
   }

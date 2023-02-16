@@ -1,216 +1,359 @@
+@import "colors";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #ddd;
-    font-family: Kanit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ddd;
+  font-family: Kanit;
 }
 
 // Palette colori
 
-$white: #ffffff;
-$crystal: #f4eeff;
-$lightgray: #eff4f5;
-$violet: #280d5f;
-$purple: #7645d9;
-$mauve: #7a6eaa;
-$lightmauve: #b8add2;
-$cyan: #1fc7d4;
-$orange: #ffb237;
-$pink: #ed4b9e;
+// $white: #ffffff;
+// $crystal: #f4eeff;
+// $lightgray: #eff4f5;
+// $violet: #280d5f;
+// $purple: #7645d9;
+// $mauve: #7a6eaa;
+// $lightmauve: #b8add2;
+// $cyan: #1fc7d4;
+// $orange: #ffb237;
+// $pink: #ed4b9e;
 
-$failure33: #ed4b9e33;
-$primary0f: #1fc7d40f;
-$primary3D: #1fc7d43d;
-$primaryBright: #53dee9;
-$primaryDark: #0098a1;
-$success: #31d0aa;
-$success19: #31d0aa19;
-$warning2D: #ed4b9e2d;
-$warning33: #ed4b9e33;
-$binance: #f0b90b;
-$overlay: #452a7a;
-$gold: #ffc700;
-$silver: #b2b2b2;
-$bronze: #e7974d;
-$secondary: #9a6aff;
-$secondary80: #9a6aff80;
-$background: #08060b;
-$backgroundDisabled: #3c3742;
-$backgroundAlt: #27262c;
-$backgroundAlt2: rgba(39,38,44,.7);
-$cardBorder: #383241;
-$dropdown: #1e1d20;
-$dropdownDeep: #100c18;
-$invertedContrast: #191326;
-$input: #372f47;
-$inputSecondary: #262130;
-$tertiary: #353547;
-$text99: #f4eeff99;
-$textDisabled: #666171;
-$disabled: #524b63;
-$gradientBubblegum: linear-gradient(139.73deg,#313d5c,#3d2a54);
-$gradientInverseBubblegum: linear-gradient(139.73deg,#3d2a54,#313d5c);
-$gradientCardHeader: linear-gradient(166.77deg,#3b4155,#3a3045);
-$gradientBlue: linear-gradient(180deg,#00707f,#19778c);
-$gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
-$gradientVioletAlt: linear-gradient(180deg,#434575,#66578d);
-$gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
-$gradientBold: linear-gradient(#53dee9,#9a6aff);
+// $failure33: #ed4b9e33;
+// $primary0f: #1fc7d40f;
+// $primary3D: #1fc7d43d;
+// $primaryBright: #53dee9;
+// $primaryDark: #0098a1;
+// $success: #31d0aa;
+// $success19: #31d0aa19;
+// $warning2D: #ed4b9e2d;
+// $warning33: #ed4b9e33;
+// $binance: #f0b90b;
+// $overlay: #452a7a;
+// $gold: #ffc700;
+// $silver: #b2b2b2;
+// $bronze: #e7974d;
+// $secondary: #9a6aff;
+// $secondary80: #9a6aff80;
+// $background: #08060b;
+// $backgroundDisabled: #3c3742;
+// $backgroundAlt: #27262c;
+// $backgroundAlt2: rgba(39,38,44,.7);
+// $cardBorder: #383241;
+// $dropdown: #1e1d20;
+// $dropdownDeep: #100c18;
+// $invertedContrast: #191326;
+// $input: #372f47;
+// $inputSecondary: #262130;
+// $tertiary: #353547;
+// $text99: #f4eeff99;
+// $textDisabled: #666171;
+// $disabled: #524b63;
+// $gradientBubblegum: linear-gradient(139.73deg,#313d5c,#3d2a54);
+// $gradientInverseBubblegum: linear-gradient(139.73deg,#3d2a54,#313d5c);
+// $gradientCardHeader: linear-gradient(166.77deg,#3b4155,#3a3045);
+// $gradientBlue: linear-gradient(180deg,#00707f,#19778c);
+// $gradientViolet: linear-gradient(180deg,#6c4999,#6d4db2);
+// $gradientVioletAlt: linear-gradient(180deg,#434575,#66578d);
+// $gradientGold: linear-gradient(180deg,#ffd800,#fdab32);
+// $gradientBold: linear-gradient(#53dee9,#9a6aff);
 
 // Font Kanit
-
 @font-face {
-    font-family: Kanit;
-    src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
-    font-weight: 100;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraLight.ttf");
+  font-weight: 100;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
-    font-weight: 200;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Light.ttf");
+  font-weight: 200;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Regular.ttf');
-    font-weight: 300;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Medium.ttf');
-    font-weight: 500;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Medium.ttf");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-SemiBold.ttf');
-    font-weight: 600;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-SemiBold.ttf");
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-Bold.ttf');
-    font-weight: 700;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-Bold.ttf");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: Kanit;
-    src: url('/assets/fonts/Kanit/Kanit-ExtraBold.ttf');
-    font-weight: 800;
+  font-family: Kanit;
+  src: url("/assets/fonts/Kanit/Kanit-ExtraBold.ttf");
+  font-weight: 800;
 }
 
 // Tipografia
 
 h1 {
-    font-size: 64px;
-    font-weight: 500;
+  font-size: 64px;
+  font-weight: 500;
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 p {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 a {
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 // Colori Tipografia
 
-.text-orange {
-    color: $orange;
+.text-warning {
+  color: var(--warning);
 }
 
-.text-purple {
-    color: $purple;
+.text-secondary {
+  color: var(--secondary);
 }
 
-.text-cyan {
-    color: $cyan;
+.text-primary {
+  color: var(--primary);
 }
 
-.text-pink {
-    color: $pink;
+.text-failure {
+  color: var(--failure);
 }
 
-.text-violet {
-    color: $violet;
+.text {
+  color: var(--text);
 }
 
-.text-lightmauve {
-    color: $lightmauve;
+.text-subtle {
+  color: var(--textSubtle);
 }
 
-.text-crystal {
-    color: $crystal;
+.text {
+  color: var(--text);
 }
 
-.text-mauve {
-    color: $mauve;
+.text-subtle {
+  color: var(--textSubtle);
 }
 
 .text-white {
-    color: $white;
+  color: var(--white);
 }
 
-.text-lightgray {
-    color: $lightgray;
+.text-tertiary {
+  color: var(--tertiary);
 }
 
-.button-text-violet {
-    font-size: 16px;
-    font-weight: 600;
-    color: $violet;
+.button-text-secondary {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
 }
 
-.button-text-cyan {
-    font-size: 16px;
-    font-weight: 600;
-    color: $cyan;
+.button-text-primary {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 .text-trading-information {
-    font-weight: 600;
-    line-height: 1.5;
-    margin-bottom: 8px;
-    font-size: 12px;
-    color: $purple;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--secondary);
 }
 
 .number-information-text {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.1;
-    color: $crystal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--text);
 }
 
 .apr-text {
-    color: $lightmauve;
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 16px;
+  color: var(--textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 .option-lenguage-text {
-    color: $crystal;
-    padding: 0px 8px;
-    border-radius: 8px;
-    font-size: 16px;
+  color: var(--text);
+  padding: 0px 8px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-:root{
+:root {
   font-family: "Kanit";
+  //colors default
+  --white: #fff;
+  --failure: #ed4b9e;
+  --failure33: #ed4b9e33;
+  --primary: #1fc7d4;
+  --primary0f: #1fc7d40f;
+  --primary3D: #1fc7d43d;
+  --primaryBright: #53dee9;
+  --primaryDark: #0098a1;
+  --success: #31d0aa;
+  --success19: #31d0aa19;
+  --warning: #ffb237;
+  --warning2D: #ed4b9e2d;
+  --warning33: #ed4b9e33;
+  --binance: #f0b90b;
+  --overlay: #452a7a;
+  --gold: #ffc700;
+  --silver: #b2b2b2;
+  --bronze: #e7974d;
+  --secondary: #9a6aff;
+  --secondary80: #9a6aff80;
+  --background: #08060b;
+  --backgroundDisabled: #3c3742;
+  --backgroundAlt: #27262c;
+  --backgroundAlt2: rgba(39, 38, 44, 0.7);
+  --cardBorder: #383241;
+  --contrast: #fff;
+  --dropdown: #1e1d20;
+  --dropdownDeep: #100c18;
+  --invertedContrast: #191326;
+  --input: #372f47;
+  --inputSecondary: #262130;
+  --tertiary: #353547;
+  --text: #f4eeff;
+  --text99: #f4eeff99;
+  --textDisabled: #666171;
+  --textSubtle: #b8add2;
+  --disabled: #524b63;
+  --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
+  --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
+  --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
+  --gradientBlue: linear-gradient(180deg, #00707f, #19778c);
+  --gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
+  --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
+  --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
+  --gradientBold: linear-gradient(#53dee9, #9a6aff);
+}
+
+[data-theme="dark"] {
+  --white: #{$dark-white};
+  --failure: #{$dark-failure};
+  --failure33: #{$dark-failure33};
+  --primary: #{$dark-primary};
+  --primary0f: #{$dark-primary0f};
+  --primary3D: #{$dark-primary3D};
+  --primaryBright: #{$dark-primaryBright};
+  --primaryDark: #{$dark-primaryDark};
+  --success: #{$dark-success};
+  --success19: #{$dark-success19};
+  --warning: #{$dark-warning};
+  --warning2D: #{$dark-warning2D};
+  --warning33: #{$dark-warning33};
+  --binance: #{$dark-binance};
+  --overlay: #{$dark-overlay};
+  --gold: #{$dark-gold};
+  --silver: #{$dark-silver};
+  --bronze: #{$dark-bronze};
+  --secondary: #{$dark-secondary};
+  --secondary80: #{$dark-secondary80};
+  --background: #{$dark-background};
+  --backgroundDisabled: #{$dark-backgroundDisabled};
+  --backgroundAlt: #{$dark-backgroundAlt};
+  --backgroundAlt2: #{$dark-backgroundAlt2};
+  --cardBorder: #{$dark-cardBorder};
+  --contrast: #{$dark-contrast};
+  --dropdown: #{$dark-dropdown};
+  --dropdownDeep: #{$dark-dropdownDeep};
+  --invertedContrast: #{$dark-invertedContrast};
+  --input: #{$dark-input};
+  --inputSecondary: #{$dark-inputSecondary};
+  --tertiary: #{$dark-tertiary};
+  --text: #{$dark-text};
+  --text99: #{$dark-text99};
+  --textDisabled: #{$dark-textDisabled};
+  --textSubtle: #{$dark-textSubtle};
+  --disabled: #{$dark-disabled};
+  --gradientBubblegum: #{$dark-gradientBubblegum};
+  --gradientInverseBubblegum: #{$dark-gradientInverseBubblegum};
+  --gradientCardHeader: #{$dark-gradientCardHeader};
+  --gradientBlue: #{$dark-gradientBlue};
+  --gradientViolet: #{$dark-gradientViolet};
+  --gradientVioletAlt: #{$dark-gradientVioletAlt};
+  --gradientGold: #{$dark-gradientGold};
+  --gradientBold: #{$dark-gradientBold};
+}
+
+[data-theme="light"] {
+  --white: #{$light-white};
+  --failure: #{$light-failure};
+  --failure33: #{$light-failure33};
+  --primary: #{$light-primary};
+  --primary0f: #{$light-primary0f};
+  --primary3D: #{$light-primary3D};
+  --primaryBright: #{$light-primaryBright};
+  --primaryDark: #{$light-primaryDark};
+  --success: #{$light-success};
+  --success19: #{$light-success19};
+  --warning: #{$light-warning};
+  --warning2D: #{$light-warning2D};
+  --warning33: #{$light-warning33};
+  --binance: #{$light-binance};
+  --overlay: #{$light-overlay};
+  --gold: #{$light-gold};
+  --silver: #{$light-silver};
+  --bronze: #{$light-bronze};
+  --secondary: #{$light-secondary};
+  --secondary80: #{$light-secondary80};
+  --background: #{$light-background};
+  --backgroundDisabled: #{$light-backgroundDisabled};
+  --backgroundAlt: #{$light-backgroundAlt};
+  --backgroundAlt2: #{$light-backgroundAlt2};
+  --cardBorder: #{$light-cardBorder};
+  --contrast: #{$light-contrast};
+  --dropdown: #{$light-dropdown};
+  --dropdownDeep: #{$light-dropdownDeep};
+  --invertedContrast: #{$light-invertedContrast};
+  --input: #{$light-input};
+  --inputSecondary: #{$light-inputSecondary};
+  --tertiary: #{$light-tertiary};
+  --text: #{$light-text};
+  --text99: #{$light-text99};
+  --textDisabled: #{$light-textDisabled};
+  --textSubtle: #{$light-textSubtle};
+  --disabled: #{$light-disabled};
+  --gradientBubblegum: #{$light-gradientBubblegum};
+  --gradientInverseBubblegum: #{$light-gradientInverseBubblegum};
+  --gradientCardHeader: #{$light-gradientCardHeader};
+  --gradientBlue: #{$light-gradientBlue};
+  --gradientViolet: #{$light-gradientViolet};
+  --gradientVioletAlt: #{$light-gradientVioletAlt};
+  --gradientGold: #{$light-gradientGold};
+  --gradientBold: #{$dark-gradientBold};
 }

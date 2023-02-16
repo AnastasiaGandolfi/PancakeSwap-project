@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-theme="dark">
 
 <head>
   <meta charset="UTF-8" />
@@ -18,25 +18,29 @@
   <div id="tooltip">
     <h1>Content copied</h1>
   </div>
+  <button class="trade-now-button switch" id="switch">
+    <p class="text-cyan">Dark Mode</p>
+  </button>
   <main class="container-components">
+
     <!-- Tipografia -->
-    <section class="component">
+    <section class="component fixedBG" style="width:100%">
       <h1 class="component-title">Typography</h1>
       <div>
-        <h1 class="text-purple">h1: la luna è fatta di pancake</h1>
-        <h2 class="text-lightgray">h2: lorem ipsum-lightgray</h2>
-        <h2 class="text-orange">h2: lorem ipsum-orange</h2>
-        <h2 class="text-purple">h2: lorem ipsum-purple</h2>
-        <h2 class="text-cyan">h2: lorem ipsum-cyan</h2>
-        <h2 class="text-pink">h2: lorem ipsum-pink</h2>
-        <h3 class="text-violet">h3: lorem ipsum</h3>
-        <p class="text-lightmauve">p: lorem ipsum</p>
-        <p class="text-orange">p: PHISHING WARNING</p>
+        <h1 class="text-secondary">h1: la luna è fatta di pancake</h1>
+        <h2 class="text-tertiary">h2: lorem ipsum text-tertiary</h2>
+        <h2 class="text-warning">h2: lorem ipsum text-warning</h2>
+        <h2 class="text-secondary">h2: lorem ipsum text-secondary</h2>
+        <h2 class="text-primary">h2: lorem ipsum-primary</h2>
+        <h2 class="text-failure">h2: lorem ipsum text-failure</h2>
+        <h3 class="text">h3: lorem ipsum text</h3>
+        <p class="text-subtle">p: lorem ipsum text-subtle</p>
+        <p class="text-warning">p: PHISHING WARNING</p>
         <p class="text-white">p: https://pancakeswap.finance</p>
-        <a href="#" class="text-mauve">anchor-text: Scambia</a><br />
-        <a href="#" class="text-cyan">anchor-text: Scambia</a>
-        <p class="button-text-violet">Button-text-violet: Scambia ora</p>
-        <p class="button-text-cyan">Button-text-cyan: Scambia ora</p>
+        <a href="#" class="text">anchor-text: Scambia</a><br />
+        <a href="#" class="text-subtle">anchor-text: Scambia</a>
+        <p class="button-text-secondary">Button-text-secondary: Scambia ora</p>
+        <p class="button-text-primary">Button-text-primary: Scambia ora</p>
         <div class="text-trading-information">
           Stake CAKE - Guadagno SQUAD
         </div>
@@ -46,7 +50,7 @@
       </div>
     </section>
     <!-- Palette colori -->
-    <section class="component">
+    <section class="component fixedBG">
       <h1 class="component-title">Color palettes</h1>
       <div class="color-container">
         <div>
@@ -55,49 +59,39 @@
           <span class="rgb-name" onclick="copyTextContent(this)">white</span>
         </div>
         <div>
-          <div class="square crystal"></div>
-          <span class="rgb-code">#f4eeff</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">crystal</span>
-        </div>
-        <div>
-          <div class="square lightgray"></div>
+          <div class="square tertiary"></div>
           <span class="rgb-code">#eff4fs</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">lightgray</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">tertiary</span>
         </div>
         <div>
-          <div class="square violet"></div>
+          <div class="square text"></div>
           <span class="rgb-code">#280d5f</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">violet</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">text</span>
         </div>
         <div>
-          <div class="square purple"></div>
+          <div class="square secondary"></div>
           <span class="rgb-code">#7645d9</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">purple</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary</span>
         </div>
         <div>
-          <div class="square mauve"></div>
-          <span class="rgb-code">#7a6eaa</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">mauve</span>
-        </div>
-        <div>
-          <div class="square lightmauve"></div>
+          <div class="square textSubtle"></div>
           <span class="rgb-code">#b8add2</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">lightmauve</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">textSubtle</span>
         </div>
         <div>
-          <div class="square cyan"></div>
+          <div class="square primary"></div>
           <span class="rgb-code">#1fc7d4</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">cyan</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary</span>
         </div>
         <div>
-          <div class="square orange"></div>
+          <div class="square warning"></div>
           <span class="rgb-code">#ffb237</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">orange</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning</span>
         </div>
         <div>
-          <div class="square pink"></div>
+          <div class="square failure"></div>
           <span class="rgb-code">#ed4b9e</span>
-          <span class="rgb-name" onclick="copyTextContent(this)">pink</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">failure</span>
         </div>
         <div>
           <div class="square failure33"></div>
@@ -293,86 +287,34 @@
         </div>
       </div>
     </section>
-    <!-- SECTION_DESCRIPTION -->
+    <!-- logos -->
     <section class="component">
-      <h1 class="component-title">Button sm</h1>
-      <div>
-        <button class="button-sm">
-          <p>Connetti wallet</p>
-        </button>
+      <h1 class="component-title">LOGOS</h1>
+      <div style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  column-gap: 10px;
+                ">
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-2.svg" width="96px" height="96px" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-30.svg" width="256px" height="64px" />
       </div>
-      <pre>
-    <code class="language-html">
-<button class="button-sm">
-<p>Connetti wallet</p>
-</button>
-    </code>
-  </pre>
     </section>
-    <!-- SECTION_DESCRIPTION -->
-    <section class="component">
-      <h1 class="component-title">Two Icons Button</h1>
-      <div>
-        <button class="button-two-icons-dark">
-          <p>👋 Mettiti in contatto</p>
-          <img src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor" />
-        </button>
-      </div>
-      <pre>
-        <code class="language-html">
-  <button class="button-two-icons-dark">
-    <p>👋 Mettiti in contatto</p>
-    <img src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor">
-  </button>
-        </code>
-      </pre>
-    </section>
-    <!-- SECTION_DESCRIPTION -->
-    <section class="component">
-      <h1 class="component-title">Trade Now Button</h1>
-      <div>
-        <button class="trade-now-button">
-          <p class="text-cyan">Scambia ora</p>
-        </button>
-      </div>
-      <pre>
-        <code class="language-html">
-    <button class="trade-now-button">
-       <p class="text-cyan">Scambia ora</p>
-    </button>
-        </code>
-        </pre>
-    </section>
-    
-     <!-- SECTION_DESCRIPTION primary square icon button -->
-      <section class="component">
-        <h1 class="component-title">Primary Square Icon Button</h1>
-        <div>
-          <button class="primary-square-icon-button">
-            <img src="assets/icons/arrow-up.svg"width="20" height="20" alt="icon" fill="cure
-            "/>
-          </button>
-        </div>
-        <pre>
-        <code class="language-html">
-          <button class="primary-square-icon-button">
-            <img src="assets/icons/arrow-up.svg" width="20" height="20" alt="icon" fill="currentColor">
-        </button>
-        </code>
-        </pre>
-      </section>
-    
-    <!-- SECTION_DESCRIPTION -->
+    <!-- icons -->
     <section class="component">
       <h1 class="component-title">ICONS</h1>
       <div style="
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            column-gap: 10px;
-          ">
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+              ">
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
@@ -412,23 +354,112 @@
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-52.svg" />
       </div>
     </section>
-    <!-- SECTION_DESCRIPTION -->
+    <!-- Button sm -->
     <section class="component">
-      <h1 class="component-title">LOGOS</h1>
-      <div style="
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            column-gap: 10px;
-          ">
-        <img onclick="copyHtml(this)" src="assets/icons/svgexport-2.svg" width="96px" height="96px" />
-        <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
-        <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
-        <img onclick="copyHtml(this)" src="assets/icons/svgexport-30.svg" width="256px" height="64px" />
+      <h1 class="component-title">Button sm</h1>
+      <div>
+        <button class="button-sm">
+          <p>Connetti wallet</p>
+        </button>
       </div>
+      <pre>
+    <code class="language-html">
+<button class="button-sm">
+<p>Connetti wallet</p>
+</button>
+    </code>
+  </pre>
     </section>
+    <!-- Two icons button -->
+    <section class="component">
+      <h1 class="component-title">Two Icons Button</h1>
+      <div>
+        <button class="button-two-icons">
+          <p>👋 Mettiti in contatto</p>
+          <img class="icon" src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
+        <code class="language-html">
+  <button class="button-two-icons">
+    <p>👋 Mettiti in contatto</p>
+    <img class="icon" src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor">
+  </button>
+        </code>
+      </pre>
+    </section>
+    <!-- Trade now button -->
+    <section class="component">
+      <h1 class="component-title">Trade Now Button</h1>
+      <div>
+        <button class="trade-now-button">
+          <p class="text-cyan">Scambia ora</p>
+        </button>
+      </div>
+      <pre>
+        <code class="language-html">
+    <button class="trade-now-button">
+       <p class="text-cyan">Scambia ora</p>
+    </button>
+        </code>
+        </pre>
+    </section>
+
+    <!-- primary square icon button -->
+    <section class="component">
+      <h1 class="component-title">Primary Square Icon Button</h1>
+      <div>
+        <button class="primary-square-icon-button">
+          <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="cure
+            " />
+        </button>
+      </div>
+      <pre>
+        <code class="language-html">
+<button class="primary-square-icon-button">
+  <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="currentColor">
+</button>
+        </code>
+        </pre>
+    </section>
+    <!-- primary-icon-button-sm-->
+    <section class="component">
+      <h1 class="component-title">Primary Icon Button sm</h1>
+      <div>
+        <button class="primary-icon-button-sm">
+          <p>Acquista CAKE</p>
+          <img class="icon" src="assets/icons/arrow-right.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
+    <code class="language-html">
+<button class="primary-icon-button-sm">
+  <p>Acquista CAKE</p>
+  <img class="icon" src="assets/icons/arrow-right.svg" width="20" height="20" alt="icon" fill="currentColor">
+</button>
+    </code>
+  </pre>
+    </section>
+
+    <!-- Primary button -->
+    <section class="component">
+      <h1 class="component-title">primary-button</h1>
+      <div> 
+        <button class="primary-button">
+        <p>Connetti wallet</p>
+      </button>
+    </div>
+      <pre>
+        <code class="language-html">
+          <button class="primary-button">
+            <p>Connetti wallet</p>
+          </button>
+        </code>
+      </pre>
+    </section>
+  </section>
+
+
     <!-- SECTION_DESCRIPTION -->
     <section class="component">
       <h1 class="component-title">COMPONENT_NAME</h1>
