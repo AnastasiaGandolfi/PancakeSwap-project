@@ -33,9 +33,9 @@
 .button-two-icons {
   @include common-button;
 
-    p {
-      color: var(--invertedContrast);
-    }
+  p {
+    color: var(--invertedContrast);
+  }
 }
 
 .trade-now-button {
@@ -85,4 +85,17 @@
     transition: opacity 0.2s ease 0s;
     opacity: 0.65;
   }
+}
+
+.primary-icon-button-sm {
+  @include common-button;
+  height: 32px;
+  padding: 0px 16px;
+  p {
+    color: var(--invertedContrast);
+  }
+}
+
+.primary-button {
+  @include common-button;
 }

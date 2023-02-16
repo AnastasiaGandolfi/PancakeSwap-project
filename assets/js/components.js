@@ -80,9 +80,9 @@ document.getElementById("switch").addEventListener("click", () => {
 
   theme === "dark"
     ? (document.getElementById("switch").querySelector("p").textContent =
-        "Dark Mode")
+        "Light Mode")
     : (document.getElementById("switch").querySelector("p").textContent =
-        "Light Mode");
+        "Dark Mode");
 
   let icons = document.getElementsByClassName("icon");
   for (let i = 0; i < icons.length; i++) {

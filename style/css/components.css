@@ -366,19 +366,17 @@ body {
         background-color: var(--text); }
       body .color-container div .lightgray {
         background-color: var(--tertiary); }
-      body .color-container div .violet {
+      body .color-container div .text {
         background-color: var(--text); }
-      body .color-container div .purple {
+      body .color-container div .secondary {
         background-color: var(--secondary); }
-      body .color-container div .mauve {
+      body .color-container div .textSubtle {
         background-color: var(--textSubtle); }
-      body .color-container div .lightmauve {
-        background-color: var(--textSubtle); }
-      body .color-container div .cyan {
+      body .color-container div .primary {
         background-color: var(--primary); }
-      body .color-container div .orange {
+      body .color-container div .warning {
         background-color: var(--warning); }
-      body .color-container div .pink {
+      body .color-container div .failure {
         background-color: var(--failure); }
       body .color-container div .failure33 {
         background-color: var(--failure33); }
