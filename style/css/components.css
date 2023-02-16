@@ -271,10 +271,6 @@ body {
   background: var(--background);
   padding: 0;
   margin: 0; }
-  body .switch {
-    position: fixed;
-    bottom: 20px;
-    right: 20px; }
   body .fixedBG {
     background: #08060b; }
   body h1 {

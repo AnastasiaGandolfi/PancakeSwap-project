@@ -99,3 +99,8 @@
 .primary-button {
   @include common-button;
 }
+
+.icon-button{
+  background-color: transparent;
+  border:0;
+}

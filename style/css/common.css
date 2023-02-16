@@ -697,3 +697,215 @@ a {
     font-weight: 550;
     font-size: 16px;
     letter-spacing: 0.03em; }
+
+.icon-button {
+  background-color: transparent;
+  border: 0; }
+
+.switch {
+  display: inline-flex;
+  width: 56px;
+  height: 32px;
+  position: relative; }
+  .switch .toggle-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #666171;
+    transition: all 0ms ease 0s;
+    color: var(--shadow-inset);
+    border-radius: 24px;
+    cursor: pointer; }
+    .switch .toggle-thumb .toggle-thumb-switch {
+      text-align: center;
+      height: 26px;
+      width: 26px;
+      position: absolute;
+      right: 3px;
+      top: 3.2px;
+      transition: 0.2s transform ease;
+      transition-delay: 0.1s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #27262c;
+      padding: 1px;
+      border-radius: 50%;
+      z-index: 10; }
+      .switch .toggle-thumb .toggle-thumb-switch:hover {
+        box-shadow: 0 0 0 3px #604796; }
+      .switch .toggle-thumb .toggle-thumb-switch:focus {
+        box-shadow: 0 0 0 3px #604796; }
+      .switch .toggle-thumb .toggle-thumb-switch-bg {
+        text-align: center;
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        right: 3px;
+        top: 3.2px;
+        transition: 0.2s transform ease;
+        transition-delay: 0.1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #27262c;
+        padding: 1px;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: var(--backgroundAlt); }
+        .switch .toggle-thumb .toggle-thumb-switch-bg:hover {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb .toggle-thumb-switch-bg:focus {
+          box-shadow: 0 0 0 3px #604796; }
+      .switch .toggle-thumb .toggle-thumb-switch img {
+        width: 20px;
+        z-index: 0; }
+    .switch .toggle-thumb-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #666171;
+      transition: all 0ms ease 0s;
+      color: var(--shadow-inset);
+      border-radius: 24px;
+      cursor: pointer;
+      background-color: var(--textDisabled); }
+      .switch .toggle-thumb-bg .toggle-thumb-switch {
+        text-align: center;
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        right: 3px;
+        top: 3.2px;
+        transition: 0.2s transform ease;
+        transition-delay: 0.1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #27262c;
+        padding: 1px;
+        border-radius: 50%;
+        z-index: 10; }
+        .switch .toggle-thumb-bg .toggle-thumb-switch:hover {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-bg .toggle-thumb-switch:focus {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-bg .toggle-thumb-switch-bg {
+          text-align: center;
+          height: 26px;
+          width: 26px;
+          position: absolute;
+          right: 3px;
+          top: 3.2px;
+          transition: 0.2s transform ease;
+          transition-delay: 0.1s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #27262c;
+          padding: 1px;
+          border-radius: 50%;
+          z-index: 10;
+          background-color: var(--backgroundAlt); }
+          .switch .toggle-thumb-bg .toggle-thumb-switch-bg:hover {
+            box-shadow: 0 0 0 3px #604796; }
+          .switch .toggle-thumb-bg .toggle-thumb-switch-bg:focus {
+            box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-bg .toggle-thumb-switch img {
+          width: 20px;
+          z-index: 0; }
+  .switch .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+
+.modal-background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--text99);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out; }
+
+.modal-settings {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: fixed;
+  inset: 0px;
+  z-index: 100;
+  visibility: hidden; }
+  .modal-settings .modal-settings-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--backgroundAlt);
+    border: 1px solid var(--cardBorder);
+    border-radius: 32px;
+    position: fixed;
+    z-index: 9999;
+    height: 60vh;
+    width: 65vh;
+    overflow: auto;
+    min-width: 320px;
+    min-height: 300px; }
+    .modal-settings .modal-settings-content .modal-settings-header {
+      width: 100%;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--gradientCardHeader); }
+      .modal-settings .modal-settings-content .modal-settings-header h2 {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--text); }
+    .modal-settings .modal-settings-content .modal-settings-body {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+      width: 100%; }
+      .modal-settings .modal-settings-content .modal-settings-body h2 {
+        color: var(--secondary);
+        font-weight: 600;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        font-size: 18px; }
+      .modal-settings .modal-settings-content .modal-settings-body .modal-settings-body-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 24px; }
+        .modal-settings .modal-settings-content .modal-settings-body .modal-settings-body-item p {
+          color: var(--text);
+          font-size: 16px;
+          font-weight: 200;
+          line-height: 1.5; }

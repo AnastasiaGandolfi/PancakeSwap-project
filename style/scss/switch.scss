@@ -1,0 +1,71 @@
+@mixin common-toggle-thumb-switch {
+  text-align: center;
+  height: 26px;
+  width: 26px;
+  position: absolute;
+  right: 3px;
+  top: 3.2px;
+  transition: 0.2s transform ease;
+  transition-delay: 0.1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #27262c;
+  padding: 1px;
+  border-radius: 50%;
+  z-index: 10;
+  &:hover {
+    box-shadow: 0 0 0 3px #604796;
+  }
+  &:focus {
+    box-shadow: 0 0 0 3px #604796;
+  }
+}
+@mixin common-toggle-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #666171;
+  transition: all 0ms ease 0s;
+  color: var(--shadow-inset);
+  border-radius: 24px;
+  cursor: pointer;
+  .toggle-thumb-switch {
+    @include common-toggle-thumb-switch;
+    &-bg {
+      @include common-toggle-thumb-switch;
+      background-color: var(--backgroundAlt);
+      
+    }
+    img {
+      width: 20px;
+      z-index: 0;
+    }
+  }
+}
+.switch {
+  display: inline-flex;
+  width: 56px;
+  height: 32px;
+  position: relative;
+  .toggle-thumb {
+    @include common-toggle-thumb;
+    &-bg {
+      @include common-toggle-thumb;
+      background-color: var(--textDisabled);
+    }
+  }
+  .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
