@@ -784,6 +784,32 @@ a {
       color: var(--primary);
       letter-spacing: 0.03em; }
 
+.primary-icon-button-lg {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary);
+  border: 0px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 0px 24px;
+  line-height: 1;
+  outline: 0px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  cursor: pointer;
+  height: 48px; }
+  .primary-icon-button-lg:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .primary-icon-button-lg p {
+    color: var(--invertedContrast);
+    margin-right: 4px;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.03em; }
+
 .switch {
   display: inline-flex;
   width: 56px;

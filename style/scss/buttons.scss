@@ -135,3 +135,7 @@
     margin-right: 4px;
   }
 }
+.primary-icon-button-lg{
+  @include common-button;
+  height: 48px;
+}
