@@ -42,8 +42,11 @@
     @include common-toggle-thumb-switch;
     &-bg {
       @include common-toggle-thumb-switch;
-      background-color: var(--backgroundAlt);
-      
+      background-color: var(--backgroundAlt); 
+    }
+    &-green{
+      @include common-toggle-thumb-switch;
+      background-color: var(--backgroundAlt); 
     }
     img {
       width: 20px;
@@ -58,6 +61,10 @@
   position: relative;
   .toggle-thumb {
     @include common-toggle-thumb;
+    &-green{
+      @include common-toggle-thumb;
+      background-color: var(--success);
+    }
     &-bg {
       @include common-toggle-thumb;
       background-color: var(--textDisabled);

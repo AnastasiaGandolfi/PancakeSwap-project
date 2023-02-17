@@ -21,6 +21,18 @@
   <!-- <button class="trade-now-button switch" id="switch">
     <p class="text-cyan">Dark Mode</p>
   </button> -->
+  <div class="fixed-switch">
+    <label class="switch">
+      <input type="checkbox" class="checkbox" id="light-switch">
+      <span class="toggle-thumb-bg">
+        <div class="toggle-thumb-switch-bg">
+          <img src="assets/icons/svgexport-40.svg">
+        </div>
+        <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
+        <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
+      </span>
+    </label>
+  </div>
   <main class="container-components">
 
     <!-- Tipografia -->
@@ -458,6 +470,33 @@
       </pre>
     </section>
 
+    <!-- modal button -->
+    <section class="component">
+      <h1 class="component-title">Modal button - switcher</h1>
+      <div>
+        <div class="modal-button-switcher">
+          <div class="modal-button active">
+            <p>Standard</p>
+          </div>
+          <div class="modal-button">
+            <p>Advanced</p>
+          </div>
+        </div>
+      </div>
+      <pre>
+        <code class="language-html">
+<div class="modal-button-switcher">
+  <div class="modal-button active">
+    <p>Standard</p>
+  </div>
+  <div class="modal-button">
+    <p>Advanced</p>
+  </div>
+</div>
+        </code>
+      </pre>
+    </section>
+
     <!-- light-dark switch -->
     <section class="component">
       <h1 class="component-title">Light - Dark - switch</h1>
@@ -519,19 +558,24 @@
     <!-- normal-switch -->
     <section class="component">
       <h1 class="component-title">normal-switch</h1>
-      <div><label class="switch">
-          <input type="checkbox" class="checkbox" id="light-switch">
-          <span class="toggle-thumb">
-            <div class="toggle-thumb-switch">
-              <img src="assets/icons/svgexport-40.svg">
+      <div>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="normal-switch">
+          <span class="toggle-thumb-green">
+            <div class="toggle-thumb-switch-green active">
             </div>
-            <img src="/assets/icons/svgexport-41.svg" width="20px">
-            <img src="/assets/icons/svgexport-42.svg" width="20px">
           </span>
-        </label></div>
+        </label>
+      </div>
       <pre>
         <code class="language-html">
-          COMPONENT_CODE
+<label class="switch">
+  <input type="checkbox" class="checkbox" id="normal-switch">
+  <span class="toggle-thumb-green">
+    <div class="toggle-thumb-switch-green active">
+    </div>
+  </span>
+</label>
         </code>
       </pre>
     </section>
@@ -540,39 +584,201 @@
     <section class="component">
       <h1 class="component-title">Navbar - settings - modal</h1>
       <div>
-        <div class="modal-background" id="modal-background"></div>
         <button class="icon-button" id="settings">
           <img src="/assets/icons/svgexport-8.svg" width="20" height="20">
         </button>
+        <div class="modal-background dismiss-modal" id="modal-background"></div>
         <div class="modal-settings">
           <div class="modal-settings-content">
             <div class="modal-settings-header">
               <h2>Impostazioni</h2>
-              <img src="/assets/icons/svgexport-1.svg" width="18" height="18">
+              <img src="/assets/icons/svgexport-1-primary.svg" width="18" height="18" class="dismiss-modal">
             </div>
             <div class="modal-settings-body">
               <h2>GLOBALE</h2>
               <div class="modal-settings-body-item">
                 <p>Modalità scura</p>
-
                 <label class="switch">
                   <input type="checkbox" class="checkbox" id="light-switch">
-                  <span class="toggle-thumb">
-                    <div class="toggle-thumb-switch">
+                  <span class="toggle-thumb-bg">
+                    <div class="toggle-thumb-switch-bg">
                       <img src="assets/icons/svgexport-40.svg">
                     </div>
-                    <img src="/assets/icons/svgexport-41.svg" width="20px">
-                    <img src="/assets/icons/svgexport-42.svg" width="20px">
+                    <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
+                    <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
                   </span>
                 </label>
+              </div>
 
+              <div class="modal-settings-body-item">
+                <p>Indicatore di salute del sottografo <img src="assets/icons/qmark.svg">
+                  <span class="tooltip-text">Attiva sempre l'indicatore di salute del sottografo. L'impostazione
+                    predefinita è mostrare l'indicatore solo quando la rete è in ritardo</span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active">
+                    </div>
+                  </span>
+                </label>
+              </div>
+
+              <div class="modal-settings-body-item">
+                <p>Mostra nome utente <img src="assets/icons/qmark.svg">
+                  <span class="tooltip-text">Mostra il nome utente del wallet invece dei coniglietti</span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active">
+                    </div>
+                  </span>
+                </label>
+              </div>
+
+              <div class="modal-settings-body-item">
+                <p>Scansione rischio token <img class="tooltip-image" src="assets/icons/qmark.svg">
+                  <span class="tooltip-text">
+                    Scansione automatica del rischio per il token selezionato
+                    I risultati della scansione del rischio sono forniti da una terza parte <a class="text-primary">AvengerDAO</a><br><br>
+                    È uno strumento a scopo puramente indicativo per consentire agli utenti di verificare il livello di
+                    rischio di riferimento di uno Smart Contract BNB Chain. Consigliamo di effettuare delle proprie
+                    ricerche: le interazioni con qualsiasi BNB Chain Smart Contract sono rischiose.
+                  </span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active">
+                    </div>
+                  </span>
+                </label>
+              </div>
+
+              <div class="modal-settings-body-item">
+                <p>Velocità di transazione predefinita <img src="assets/icons/qmark.svg">
+                  <span class="tooltip-text">Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees.
+                    Choose “Default” to use the settings from your current blockchain RPC node.</span>
+                
+                </p>
+              </div>
+              <div class="modal-button-switcher">
+                <div class="modal-button active">
+                  <p>Default</p>
+                </div>
+                <div class="modal-button">
+                  <p>Standard (5)</p>
+                </div>
+                <div class="modal-button">
+                  <p>Veloce (6)</p>
+                </div>
+                <div class="modal-button">
+                  <p>Istantanea (7)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
-          COMPONENT_CODE
+<button class="icon-button" id="settings">
+  <img src="/assets/icons/svgexport-8.svg" width="20" height="20">
+</button>
+<div class="modal-background dismiss-modal" id="modal-background"></div>
+<div class="modal-settings">
+  <div class="modal-settings-content">
+    <div class="modal-settings-header">
+      <h2>Impostazioni</h2>
+      <img src="/assets/icons/svgexport-1-primary.svg" width="18" height="18" class="dismiss-modal">
+    </div>
+    <div class="modal-settings-body">
+      <h2>GLOBALE</h2>
+      <div class="modal-settings-body-item">
+        <p>Modalità scura</p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="light-switch">
+          <span class="toggle-thumb-bg">
+            <div class="toggle-thumb-switch-bg">
+              <img src="assets/icons/svgexport-40.svg">
+            </div>
+            <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
+            <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-settings-body-item">
+        <p>Indicatore di salute del sottografo <img src="assets/icons/qmark.svg">
+          <span class="tooltip-text">Attiva sempre l'indicatore di salute del sottografo. L'impostazione
+            predefinita è mostrare l'indicatore solo quando la rete è in ritardo</span>
+        </p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="normal-switch">
+          <span class="toggle-thumb-green">
+            <div class="toggle-thumb-switch-green active">
+            </div>
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-settings-body-item">
+        <p>Mostra nome utente <img src="assets/icons/qmark.svg">
+          <span class="tooltip-text">Mostra il nome utente del wallet invece dei coniglietti</span>
+        </p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="normal-switch">
+          <span class="toggle-thumb-green">
+            <div class="toggle-thumb-switch-green active">
+            </div>
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-settings-body-item">
+        <p>Scansione rischio token <img class="tooltip-image" src="assets/icons/qmark.svg">
+          <span class="tooltip-text">
+            Scansione automatica del rischio per il token selezionato
+            I risultati della scansione del rischio sono forniti da una terza parte <a class="text-primary">AvengerDAO</a><br><br>
+            È uno strumento a scopo puramente indicativo per consentire agli utenti di verificare il livello di
+            rischio di riferimento di uno Smart Contract BNB Chain. Consigliamo di effettuare delle proprie
+            ricerche: le interazioni con qualsiasi BNB Chain Smart Contract sono rischiose.
+          </span>
+        </p>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="normal-switch">
+          <span class="toggle-thumb-green">
+            <div class="toggle-thumb-switch-green active">
+            </div>
+          </span>
+        </label>
+      </div>
+
+      <div class="modal-settings-body-item">
+        <p>Velocità di transazione predefinita <img src="assets/icons/qmark.svg">
+          <span class="tooltip-text">Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees.
+            Choose “Default” to use the settings from your current blockchain RPC node.</span>
+        
+        </p>
+      </div>
+      <div class="modal-button-switcher">
+        <div class="modal-button active">
+          <p>Default</p>
+        </div>
+        <div class="modal-button">
+          <p>Standard (5)</p>
+        </div>
+        <div class="modal-button">
+          <p>Veloce (6)</p>
+        </div>
+        <div class="modal-button">
+          <p>Istantanea (7)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
         </code>
       </pre>
     </section>

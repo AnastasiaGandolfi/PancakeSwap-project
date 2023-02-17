@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   color: #ddd;
   font-family: Kanit; }
@@ -147,6 +148,7 @@ a {
   --secondary: #9a6aff;
   --secondary80: #9a6aff80;
   --background: #08060b;
+  --background-reverse: #08060b;
   --backgroundDisabled: #3c3742;
   --backgroundAlt: #27262c;
   --backgroundAlt2: rgba(39, 38, 44, 0.7);
@@ -159,6 +161,7 @@ a {
   --inputSecondary: #262130;
   --tertiary: #353547;
   --text: #f4eeff;
+  --text-reverse: #f4eeff;
   --text99: #f4eeff99;
   --textDisabled: #666171;
   --textSubtle: #b8add2;
@@ -194,6 +197,7 @@ a {
   --secondary: #9a6aff;
   --secondary80: #9a6aff80;
   --background: #08060b;
+  --background-reverse: #fff;
   --backgroundDisabled: #3c3742;
   --backgroundAlt: #27262c;
   --backgroundAlt2: rgba(39, 38, 44, 0.7);
@@ -206,6 +210,7 @@ a {
   --inputSecondary: #262130;
   --tertiary: #353547;
   --text: #f4eeff;
+  --text-reverse: #280d5f;
   --text99: #f4eeff99;
   --textDisabled: #666171;
   --textSubtle: #b8add2;
@@ -241,6 +246,7 @@ a {
   --secondary: #7645d9;
   --secondary80: #7645d980;
   --background: #faf9fa;
+  --background-reverse: #27262c;
   --backgroundDisabled: #e9eaeb;
   --backgroundAlt: #fff;
   --backgroundAlt2: rgba(255, 255, 255, 0.7);
@@ -253,6 +259,7 @@ a {
   --inputSecondary: #d7caec;
   --tertiary: #eff4f5;
   --text: #280d5f;
+  --text-reverse: #f4eeff;
   --text99: #280d5f99;
   --textDisabled: #bdc2c4;
   --textSubtle: #7a6eaa;
@@ -269,6 +276,7 @@ a {
 * {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
   color: #ddd;
   font-family: Kanit; }
@@ -415,6 +423,7 @@ a {
   --secondary: #9a6aff;
   --secondary80: #9a6aff80;
   --background: #08060b;
+  --background-reverse: #08060b;
   --backgroundDisabled: #3c3742;
   --backgroundAlt: #27262c;
   --backgroundAlt2: rgba(39, 38, 44, 0.7);
@@ -427,6 +436,7 @@ a {
   --inputSecondary: #262130;
   --tertiary: #353547;
   --text: #f4eeff;
+  --text-reverse: #f4eeff;
   --text99: #f4eeff99;
   --textDisabled: #666171;
   --textSubtle: #b8add2;
@@ -462,6 +472,7 @@ a {
   --secondary: #9a6aff;
   --secondary80: #9a6aff80;
   --background: #08060b;
+  --background-reverse: #fff;
   --backgroundDisabled: #3c3742;
   --backgroundAlt: #27262c;
   --backgroundAlt2: rgba(39, 38, 44, 0.7);
@@ -474,6 +485,7 @@ a {
   --inputSecondary: #262130;
   --tertiary: #353547;
   --text: #f4eeff;
+  --text-reverse: #280d5f;
   --text99: #f4eeff99;
   --textDisabled: #666171;
   --textSubtle: #b8add2;
@@ -509,6 +521,7 @@ a {
   --secondary: #7645d9;
   --secondary80: #7645d980;
   --background: #faf9fa;
+  --background-reverse: #27262c;
   --backgroundDisabled: #e9eaeb;
   --backgroundAlt: #fff;
   --backgroundAlt2: rgba(255, 255, 255, 0.7);
@@ -521,6 +534,7 @@ a {
   --inputSecondary: #d7caec;
   --tertiary: #eff4f5;
   --text: #280d5f;
+  --text-reverse: #f4eeff;
   --text99: #280d5f99;
   --textDisabled: #bdc2c4;
   --textSubtle: #7a6eaa;
@@ -702,6 +716,74 @@ a {
   background-color: transparent;
   border: 0; }
 
+.modal-button-switcher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .modal-button-switcher .modal-button.active {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    border: 0px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 0px 24px;
+    line-height: 1;
+    outline: 0px;
+    transition: opacity 0.2s ease 0s;
+    opacity: 1;
+    cursor: pointer;
+    height: 32px;
+    padding: 0px 16px;
+    margin-top: 4;
+    margin-right: 4px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -0.8px 0px 0px inset; }
+    .modal-button-switcher .modal-button.active:hover {
+      transition: opacity 0.2s ease 0s;
+      opacity: 0.65; }
+    .modal-button-switcher .modal-button.active p {
+      color: var(--invertedContrast);
+      margin-right: 4px;
+      font-weight: 550;
+      font-size: 16px;
+      letter-spacing: 0.03em; }
+    .modal-button-switcher .modal-button.active p {
+      letter-spacing: 0.03em; }
+  .modal-button-switcher .modal-button {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary);
+    border: 0px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 0px 24px;
+    line-height: 1;
+    outline: 0px;
+    transition: opacity 0.2s ease 0s;
+    opacity: 1;
+    cursor: pointer;
+    background-color: var(--tertiary);
+    height: 32px;
+    padding: 0px 16px;
+    margin-top: 4px;
+    margin-right: 4px; }
+    .modal-button-switcher .modal-button:hover {
+      transition: opacity 0.2s ease 0s;
+      opacity: 0.65; }
+    .modal-button-switcher .modal-button p {
+      color: var(--invertedContrast);
+      margin-right: 4px;
+      font-weight: 550;
+      font-size: 16px;
+      letter-spacing: 0.03em; }
+    .modal-button-switcher .modal-button p {
+      color: var(--primary);
+      letter-spacing: 0.03em; }
+
 .switch {
   display: inline-flex;
   width: 56px;
@@ -766,9 +848,116 @@ a {
           box-shadow: 0 0 0 3px #604796; }
         .switch .toggle-thumb .toggle-thumb-switch-bg:focus {
           box-shadow: 0 0 0 3px #604796; }
+      .switch .toggle-thumb .toggle-thumb-switch-green {
+        text-align: center;
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        right: 3px;
+        top: 3.2px;
+        transition: 0.2s transform ease;
+        transition-delay: 0.1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #27262c;
+        padding: 1px;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: var(--backgroundAlt); }
+        .switch .toggle-thumb .toggle-thumb-switch-green:hover {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb .toggle-thumb-switch-green:focus {
+          box-shadow: 0 0 0 3px #604796; }
       .switch .toggle-thumb .toggle-thumb-switch img {
         width: 20px;
         z-index: 0; }
+    .switch .toggle-thumb-green {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-left: 4px;
+      padding-right: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #666171;
+      transition: all 0ms ease 0s;
+      color: var(--shadow-inset);
+      border-radius: 24px;
+      cursor: pointer;
+      background-color: var(--success); }
+      .switch .toggle-thumb-green .toggle-thumb-switch {
+        text-align: center;
+        height: 26px;
+        width: 26px;
+        position: absolute;
+        right: 3px;
+        top: 3.2px;
+        transition: 0.2s transform ease;
+        transition-delay: 0.1s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #27262c;
+        padding: 1px;
+        border-radius: 50%;
+        z-index: 10; }
+        .switch .toggle-thumb-green .toggle-thumb-switch:hover {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-green .toggle-thumb-switch:focus {
+          box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-green .toggle-thumb-switch-bg {
+          text-align: center;
+          height: 26px;
+          width: 26px;
+          position: absolute;
+          right: 3px;
+          top: 3.2px;
+          transition: 0.2s transform ease;
+          transition-delay: 0.1s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #27262c;
+          padding: 1px;
+          border-radius: 50%;
+          z-index: 10;
+          background-color: var(--backgroundAlt); }
+          .switch .toggle-thumb-green .toggle-thumb-switch-bg:hover {
+            box-shadow: 0 0 0 3px #604796; }
+          .switch .toggle-thumb-green .toggle-thumb-switch-bg:focus {
+            box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-green .toggle-thumb-switch-green {
+          text-align: center;
+          height: 26px;
+          width: 26px;
+          position: absolute;
+          right: 3px;
+          top: 3.2px;
+          transition: 0.2s transform ease;
+          transition-delay: 0.1s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #27262c;
+          padding: 1px;
+          border-radius: 50%;
+          z-index: 10;
+          background-color: var(--backgroundAlt); }
+          .switch .toggle-thumb-green .toggle-thumb-switch-green:hover {
+            box-shadow: 0 0 0 3px #604796; }
+          .switch .toggle-thumb-green .toggle-thumb-switch-green:focus {
+            box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-green .toggle-thumb-switch img {
+          width: 20px;
+          z-index: 0; }
     .switch .toggle-thumb-bg {
       position: absolute;
       top: 0;
@@ -829,6 +1018,28 @@ a {
             box-shadow: 0 0 0 3px #604796; }
           .switch .toggle-thumb-bg .toggle-thumb-switch-bg:focus {
             box-shadow: 0 0 0 3px #604796; }
+        .switch .toggle-thumb-bg .toggle-thumb-switch-green {
+          text-align: center;
+          height: 26px;
+          width: 26px;
+          position: absolute;
+          right: 3px;
+          top: 3.2px;
+          transition: 0.2s transform ease;
+          transition-delay: 0.1s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-color: #27262c;
+          padding: 1px;
+          border-radius: 50%;
+          z-index: 10;
+          background-color: var(--backgroundAlt); }
+          .switch .toggle-thumb-bg .toggle-thumb-switch-green:hover {
+            box-shadow: 0 0 0 3px #604796; }
+          .switch .toggle-thumb-bg .toggle-thumb-switch-green:focus {
+            box-shadow: 0 0 0 3px #604796; }
         .switch .toggle-thumb-bg .toggle-thumb-switch img {
           width: 20px;
           z-index: 0; }
@@ -846,7 +1057,8 @@ a {
   background-color: var(--text99);
   z-index: -1;
   opacity: 0;
-  transition: opacity 300ms ease-in-out; }
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden; }
 
 .modal-settings {
   display: flex;
@@ -857,8 +1069,43 @@ a {
   align-items: center;
   position: fixed;
   inset: 0px;
-  z-index: 100;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 100; }
+  .modal-settings p {
+    position: relative; }
+    .modal-settings p:hover .tooltip-text {
+      visibility: visible;
+      opacity: 1; }
+  .modal-settings .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    background-color: var(--background-reverse);
+    color: var(--text-reverse);
+    text-align: left;
+    padding: 16px 18px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 100%;
+    min-width: 340px;
+    z-index: 9999;
+    letter-spacing: 0.03em;
+    bottom: 40px;
+    left: 85%;
+    opacity: 0;
+    transition: opacity 0.3s; }
+  .modal-settings .tooltip-text::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 8%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--background-reverse) transparent transparent transparent; }
   .modal-settings .modal-settings-content {
     display: flex;
     flex-direction: column;
@@ -868,12 +1115,11 @@ a {
     border-radius: 32px;
     position: fixed;
     z-index: 9999;
-    height: 60vh;
-    width: 65vh;
-    overflow: auto;
-    min-width: 320px;
+    min-width: 350px;
     min-height: 300px; }
     .modal-settings .modal-settings-content .modal-settings-header {
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
       width: 100%;
       padding: 20px 24px;
       display: flex;
@@ -890,7 +1136,8 @@ a {
       flex-direction: column;
       align-items: flex-start;
       padding: 24px;
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
       .modal-settings .modal-settings-content .modal-settings-body h2 {
         color: var(--secondary);
         font-weight: 600;
@@ -909,3 +1156,5 @@ a {
           font-size: 16px;
           font-weight: 200;
           line-height: 1.5; }
+      .modal-settings .modal-settings-content .modal-settings-body:last-child {
+        margin-bottom: 30px; }

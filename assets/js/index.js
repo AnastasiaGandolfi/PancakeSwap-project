@@ -1,6 +1,21 @@
 function openModalSettings() {
   let modalBackground = document.getElementById("modal-background");
-  modalBackground.style.opacity = 1;
+  modalBackground.style.opacity = 0.3;
+  let modal = document.querySelector('.modal-settings');
+  modal.style.visibility = 'visible';
+}
+
+const dismissModal = Array.from(document.querySelectorAll(".dismiss-modal"));
+for (let dismiss of dismissModal) {
+  console.log(dismissModal);
+  dismiss.addEventListener("click", closeModal);
+}
+
+function closeModal(){
+  let modalBackground = document.getElementById("modal-background");
+  modalBackground.style.opacity = 0;
+  let modal = document.querySelector('.modal-settings')
+  modal.style.visibility = 'hidden';
 }
 
 const settings = document.getElementById("settings");
@@ -10,6 +25,7 @@ console.log(settings);
 let lightSwitches = Array.from(document.querySelectorAll(".toggle-thumb-switch"));
 let bgLightSwitches = Array.from(document.querySelectorAll(".toggle-thumb-switch-bg"))
 lightSwitches = [...lightSwitches, ...bgLightSwitches];
+
 for(let lightSwitch of lightSwitches) {
   lightSwitch.addEventListener("click", changeTheme);
 }
@@ -40,3 +56,34 @@ function changeTheme() {
   }
 }
 
+let normalSwitches = Array.from(document.querySelectorAll(".toggle-thumb-switch-green"));
+for(let normalSwitch of normalSwitches) {
+  normalSwitch.addEventListener("click", toggleSwitch);
+}
+
+function toggleSwitch(evt){
+  if(evt.target.classList.value.includes("active")){
+    evt.target.classList.remove("active");
+    evt.target.style = "transform: translateX(-24px);";
+    evt.target.parentNode.style = "background-color: var(--textDisabled)";
+  }else{
+    evt.target.classList.add("active");
+    evt.target.style = "transform: translateX(0px);";
+    evt.target.parentNode.style = "background-color: var(--success)";
+
+  }
+}
+
+let modalSwitcher = document.querySelectorAll(".modal-button");
+for(let switcher of modalSwitcher){
+  console.log(switcher);
+  switcher.addEventListener("click", switchIt);
+}
+
+function switchIt(evt){
+  for(let switcher of modalSwitcher){
+    switcher.classList.remove("active");
+  }
+  evt.target.classList.add("active");
+  evt.target.parentNode.classList.add("active");
+}

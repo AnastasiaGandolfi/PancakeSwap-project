@@ -5,6 +5,12 @@ body {
   background: var(--background);
   padding:0;
   margin:0;
+  .fixed-switch{
+    z-index:1000;
+    position: fixed;
+    bottom:30px;
+    right:30px;
+  }
 
   .fixedBG{
     background: #08060b;
@@ -46,7 +52,6 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     gap: 30px;
-
     .component-title {
       font-family: Kanit;
       color: var(--warning);
