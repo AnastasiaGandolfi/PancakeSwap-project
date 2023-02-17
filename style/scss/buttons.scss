@@ -99,3 +99,39 @@
 .primary-button {
   @include common-button;
 }
+
+.icon-button {
+  background-color: transparent;
+  border: 0;
+}
+
+.modal-button-switcher {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .modal-button.active {
+    @include common-button;
+    height: 32px;
+    padding: 0px 16px;
+    margin-top: 4;
+    margin-right: 4px;
+    box-shadow: rgba(14, 14, 44, 0.4) 0px -0.8px 0px 0px inset;
+    p{
+      letter-spacing:0.03em;
+    }
+
+  }
+
+  .modal-button {
+    @include common-button;
+    background-color: var(--tertiary);
+    p{
+      color: var(--primary);
+      letter-spacing:0.03em;
+    }
+    height: 32px;
+    padding: 0px 16px;
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+}

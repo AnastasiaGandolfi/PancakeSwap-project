@@ -71,21 +71,21 @@ async function copyHtml(el) {
 }
 replaceAllCode();
 
-document.getElementById("switch").addEventListener("click", () => {
+// document.getElementById("switch").addEventListener("click", () => {
 
-  let theme = document.documentElement.getAttribute("data-theme");
-  theme === "dark"
-    ? (document.documentElement.setAttribute("data-theme", "light"))
-    : (document.documentElement.setAttribute("data-theme","dark"));
+//   let theme = document.documentElement.getAttribute("data-theme");
+//   theme === "dark"
+//     ? (document.documentElement.setAttribute("data-theme", "light"))
+//     : (document.documentElement.setAttribute("data-theme","dark"));
 
-  theme === "dark"
-    ? (document.getElementById("switch").querySelector("p").textContent =
-        "Light Mode")
-    : (document.getElementById("switch").querySelector("p").textContent =
-        "Dark Mode");
+//   theme === "dark"
+//     ? (document.getElementById("switch").querySelector("p").textContent =
+//         "Light Mode")
+//     : (document.getElementById("switch").querySelector("p").textContent =
+//         "Dark Mode");
 
-  let icons = document.getElementsByClassName("icon");
-  for (let i = 0; i < icons.length; i++) {
-    icons[i].style.filter = theme == "dark" ? "invert(1)" : "invert(0)";
-  }
-});
+//   let icons = document.getElementsByClassName("icon");
+//   for (let i = 0; i < icons.length; i++) {
+//     icons[i].style.filter = theme == "dark" ? "invert(1)" : "invert(0)";
+//   }
+// });
