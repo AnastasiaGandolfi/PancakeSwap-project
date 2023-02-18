@@ -810,6 +810,25 @@ a {
     font-size: 16px;
     letter-spacing: 0.03em; }
 
+.search-write {
+  color: var(--textSubtle);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.search-farm {
+  background-color: var(--input);
+  font-size: 16px;
+  height: 40px;
+  width: 223px;
+  outline: 0px;
+  padding: 0px 16px;
+  border-radius: 16px; }
+  .search-farm::placeholder {
+    color: var(--textSubtle);
+    font-weight: 200; }
+
 .switch {
   display: inline-flex;
   width: 56px;
