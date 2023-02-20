@@ -81,6 +81,7 @@
 .primary-square-icon-button {
   @include common-button;
   width: 50px;
+
   &:hover {
     transition: opacity 0.2s ease 0s;
     opacity: 0.65;
@@ -91,6 +92,7 @@
   @include common-button;
   height: 32px;
   padding: 0px 16px;
+
   p {
     color: var(--invertedContrast);
   }
@@ -109,6 +111,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
   .modal-button.active {
     @include common-button;
     height: 32px;
@@ -116,8 +119,9 @@
     margin-top: 4;
     margin-right: 4px;
     box-shadow: rgba(14, 14, 44, 0.4) 0px -0.8px 0px 0px inset;
-    p{
-      letter-spacing:0.03em;
+
+    p {
+      letter-spacing: 0.03em;
     }
 
   }
@@ -125,17 +129,24 @@
   .modal-button {
     @include common-button;
     background-color: var(--tertiary);
-    p{
+
+    p {
       color: var(--primary);
-      letter-spacing:0.03em;
+      letter-spacing: 0.03em;
     }
+
     height: 32px;
     padding: 0px 16px;
     margin-top: 4px;
     margin-right: 4px;
   }
 }
-.primary-icon-button-lg{
+
+.primary-icon-button-lg {
   @include common-button;
   height: 48px;
 }
+
+
+
+
