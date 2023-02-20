@@ -114,3 +114,21 @@ function switchIt(evt) {
   evt.target.classList.add("active");
   evt.target.parentNode.classList.add("active");
 }
+
+//filter-by-switch-button
+const activeButton = document.querySelector('.filter-button-switched.active');
+const finishedButton = document.querySelector('.filter-button-switched.terminato');
+
+activeButton.addEventListener('click', function() {
+  activeButton.classList.add('clicked');
+  activeButton.classList.remove('active');
+  finishedButton.classList.remove('clicked');
+  finishedButton.classList.add('active');
+});
+
+finishedButton.addEventListener('click', function() {
+  finishedButton.classList.add('clicked');
+  finishedButton.classList.remove('active');
+  activeButton.classList.remove('clicked');
+  activeButton.classList.add('active');
+});

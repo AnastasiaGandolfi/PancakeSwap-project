@@ -117,3 +117,75 @@
     margin-left: 8px;
   }
 }
+
+//filter-by-switch
+.filter-switch-title {
+  color: var(--textSubtle);
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 12px;
+
+
+}
+.filter-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 194px;
+  background-color: var(--input);
+  width: 194px;
+  border-radius: 16px;
+}
+
+.filter-switched-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border: 0px; 
+ 
+}
+
+.filter-button-switched {
+  flex-grow: 1;
+  height: 34px;
+  background-color: var(--textSubtle);
+  border: 0px; 
+  color: var(--input);
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.48px;
+  line-height: 1;
+  opacity: 1; 
+  outline: 0px; 
+
+  &:hover {
+    opacity: 0.5;
+  }
+ }
+
+.filter-button-switched.active {
+  background-color: var(--input);
+  color: var(--textSubtle);
+}
+
+.filter-button-switched.active.clicked {
+  background-color: var(--input);
+  color: var(--textSubtle);
+}
+
+.filter-button-switched.terminato {
+  color: var(--textSubtle);
+  background-color: var(--input);
+}
+
+.filter-button-switched.terminato.clicked {
+  color: var(--input);
+  background-color: var(--textSubtle);
+}
