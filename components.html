@@ -23,20 +23,19 @@
   </button> -->
   <div class="fixed-switch">
     <label class="switch">
-      <input type="checkbox" class="checkbox" id="light-switch">
+      <input type="checkbox" class="checkbox" id="light-switch" />
       <span class="toggle-thumb-bg">
         <div class="toggle-thumb-switch-bg">
-          <img src="assets/icons/svgexport-40.svg">
+          <img src="assets/icons/svgexport-40.svg" />
         </div>
-        <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
-        <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
+        <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+        <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
       </span>
     </label>
   </div>
   <main class="container-components">
-
     <!-- Tipografia -->
-    <section class="component fixedBG" style="width:100%">
+    <section class="component fixedBG" style="width: 100%">
       <h1 class="component-title">Typography</h1>
       <div>
         <h1 class="text-secondary">h1: la luna è fatta di pancake</h1>
@@ -51,7 +50,9 @@
         <p class="text-white">p: https://pancakeswap.finance</p>
         <a href="#" class="text">anchor-text: Scambia</a><br />
         <a href="#" class="text-subtle">anchor-text: Scambia</a>
-        <p class="button-text-secondary">Button-text-secondary: Scambia ora</p>
+        <p class="button-text-secondary">
+          Button-text-secondary: Scambia ora
+        </p>
         <p class="button-text-primary">Button-text-primary: Scambia ora</p>
         <div class="text-trading-information">
           Stake CAKE - Guadagno SQUAD
@@ -303,13 +304,13 @@
     <section class="component">
       <h1 class="component-title">Logos</h1>
       <div style="
-                  display: flex;
-                  flex-wrap: wrap;
-                  flex-direction: row;
-                  align-items: center;
-                  justify-content: center;
-                  column-gap: 10px;
-                ">
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+          ">
         <img onclick="copyHtml(this)" src="assets/icons/svgexport-2.svg" width="96px" height="96px" />
         <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
         <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
@@ -320,13 +321,13 @@
     <section class="component">
       <h1 class="component-title">Icons</h1>
       <div style="
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                column-gap: 10px;
-              ">
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            column-gap: 10px;
+          ">
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
         <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
@@ -502,13 +503,13 @@
       <h1 class="component-title">Light - Dark - switch</h1>
       <div>
         <label class="switch">
-          <input type="checkbox" class="checkbox" id="light-switch">
+          <input type="checkbox" class="checkbox" id="light-switch" />
           <span class="toggle-thumb">
             <div class="toggle-thumb-switch">
-              <img src="assets/icons/svgexport-40.svg">
+              <img src="assets/icons/svgexport-40.svg" />
             </div>
-            <img src="/assets/icons/svgexport-41.svg" width="20px">
-            <img src="/assets/icons/svgexport-42.svg" width="20px">
+            <img src="/assets/icons/svgexport-41.svg" width="20px" />
+            <img src="/assets/icons/svgexport-42.svg" width="20px" />
           </span>
         </label>
       </div>
@@ -529,13 +530,13 @@
 
       <div>
         <label class="switch">
-          <input type="checkbox" class="checkbox" id="light-switch">
+          <input type="checkbox" class="checkbox" id="light-switch" />
           <span class="toggle-thumb-bg">
             <div class="toggle-thumb-switch-bg">
-              <img src="assets/icons/svgexport-40.svg">
+              <img src="assets/icons/svgexport-40.svg" />
             </div>
-            <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
-            <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
+            <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+            <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
           </span>
         </label>
       </div>
@@ -560,10 +561,9 @@
       <h1 class="component-title">normal-switch</h1>
       <div>
         <label class="switch">
-          <input type="checkbox" class="checkbox" id="normal-switch">
+          <input type="checkbox" class="checkbox" id="normal-switch" />
           <span class="toggle-thumb-green">
-            <div class="toggle-thumb-switch-green active">
-            </div>
+            <div class="toggle-thumb-switch-green active"></div>
           </span>
         </label>
       </div>
@@ -579,88 +579,124 @@
         </code>
       </pre>
     </section>
-
+    <!-- small-switch -->
+    <section class="component">
+      <h1 class="component-title">small-switch</h1>
+      <div class="staked-container">
+        <label class="switch-small">
+          <input type="checkbox" class="checkbox" id="normal-switch" />
+          <span class="toggle-thumb-small-green">
+            <div class="toggle-thumb-switch-small-green active"></div>
+          </span>
+        </label>
+        <div class="staked-text">Staked only</div>
+      </div>
+      <pre>
+            <code class="language-html">
+    <div class="staked-container">
+        <label class="switch-small">
+          <input type="checkbox" class="checkbox" id="normal-switch" />
+          <span class="toggle-thumb-small-green">
+            <div class="toggle-thumb-switch-small-green active"></div>
+          </span>
+        </label>
+      <div class="staked-text">Staked only</div>
+    </div>
+            </code>
+          </pre>
+    </section>
     <!-- Navbar - settings - modal -->
     <section class="component">
       <h1 class="component-title">Navbar - settings - modal</h1>
       <div>
         <button class="icon-button" id="settings">
-          <img src="/assets/icons/svgexport-8.svg" width="20" height="20">
+          <img src="/assets/icons/svgexport-8.svg" width="20" height="20" />
         </button>
         <div class="modal-background dismiss-modal" id="modal-background"></div>
         <div class="modal-settings">
           <div class="modal-settings-content">
             <div class="modal-settings-header">
               <h2>Impostazioni</h2>
-              <img src="/assets/icons/svgexport-1-primary.svg" width="18" height="18" class="dismiss-modal">
+              <img src="/assets/icons/svgexport-1-primary.svg" width="18" height="18" class="dismiss-modal" />
             </div>
             <div class="modal-settings-body">
               <h2>GLOBALE</h2>
               <div class="modal-settings-body-item">
                 <p>Modalità scura</p>
                 <label class="switch">
-                  <input type="checkbox" class="checkbox" id="light-switch">
+                  <input type="checkbox" class="checkbox" id="light-switch" />
                   <span class="toggle-thumb-bg">
                     <div class="toggle-thumb-switch-bg">
-                      <img src="assets/icons/svgexport-40.svg">
+                      <img src="assets/icons/svgexport-40.svg" />
                     </div>
-                    <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px">
-                    <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px">
+                    <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+                    <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
                   </span>
                 </label>
               </div>
 
               <div class="modal-settings-body-item">
-                <p>Indicatore di salute del sottografo <img src="assets/icons/qmark.svg">
-                  <span class="tooltip-text">Attiva sempre l'indicatore di salute del sottografo. L'impostazione
-                    predefinita è mostrare l'indicatore solo quando la rete è in ritardo</span>
+                <p>
+                  Indicatore di salute del sottografo
+                  <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Attiva sempre l'indicatore di salute del sottografo.
+                    L'impostazione predefinita è mostrare l'indicatore solo
+                    quando la rete è in ritardo</span>
                 </p>
                 <label class="switch">
-                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
                   <span class="toggle-thumb-green">
-                    <div class="toggle-thumb-switch-green active">
-                    </div>
+                    <div class="toggle-thumb-switch-green active"></div>
                   </span>
                 </label>
               </div>
 
               <div class="modal-settings-body-item">
-                <p>Mostra nome utente <img src="assets/icons/qmark.svg">
-                  <span class="tooltip-text">Mostra il nome utente del wallet invece dei coniglietti</span>
+                <p>
+                  Mostra nome utente <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Mostra il nome utente del wallet invece dei
+                    coniglietti</span>
                 </p>
                 <label class="switch">
-                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
                   <span class="toggle-thumb-green">
-                    <div class="toggle-thumb-switch-green active">
-                    </div>
+                    <div class="toggle-thumb-switch-green active"></div>
                   </span>
                 </label>
               </div>
 
               <div class="modal-settings-body-item">
-                <p>Scansione rischio token <img class="tooltip-image" src="assets/icons/qmark.svg">
+                <p>
+                  Scansione rischio token
+                  <img class="tooltip-image" src="assets/icons/qmark.svg" />
                   <span class="tooltip-text">
                     Scansione automatica del rischio per il token selezionato
-                    I risultati della scansione del rischio sono forniti da una terza parte <a class="text-primary">AvengerDAO</a><br><br>
-                    È uno strumento a scopo puramente indicativo per consentire agli utenti di verificare il livello di
-                    rischio di riferimento di uno Smart Contract BNB Chain. Consigliamo di effettuare delle proprie
-                    ricerche: le interazioni con qualsiasi BNB Chain Smart Contract sono rischiose.
+                    I risultati della scansione del rischio sono forniti da
+                    una terza parte <a class="text-primary">AvengerDAO</a><br /><br />
+                    È uno strumento a scopo puramente indicativo per
+                    consentire agli utenti di verificare il livello di rischio
+                    di riferimento di uno Smart Contract BNB Chain.
+                    Consigliamo di effettuare delle proprie ricerche: le
+                    interazioni con qualsiasi BNB Chain Smart Contract sono
+                    rischiose.
                   </span>
                 </p>
                 <label class="switch">
-                  <input type="checkbox" class="checkbox" id="normal-switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
                   <span class="toggle-thumb-green">
-                    <div class="toggle-thumb-switch-green active">
-                    </div>
+                    <div class="toggle-thumb-switch-green active"></div>
                   </span>
                 </label>
               </div>
 
               <div class="modal-settings-body-item">
-                <p>Velocità di transazione predefinita <img src="assets/icons/qmark.svg">
-                  <span class="tooltip-text">Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees.
-                    Choose “Default” to use the settings from your current blockchain RPC node.</span>
-                
+                <p>
+                  Velocità di transazione predefinita
+                  <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Adjusts the gas price (transaction fee) for your
+                    transaction. Higher GWEI = higher speed = higher fees.
+                    Choose “Default” to use the settings from your current
+                    blockchain RPC node.</span>
                 </p>
               </div>
               <div class="modal-button-switcher">
@@ -789,7 +825,7 @@
       <div>
         <button class="primary-icon-button-lg">
           <p>Scambia ora</p>
-          <img class="icon" src="assets/icons/arrow-right.svg" width="20"  alt="icon" fill="currentColor">
+          <img class="icon" src="assets/icons/arrow-right.svg" width="20" alt="icon" fill="currentColor" />
         </button>
       </div>
       <pre>
@@ -802,8 +838,9 @@
       </pre>
     </section>
 
-     <!-- Sort by - input text -->
-     <section class="component">
+
+    <!-- Sort by - input text -->
+    <section class="component">
       <h1 class="component-title">Sort by - Input text</h1>
       <div>
         <div class="sort-by-title">Cerca</div>
@@ -817,8 +854,8 @@
       </pre>
     </section>
 
-     <!-- SECTION_DESCRIPTION -->
-     <section class="component">
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
       <h1 class="component-title">COMPONENT_NAME</h1>
       <div>COMPONENT_CODE</div>
       <pre>
@@ -827,8 +864,8 @@
       </code>
     </pre>
     </section>
-    
   </main>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
   <script src="assets/js/components.js"></script>

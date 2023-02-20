@@ -42,11 +42,11 @@
     @include common-toggle-thumb-switch;
     &-bg {
       @include common-toggle-thumb-switch;
-      background-color: var(--backgroundAlt); 
+      background-color: var(--backgroundAlt);
     }
-    &-green{
+    &-green {
       @include common-toggle-thumb-switch;
-      background-color: var(--backgroundAlt); 
+      background-color: var(--backgroundAlt);
     }
     img {
       width: 20px;
@@ -61,7 +61,7 @@
   position: relative;
   .toggle-thumb {
     @include common-toggle-thumb;
-    &-green{
+    &-green {
       @include common-toggle-thumb;
       background-color: var(--success);
     }
@@ -74,5 +74,46 @@
     opacity: 0;
     width: 0;
     height: 0;
+  }
+}
+.toggle-thumb-switch-small-green {
+  @include common-toggle-thumb-switch;
+  width: 16px;
+  height: 16px;
+  top: 2.2px;
+  background-color: var(--backgroundAlt);
+}
+.switch-small {
+  display: inline-flex;
+  width: 36px;
+  height: 20px;
+  position: relative;
+  .toggle-thumb-small-green {
+    @include common-toggle-thumb;
+    &-green {
+      @include common-toggle-thumb;
+      background-color: var(--success);
+    }
+    &-bg {
+      @include common-toggle-thumb;
+      background-color: var(--textDisabled);
+    }
+  }
+  .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.staked-container{
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  margin-left: 10px;
+  .staked-text{
+    color: var(--colors-text);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 8px;
   }
 }
