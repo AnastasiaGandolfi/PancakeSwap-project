@@ -1,0 +1,31 @@
+.sort-by-title {
+    color: var(--textSubtle);
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12px;
+  
+  }
+  
+  .sort-by-input {
+    background-color: var(--input);
+    font-size: 16px;
+    height: 40px;
+    width: 223px;
+    outline: 0px;
+    padding: 0px 16px;
+    border-radius: 16px;
+    border: 1px solid var(--inputSecondary);
+  
+    &::placeholder {
+      color: var(--textSubtle);
+      font-weight: 200;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 .15vw var(--overlay);
+      border: 1px solid var(--overlay); 
+        
+    }
+  
+  }
