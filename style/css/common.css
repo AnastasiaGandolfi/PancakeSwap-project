@@ -810,6 +810,37 @@ a {
     font-size: 16px;
     letter-spacing: 0.03em; }
 
+.button-white {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--primary);
+  border: 0px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 0px 24px;
+  line-height: 1;
+  outline: 0px;
+  transition: opacity 0.2s ease 0s;
+  opacity: 1;
+  cursor: pointer;
+  background-color: var(--white); }
+  .button-white:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.65; }
+  .button-white p {
+    color: var(--invertedContrast);
+    margin-right: 4px;
+    font-weight: 550;
+    font-size: 16px;
+    letter-spacing: 0.03em; }
+  .button-white p {
+    color: var(--primary); }
+  .button-white:hover {
+    transition: opacity 0.2s ease 0s;
+    opacity: 0.7; }
+
 .switch {
   display: inline-flex;
   width: 56px;
