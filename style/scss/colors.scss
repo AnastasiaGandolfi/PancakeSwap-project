@@ -50,6 +50,8 @@ $dark-gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
 $dark-gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
 $dark-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
 $dark-gradientBold: linear-gradient(#53dee9, #9a6aff);
+$dark-shadows-tooltip: 0px 0px 2px rgba(0,0,0,.2),0px 4px 12px -8px rgba(14,14,44,.1);
+$dark-shadows-inset: inset 0px 2px 2px -1px rgba(74,74,104,.1);
 
 //Light mode colors
 $light-white: #fff;
@@ -100,3 +102,5 @@ $light-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
 $light-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
 $light-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
 $light-gradientBold: linear-gradient(#53dee9, #7645d9);
+$light-shadows-tooltip: 0px 0px 2px rgba(0,0,0,.2),0px 4px 12px -8px rgba(14,14,44,.1);
+$light-shadows-inset: inset 0px 2px 2px -1px rgba(74,74,104,.1);
