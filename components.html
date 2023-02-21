@@ -403,6 +403,42 @@
         </code>
       </pre>
     </section>
+    <!-- primary-icon-button-lg -->
+    <section class="component">
+      <h1 class="component-title">Primary icon button lg</h1>
+      <div>
+        <button class="primary-icon-button-lg">
+          <p>Scambia ora</p>
+          <img class="icon" src="assets/icons/arrow-right.svg" width="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
+<code class="language-html">
+  <button class="primary-icon-button-lg">
+    <p>Scambia ora</p>
+    <img class="icon" src="assets/icons/arrow-right.svg" width="20"  alt="icon" fill="currentColor">
+  </button>
+</code>
+          </pre>
+    </section>
+
+    <!-- Primary button -->
+    <section class="component">
+      <h1 class="component-title">Primary button</h1>
+      <div>
+        <button class="primary-button">
+          <p>Connetti wallet</p>
+        </button>
+      </div>
+      <pre>
+    <code class="language-html">
+<button class="primary-button">
+<p>Connetti wallet</p>
+</button>
+    </code>
+  </pre>
+    </section>
+
     <!-- Trade now button -->
     <section class="component">
       <h1 class="component-title">Trade Now Button</h1>
@@ -420,23 +456,6 @@
         </pre>
     </section>
 
-    <!-- primary square icon button -->
-    <section class="component">
-      <h1 class="component-title">Primary Square Icon Button</h1>
-      <div>
-        <button class="primary-square-icon-button">
-          <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="cure
-            " />
-        </button>
-      </div>
-      <pre>
-        <code class="language-html">
-<button class="primary-square-icon-button">
-  <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="currentColor">
-</button>
-        </code>
-        </pre>
-    </section>
     <!-- primary-icon-button-sm-->
     <section class="component">
       <h1 class="component-title">Primary Icon Button sm</h1>
@@ -456,21 +475,22 @@
   </pre>
     </section>
 
-    <!-- Primary button -->
+    <!-- primary square icon button -->
     <section class="component">
-      <h1 class="component-title">Primary button</h1>
+      <h1 class="component-title">Primary Square Icon Button</h1>
       <div>
-        <button class="primary-button">
-          <p>Connetti wallet</p>
+        <button class="primary-square-icon-button">
+          <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="cure
+        " />
         </button>
       </div>
       <pre>
-        <code class="language-html">
-<button class="primary-button">
-  <p>Connetti wallet</p>
+    <code class="language-html">
+<button class="primary-square-icon-button">
+<img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="currentColor">
 </button>
-        </code>
-      </pre>
+    </code>
+    </pre>
     </section>
 
     <!-- modal button -->
@@ -823,46 +843,10 @@
       </pre>
     </section>
 
-    <!-- primary-icon-button-lg -->
-    <section class="component">
-      <h1 class="component-title">Primary icon button lg</h1>
-      <div>
-        <button class="primary-icon-button-lg">
-          <p>Scambia ora</p>
-          <img class="icon" src="assets/icons/arrow-right.svg" width="20" alt="icon" fill="currentColor" />
-        </button>
-      </div>
-      <pre>
-        <code class="language-html">
-          <button class="primary-icon-button-lg">
-            <p>Scambia ora</p>
-            <img class="icon" src="assets/icons/arrow-right.svg" width="20"  alt="icon" fill="currentColor">
-          </button>
-        </code>
-      </pre>
-    </section>
-
-
-
-    <!-- Sort by - input text -->
-    <section class="component">
-      <h1 class="component-title">Sort by - Input text</h1>
-      <div>
-        <div class="sort-by-title">Cerca</div>
-        <input placeholder="Cerca farm" class="sort-by-input">
-      </div>
-       <pre>
-        <code class="language-html">
-          <div class="sort-by-title">Cerca</div>
-          <input placeholder="Cerca farm" font-weight="normal" class="sort-by-input">
-        </code>
-      </pre>
-    </section>
-
 
     <!-- Filter by-switch -->
     <section class="component">
-      <h1 class="component-title">Filter by-switch</h1>
+      <h1 class="component-title">Filter by - switch</h1>
       <div>
         <div class="filter-switch-title">Filtra per</div>
         <div class="filter-button-container">
@@ -873,21 +857,111 @@
         </div>
       </div>
       <pre>
-        <code class="language-html">
-          <div class="filter-switch-title">Filtra per</div>
-          <div class="filter-button-container">
-              <div class="filter-switched-button-wrapper">
-                  <button class="filter-button-switched active">Attivo</button>
-                  <button class="filter-button-switched terminato clicked">Terminato</button>
-              </div>
+<code class="language-html">
+  <div class="filter-switch-title">Filtra per</div>
+  <div class="filter-button-container">
+      <div class="filter-switched-button-wrapper">
+          <button class="filter-button-switched active">Attivo</button>
+          <button class="filter-button-switched terminato clicked">Terminato</button>
+      </div>
+  </div>
+</code>
+      </pre>
+    </section>
+
+    <!-- sort by - dropdown -->
+    <section class="component">
+      <h1 class="component-title">Sort by - dropdown</h1>
+      <div class="dropdown-title-content-container">
+        <p class="dropdown-title">Ordina per</p>
+        <div class="dropdown-content-container" onclick="showDropdown(false)">
+          <div class="dropdown-item-container" id="dropdown-item-container">
+            <div class="dropdown-item" id="dropdown-title">Popolare</div>
           </div>
+          <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" color="text" width="24"
+            xmlns="http://www.w3.org/2000/svg" height="24" class="icon">
+            <path
+              d="M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z"
+              fill="#F4EEFF"></path>
+          </svg>
+          <div class="dropdown-content">
+            <ul class="dropdown-content-ul">
+              <li class="dropdown-li">
+                <div class="dropdown-item">APR</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Moltiplicatore</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Guadagni</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Liquidità</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Più recenti</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <pre style="width: 90vw;">
+<code class="language-html">
+  <div class="dropdown-title-content-container">
+    <p class="dropdown-title">Ordina per</p>
+    <div class="dropdown-content-container" onclick="showDropdown(false)">
+      <div class="dropdown-item-container" id="dropdown-item-container">
+        <div class="dropdown-item" id="dropdown-title">Popolare</div>
+      </div>
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" color="text" width="24"
+        xmlns="http://www.w3.org/2000/svg" height="24" class="icon">
+        <path
+          d="M8.71005 11.71L11.3001 14.3C11.6901 14.69 12.3201 14.69 12.7101 14.3L15.3001 11.71C15.9301 11.08 15.4801 10 14.5901 10H9.41005C8.52005 10 8.08005 11.08 8.71005 11.71Z"
+          fill="#F4EEFF"></path>
+      </svg>
+      <div class="dropdown-content">
+        <ul class="dropdown-content-ul">
+          <li class="dropdown-li">
+            <div class="dropdown-item">APR</div>
+          </li>
+          <li class="dropdown-li">
+            <div class="dropdown-item">Moltiplicatore</div>
+          </li>
+          <li class="dropdown-li">
+            <div class="dropdown-item">Guadagni</div>
+          </li>
+          <li class="dropdown-li">
+            <div class="dropdown-item">Liquidità</div>
+          </li>
+          <li class="dropdown-li">
+            <div class="dropdown-item">Più recenti</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</code>
+  </pre>
+    </section>
+
+    <!-- Sort by - input text -->
+    <section class="component">
+      <h1 class="component-title">Sort by - Input text</h1>
+      <div>
+        <div class="sort-by-title">Cerca</div>
+        <input placeholder="Cerca farm" class="sort-by-input">
+      </div>
+      <pre>
+        <code class="language-html">
+          <div class="sort-by-title">Cerca</div>
+          <input placeholder="Cerca farm" font-weight="normal" class="sort-by-input">
         </code>
       </pre>
     </section>
 
- 
 
-   
+
+
 
 
     <!-- SECTION_DESCRIPTION -->
@@ -907,6 +981,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
   <script src="assets/js/components.js"></script>
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+
 </body>
 
 </html>
