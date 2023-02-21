@@ -1,0 +1,107 @@
+@mixin dropdown-item {
+    color: var(--text);
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 16px;
+    vertical-align: baseline;
+    margin: 0;
+}
+
+.dropdown-title {
+    color: var(--textSubtle);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.dropdown-content-container {
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    background: var(--input);
+    height: 40px;
+    min-width: 136px;
+    user-select: none;
+    z-index: 20;
+    border-radius: 16px;
+
+    @media (min-width: 576px) {
+        min-width: 168px;
+    }
+
+    .dropdown-item-container {
+        box-shadow: var(--shadows-tooltip);
+        border-radius: 16px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        padding: 0px 16px;
+        border: 1px solid var(--inputSecondary);
+        background: var(--input);
+        transition: border-radius 0.15s ease 0s;
+
+        .dropdown-item {
+            @include dropdown-item;
+        }
+    }
+
+    svg {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        align-self: center;
+        fill: var(--text);
+        flex-shrink: 0;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        overflow: hidden;
+        background: var(--input);
+        z-index: 10;
+        transform-origin: center top;
+        width: 100%;
+        border-radius: 0px 0px 16px 16px;
+        box-shadow: var(--shadows-tooltip);
+        border-top-width: 0px;
+        height: auto;
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+
+
+        .dropdown-content-ul.show {
+            transition: all 0.25s ease 0s;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            z-index: 10;
+            list-style: inside disc;
+            display: block;
+
+            .dropdown-li {
+                text-align: -webkit-match-parent;
+                list-style: none;
+                padding: 8px 16px;
+
+                &:hover {
+                    background-color: var(--inputSecondary);
+                }
+
+                .dropdown-item {
+                    @include dropdown-item;
+                }
+            }
+        }
+
+        .dropdown-content-ul {
+            display: none;
+        }
+    }
+}
