@@ -1609,7 +1609,7 @@ a {
       font-size: 16px;
       vertical-align: baseline;
       margin: 0; }
-  .dropdown-content-container svg {
+  .dropdown-content-container .icon {
     position: absolute;
     right: 10px;
     top: 50%;
