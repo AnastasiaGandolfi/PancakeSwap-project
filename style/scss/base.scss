@@ -131,7 +131,9 @@ a {
 }
 
 // Colori Tipografia
-
+.text {
+  color: var(--text);
+}
 .text-warning {
   color: var(--warning);
 }
@@ -167,15 +169,15 @@ a {
 .text-white {
   color: var(--white);
 }
-
-.text-tertiary {
-  color: var(--tertiary);
-}
-
-.button-text-secondary {
+.button-text-white {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text);
+  color: var(--white);
+}
+.button-text-inverted {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--invertedContrast);
 }
 
 .button-text-primary {
