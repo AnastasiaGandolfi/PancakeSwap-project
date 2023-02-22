@@ -1925,3 +1925,73 @@ a {
           margin-right: 0px; }
     .navbar-select-container .navbar-select .navbar-dropdown-container {
       display: none; }
+
+
+/* BIG CARDS */
+      .big-cards-container {
+        display: flex;
+        padding: 10px;
+        text-align: justify;
+        margin: 100px 0;
+        gap: 2rem;
+      }
+      .big-ps-card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 24px;
+        padding: 1.5rem;
+        width: 18rem;
+        height: 23rem;
+        font: 400 16px / 24px "Kanit";
+      }
+      
+      .big-ps-card .big-card-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .big-ps-card .big-card-title {
+        display: flex;
+        flex-direction: column;
+      }
+      .big-ps-card .big-card-title .amount {
+        margin: 1.75rem 0;
+      }
+      .big-ps-card .caption {
+        margin: 0.7rem 0;
+      }
+      .big-ps-card .cta button {
+        width: 100%;
+        height: 48px;
+        will-change: opacity;
+        transition: opacity 0.2s ease 0s;
+      }
+      
+      .yellow-card {
+        float: left;
+        background: var(--gradientGold);
+        box-shadow: inset 0px -4px 0px 0px var(--warning);
+        transform: rotate(-3deg);
+      }
+      .yellow-card h2,p {
+        color: var(--text-reverse);
+      }
+      .yellow-card .paragraph-bold{
+        padding-top:45px;
+      }
+      
+      .purple-card {
+        background: var(--gradientViolet);
+        box-shadow: inset 0px -4px 0px 0px var(--overlay);
+        transform: rotate(3deg);
+      }
+      .purple-card .paragraph-bold {
+        padding-top: 45px;
+      
+      }
+      .purple-card.caption {
+        color:white;
+      
+      }
