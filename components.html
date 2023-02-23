@@ -1,514 +1,400 @@
 <!DOCTYPE html>
 <html lang="it" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PancakeSwap | Components</title>
-    <link rel="stylesheet" href="./style/css/components.css" />
-    <link rel="stylesheet" href="./style/css/common.css" />
-    <meta name="description" content="List of components used in the website" />
-    <meta name="author" content="Fullstack Team 3" />
-    <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css"
-    />
-  </head>
 
-  <body>
-    <div id="tooltip">
-      <h1>Content copied</h1>
-    </div>
-    <!-- <button class="trade-now-button switch" id="switch">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PancakeSwap | Components</title>
+  <link rel="stylesheet" href="./style/css/components.css" />
+  <link rel="stylesheet" href="./style/css/common.css" />
+  <meta name="description" content="List of components used in the website" />
+  <meta name="author" content="Fullstack Team 3" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css" />
+</head>
+
+<body>
+  <div id="tooltip">
+    <h1>Content copied</h1>
+  </div>
+  <!-- <button class="trade-now-button switch" id="switch">
     <p class="text-cyan">Dark Mode</p>
   </button> -->
-    <div class="fixed-switch">
-      <label class="switch">
-        <input type="checkbox" class="checkbox" id="light-switch" />
-        <span class="toggle-thumb-bg">
-          <div class="toggle-thumb-switch-bg">
-            <img src="assets/icons/svgexport-40.svg" />
-          </div>
-          <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
-          <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
-        </span>
-      </label>
-    </div>
-    <main class="container-components">
-      <!-- Tipografia -->
-      <section class="component fixedBG" style="width: 100%">
-        <h1 class="component-title">Typography</h1>
+  <div class="fixed-switch">
+    <label class="switch">
+      <input type="checkbox" class="checkbox" id="light-switch" />
+      <span class="toggle-thumb-bg">
+        <div class="toggle-thumb-switch-bg">
+          <img src="assets/icons/svgexport-40.svg" />
+        </div>
+        <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+        <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
+      </span>
+    </label>
+  </div>
+  <main class="container-components">
+    <!-- Tipografia -->
+    <section class="component fixedBG" style="width: 100%">
+      <h1 class="component-title">Typography</h1>
+      <div>
+        <h2 class="text">h2: lorem ipsum text</h2>
+        <h2 class="text-warning">h2: lorem ipsum text-warning</h2>
+        <h2 class="text-secondary">h2: lorem ipsum text-secondary</h2>
+        <h2 class="text-primary">h2: lorem ipsum text-primary</h2>
+        <h2 class="text-failure">h2: lorem ipsum text-failure</h2>
+        <p class="text-subtle">p: lorem ipsum text-subtle</p>
+        <p class="text-warning">p: PHISHING WARNING</p>
+        <p class="text-white">p: https://pancakeswap.finance</p>
+        <a href="#" class="text-primary">anchor-text-primary: Scropi di più</a><br />
+        <a href="#" class="text-subtle">anchor-text-subtle: Scambia</a>
+        <p class="button-text-inverted">
+          Button-text-secondary: Connetti wallet
+        </p>
+        <p class="button-text-white">
+          Button-text-white: Trade now using trust wallet
+        </p>
+        <p class="button-text-primary">Button-text-primary: Scambia ora</p>
+        <div class="text-trading-information">
+          Stake CAKE - Guadagno SQUAD
+        </div>
+        <div class="number-information-text">48.130%</div>
+        <div class="apr-text">APR</div>
+        <div class="option-lenguage-text">italiano</div>
+      </div>
+    </section>
+    <!-- Palette colori -->
+    <section class="component fixedBG">
+      <h1 class="component-title">Color palettes</h1>
+      <div class="color-container">
         <div>
-          <h2 class="text">h2: lorem ipsum text</h2>
-          <h2 class="text-warning">h2: lorem ipsum text-warning</h2>
-          <h2 class="text-secondary">h2: lorem ipsum text-secondary</h2>
-          <h2 class="text-primary">h2: lorem ipsum text-primary</h2>
-          <h2 class="text-failure">h2: lorem ipsum text-failure</h2>
-          <p class="text-subtle">p: lorem ipsum text-subtle</p>
-          <p class="text-warning">p: PHISHING WARNING</p>
-          <p class="text-white">p: https://pancakeswap.finance</p>
-          <a href="#" class="text-primary">anchor-text-primary: Scropi di più</a
-          ><br />
-          <a href="#" class="text-subtle">anchor-text-subtle: Scambia</a>
-          <p class="button-text-inverted">
-            Button-text-secondary: Connetti wallet
-          </p>
-          <p class="button-text-white">
-            Button-text-white: Trade now using trust wallet
-          </p>
-          <p class="button-text-primary">Button-text-primary: Scambia ora</p>
-          <div class="text-trading-information">
-            Stake CAKE - Guadagno SQUAD
-          </div>
-          <div class="number-information-text">48.130%</div>
-          <div class="apr-text">APR</div>
-          <div class="option-lenguage-text">italiano</div>
+          <div class="square white"></div>
+          <span class="rgb-code">#fff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">white</span>
         </div>
-      </section>
-      <!-- Palette colori -->
-      <section class="component fixedBG">
-        <h1 class="component-title">Color palettes</h1>
-        <div class="color-container">
-          <div>
-            <div class="square white"></div>
-            <span class="rgb-code">#fff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">white</span>
-          </div>
-          <div>
-            <div class="square tertiary"></div>
-            <span class="rgb-code">#eff4fs</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >tertiary</span
-            >
-          </div>
-          <div>
-            <div class="square text"></div>
-            <span class="rgb-code">#280d5f</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">text</span>
-          </div>
-          <div>
-            <div class="square secondary"></div>
-            <span class="rgb-code">#7645d9</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >secondary</span
-            >
-          </div>
-          <div>
-            <div class="square textSubtle"></div>
-            <span class="rgb-code">#b8add2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >textSubtle</span
-            >
-          </div>
-          <div>
-            <div class="square primary"></div>
-            <span class="rgb-code">#1fc7d4</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primary</span
-            >
-          </div>
-          <div>
-            <div class="square warning"></div>
-            <span class="rgb-code">#ffb237</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >warning</span
-            >
-          </div>
-          <div>
-            <div class="square failure"></div>
-            <span class="rgb-code">#ed4b9e</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >failure</span
-            >
-          </div>
-          <div>
-            <div class="square failure33"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >failure33</span
-            >
-          </div>
-          <div>
-            <div class="square primary0f"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primary0f</span
-            >
-          </div>
-          <div>
-            <div class="square primary3D"></div>
-            <span class="rgb-code">#1fc7d43d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primary3D</span
-            >
-          </div>
-          <div>
-            <div class="square primaryBright"></div>
-            <span class="rgb-code">#53dee9</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primaryBright</span
-            >
-          </div>
-          <div>
-            <div class="square primaryDark"></div>
-            <span class="rgb-code">#0098a1</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >primaryDark</span
-            >
-          </div>
-          <div>
-            <div class="square success"></div>
-            <span class="rgb-code">#31d0aa</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >success</span
-            >
-          </div>
-          <div>
-            <div class="square success19"></div>
-            <span class="rgb-code">#31d0aa19</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >success19</span
-            >
-          </div>
-          <div>
-            <div class="square warning2D"></div>
-            <span class="rgb-code">#ed4b9e2d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >warning2D</span
-            >
-          </div>
-          <div>
-            <div class="square warning33"></div>
-            <span class="rgb-code">#ed4b9e33</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >warning33</span
-            >
-          </div>
-          <div>
-            <div class="square binance"></div>
-            <span class="rgb-code">#f0b90b</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >binance</span
-            >
-          </div>
-          <div>
-            <div class="square overlay"></div>
-            <span class="rgb-code">#452a7a</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >overlay</span
-            >
-          </div>
-          <div>
-            <div class="square gold"></div>
-            <span class="rgb-code">#ffc700</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">gold</span>
-          </div>
-          <div>
-            <div class="square silver"></div>
-            <span class="rgb-code">#b2b2b2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">silver</span>
-          </div>
-          <div>
-            <div class="square bronze"></div>
-            <span class="rgb-code">#e7974d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">bronze</span>
-          </div>
-          <div>
-            <div class="square secondary"></div>
-            <span class="rgb-code">#9a6aff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >secondary</span
-            >
-          </div>
-          <div>
-            <div class="square secondary80"></div>
-            <span class="rgb-code">#9a6aff80</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >secondary80</span
-            >
-          </div>
-          <div>
-            <div class="square background"></div>
-            <span class="rgb-code">#08060b</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >background</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundDisabled"></div>
-            <span class="rgb-code">#3c3742</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundDisabled</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundAlt"></div>
-            <span class="rgb-code">#27262c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundAlt</span
-            >
-          </div>
-          <div>
-            <div class="square backgroundAlt2"></div>
-            <span class="rgb-code">rgba(39,38,44,.7);</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >backgroundAlt2</span
-            >
-          </div>
-          <div>
-            <div class="square cardBorder"></div>
-            <span class="rgb-code">#383241</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >cardBorder</span
-            >
-          </div>
-          <div>
-            <div class="square dropdown"></div>
-            <span class="rgb-code">#1e1d20</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >dropdown</span
-            >
-          </div>
-          <div>
-            <div class="square dropdownDeep"></div>
-            <span class="rgb-code">#100c18</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >dropdownDeep</span
-            >
-          </div>
-          <div>
-            <div class="square invertedContrast"></div>
-            <span class="rgb-code">#191326</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >invertedContrast</span
-            >
-          </div>
-          <div>
-            <div class="square input"></div>
-            <span class="rgb-code">#372f47</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">input</span>
-          </div>
-          <div>
-            <div class="square inputSecondary"></div>
-            <span class="rgb-code">#262130</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >inputSecondary</span
-            >
-          </div>
-          <div>
-            <div class="square tertiary"></div>
-            <span class="rgb-code">#353547</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >tertiary</span
-            >
-          </div>
-          <div>
-            <div class="square text99"></div>
-            <span class="rgb-code">#f4eeff99</span>
-            <span class="rgb-name" onclick="copyTextContent(this)">text99</span>
-          </div>
-          <div>
-            <div class="square textDisabled"></div>
-            <span class="rgb-code">#666171</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >textDisabled</span
-            >
-          </div>
-          <div>
-            <div class="square disabled"></div>
-            <span class="rgb-code">#372f47</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >disabled</span
-            >
-          </div>
+        <div>
+          <div class="square tertiary"></div>
+          <span class="rgb-code">#eff4fs</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">tertiary</span>
         </div>
-        <div class="color-container" style="margin-top: -95px">
-          <div style="width: 200px">
-            <div class="square gradientBubblegum"></div>
-            <span class="rgb-code">#313d5c #3d2a54</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBubblegum</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientInverseBubblegum"></div>
-            <span class="rgb-code">#3d2a54 #313d5c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientInverseBubblegum</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientCardHeader"></div>
-            <span class="rgb-code">#3b4155 #3a3045</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientCardHeader</span
-            >
-          </div>
+        <div>
+          <div class="square text"></div>
+          <span class="rgb-code">#280d5f</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">text</span>
+        </div>
+        <div>
+          <div class="square secondary"></div>
+          <span class="rgb-code">#7645d9</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary</span>
+        </div>
+        <div>
+          <div class="square textSubtle"></div>
+          <span class="rgb-code">#b8add2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">textSubtle</span>
+        </div>
+        <div>
+          <div class="square primary"></div>
+          <span class="rgb-code">#1fc7d4</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary</span>
+        </div>
+        <div>
+          <div class="square warning"></div>
+          <span class="rgb-code">#ffb237</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning</span>
+        </div>
+        <div>
+          <div class="square failure"></div>
+          <span class="rgb-code">#ed4b9e</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">failure</span>
+        </div>
+        <div>
+          <div class="square failure33"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">failure33</span>
+        </div>
+        <div>
+          <div class="square primary0f"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary0f</span>
+        </div>
+        <div>
+          <div class="square primary3D"></div>
+          <span class="rgb-code">#1fc7d43d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primary3D</span>
+        </div>
+        <div>
+          <div class="square primaryBright"></div>
+          <span class="rgb-code">#53dee9</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primaryBright</span>
+        </div>
+        <div>
+          <div class="square primaryDark"></div>
+          <span class="rgb-code">#0098a1</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">primaryDark</span>
+        </div>
+        <div>
+          <div class="square success"></div>
+          <span class="rgb-code">#31d0aa</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">success</span>
+        </div>
+        <div>
+          <div class="square success19"></div>
+          <span class="rgb-code">#31d0aa19</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">success19</span>
+        </div>
+        <div>
+          <div class="square warning2D"></div>
+          <span class="rgb-code">#ed4b9e2d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning2D</span>
+        </div>
+        <div>
+          <div class="square warning33"></div>
+          <span class="rgb-code">#ed4b9e33</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">warning33</span>
+        </div>
+        <div>
+          <div class="square binance"></div>
+          <span class="rgb-code">#f0b90b</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">binance</span>
+        </div>
+        <div>
+          <div class="square overlay"></div>
+          <span class="rgb-code">#452a7a</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">overlay</span>
+        </div>
+        <div>
+          <div class="square gold"></div>
+          <span class="rgb-code">#ffc700</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gold</span>
+        </div>
+        <div>
+          <div class="square silver"></div>
+          <span class="rgb-code">#b2b2b2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">silver</span>
+        </div>
+        <div>
+          <div class="square bronze"></div>
+          <span class="rgb-code">#e7974d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">bronze</span>
+        </div>
+        <div>
+          <div class="square secondary"></div>
+          <span class="rgb-code">#9a6aff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary</span>
+        </div>
+        <div>
+          <div class="square secondary80"></div>
+          <span class="rgb-code">#9a6aff80</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">secondary80</span>
+        </div>
+        <div>
+          <div class="square background"></div>
+          <span class="rgb-code">#08060b</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">background</span>
+        </div>
+        <div>
+          <div class="square backgroundDisabled"></div>
+          <span class="rgb-code">#3c3742</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundDisabled</span>
+        </div>
+        <div>
+          <div class="square backgroundAlt"></div>
+          <span class="rgb-code">#27262c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundAlt</span>
+        </div>
+        <div>
+          <div class="square backgroundAlt2"></div>
+          <span class="rgb-code">rgba(39,38,44,.7);</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">backgroundAlt2</span>
+        </div>
+        <div>
+          <div class="square cardBorder"></div>
+          <span class="rgb-code">#383241</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">cardBorder</span>
+        </div>
+        <div>
+          <div class="square dropdown"></div>
+          <span class="rgb-code">#1e1d20</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">dropdown</span>
+        </div>
+        <div>
+          <div class="square dropdownDeep"></div>
+          <span class="rgb-code">#100c18</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">dropdownDeep</span>
+        </div>
+        <div>
+          <div class="square invertedContrast"></div>
+          <span class="rgb-code">#191326</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">invertedContrast</span>
+        </div>
+        <div>
+          <div class="square input"></div>
+          <span class="rgb-code">#372f47</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">input</span>
+        </div>
+        <div>
+          <div class="square inputSecondary"></div>
+          <span class="rgb-code">#262130</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">inputSecondary</span>
+        </div>
+        <div>
+          <div class="square tertiary"></div>
+          <span class="rgb-code">#353547</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">tertiary</span>
+        </div>
+        <div>
+          <div class="square text99"></div>
+          <span class="rgb-code">#f4eeff99</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">text99</span>
+        </div>
+        <div>
+          <div class="square textDisabled"></div>
+          <span class="rgb-code">#666171</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">textDisabled</span>
+        </div>
+        <div>
+          <div class="square disabled"></div>
+          <span class="rgb-code">#372f47</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">disabled</span>
+        </div>
+      </div>
+      <div class="color-container" style="margin-top: -95px">
+        <div style="width: 200px">
+          <div class="square gradientBubblegum"></div>
+          <span class="rgb-code">#313d5c #3d2a54</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBubblegum</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientInverseBubblegum"></div>
+          <span class="rgb-code">#3d2a54 #313d5c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientInverseBubblegum</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientCardHeader"></div>
+          <span class="rgb-code">#3b4155 #3a3045</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientCardHeader</span>
+        </div>
 
-          <div style="width: 200px">
-            <div class="square gradientBlue"></div>
-            <span class="rgb-code">#00707f #19778c</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBlue</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientViolet"></div>
-            <span class="rgb-code">#6c4999 #6d4db2</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientViolet</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientVioletAlt"></div>
-            <span class="rgb-code">#434575 #66578d</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientVioletAlt</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientGold"></div>
-            <span class="rgb-code">#ffd800 #fdab32</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientGold</span
-            >
-          </div>
-          <div style="width: 200px">
-            <div class="square gradientBold"></div>
-            <span class="rgb-code">#53dee9 #9a6aff</span>
-            <span class="rgb-name" onclick="copyTextContent(this)"
-              >gradientBold</span
-            >
-          </div>
+        <div style="width: 200px">
+          <div class="square gradientBlue"></div>
+          <span class="rgb-code">#00707f #19778c</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBlue</span>
         </div>
-      </section>
-      <!-- logos -->
-      <section class="component">
-        <h1 class="component-title">Logos</h1>
-        <div
-          style="
+        <div style="width: 200px">
+          <div class="square gradientViolet"></div>
+          <span class="rgb-code">#6c4999 #6d4db2</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientViolet</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientVioletAlt"></div>
+          <span class="rgb-code">#434575 #66578d</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientVioletAlt</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientGold"></div>
+          <span class="rgb-code">#ffd800 #fdab32</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientGold</span>
+        </div>
+        <div style="width: 200px">
+          <div class="square gradientBold"></div>
+          <span class="rgb-code">#53dee9 #9a6aff</span>
+          <span class="rgb-name" onclick="copyTextContent(this)">gradientBold</span>
+        </div>
+      </div>
+    </section>
+    <!-- logos -->
+    <section class="component">
+      <h1 class="component-title">Logos</h1>
+      <div style="
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             column-gap: 10px;
-          "
-        >
-          <img
-            onclick="copyHtml(this)"
-            src="assets/icons/svgexport-2.svg"
-            width="96px"
-            height="96px"
-          />
-          <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
-          <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="assets/icons/svgexport-30.svg"
-            width="256px"
-            height="64px"
-          />
-        </div>
-      </section>
-      <!-- icons -->
-      <section class="component">
-        <h1 class="component-title">Icons</h1>
-        <div
-          style="
+          ">
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-2.svg" width="96px" height="96px" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-6.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-18.svg" />
+        <img onclick="copyHtml(this)" src="assets/icons/svgexport-30.svg" width="256px" height="64px" />
+      </div>
+    </section>
+    <!-- icons -->
+    <section class="component">
+      <h1 class="component-title">Icons</h1>
+      <div style="
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             column-gap: 10px;
-          "
-        >
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-7.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-8.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-9.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-10.svg"
-            style="background-color: white"
-          />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-13.svg"
-            style="background-color: white"
-          />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-19.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-20.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-21.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-23.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-25.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-26.svg" />
-          <img
-            onclick="copyHtml(this)"
-            src="/assets/icons/svgexport-27.svg"
-            style="background-color: white"
-          />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-28.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-32.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-33.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-34.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-35.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-36.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-37.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-38.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-39.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-40.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-41.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-42.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-43.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-44.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-45.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-46.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-47.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-48.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-49.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-50.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-51.svg" />
-          <img onclick="copyHtml(this)" src="/assets/icons/svgexport-52.svg" />
-        </div>
-      </section>
-      <!-- Button sm -->
-      <section class="component">
-        <h1 class="component-title">Button sm</h1>
-        <div>
-          <button class="button-sm">
-            <p>Connetti wallet</p>
-          </button>
-        </div>
-        <pre>
+          ">
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-1.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-4.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-5.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-7.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-8.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-9.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-10.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-13.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-19.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-20.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-21.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-23.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-25.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-26.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-27.svg" style="background-color: white" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-28.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-32.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-33.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-34.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-35.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-36.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-37.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-38.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-39.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-40.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-41.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-42.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-43.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-44.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-45.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-46.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-47.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-48.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-49.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-50.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-51.svg" />
+        <img onclick="copyHtml(this)" src="/assets/icons/svgexport-52.svg" />
+      </div>
+    </section>
+    <!-- Button sm -->
+    <section class="component">
+      <h1 class="component-title">Button sm</h1>
+      <div>
+        <button class="button-sm">
+          <p>Connetti wallet</p>
+        </button>
+      </div>
+      <pre>
     <code class="language-html">
 <button class="button-sm">
 <p>Connetti wallet</p>
 </button>
     </code>
   </pre>
-      </section>
-      <!-- Two icons button -->
-      <section class="component">
-        <h1 class="component-title">Two Icons Button</h1>
-        <div>
-          <button class="button-two-icons">
-            <p>👋 Mettiti in contatto</p>
-            <img
-              class="icon"
-              src="assets/icons/svgexport-13.svg"
-              width="20"
-              height="20"
-              alt="icon"
-              fill="currentColor"
-            />
-          </button>
-        </div>
-        <pre>
+    </section>
+    <!-- Two icons button -->
+    <section class="component">
+      <h1 class="component-title">Two Icons Button</h1>
+      <div>
+        <button class="button-two-icons">
+          <p>👋 Mettiti in contatto</p>
+          <img class="icon" src="assets/icons/svgexport-13.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="button-two-icons">
   <p>👋 Mettiti in contatto</p>
@@ -516,23 +402,17 @@
 </button>
         </code>
       </pre>
-      </section>
-      <!-- primary-icon-button-lg -->
-      <section class="component">
-        <h1 class="component-title">Primary icon button lg</h1>
-        <div>
-          <button class="primary-icon-button-lg">
-            <p>Scambia ora</p>
-            <img
-              class="icon"
-              src="assets/icons/arrow-right.svg"
-              width="20"
-              alt="icon"
-              fill="currentColor"
-            />
-          </button>
-        </div>
-        <pre>
+    </section>
+    <!-- primary-icon-button-lg -->
+    <section class="component">
+      <h1 class="component-title">Primary icon button lg</h1>
+      <div>
+        <button class="primary-icon-button-lg">
+          <p>Scambia ora</p>
+          <img class="icon" src="assets/icons/arrow-right.svg" width="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="primary-icon-button-lg">
   <p>Scambia ora</p>
@@ -540,59 +420,52 @@
 </button>
         </code>
           </pre>
-      </section>
+    </section>
 
-      <!-- Primary button -->
-      <section class="component">
-        <h1 class="component-title">Primary button</h1>
-        <div>
-          <button class="primary-button">
-            <p>Connetti wallet</p>
-          </button>
-        </div>
-        <pre>
+    <!-- Primary button -->
+    <section class="component">
+      <h1 class="component-title">Primary button</h1>
+      <div>
+        <button class="primary-button">
+          <p>Connetti wallet</p>
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="primary-button">
   <p>Connetti wallet</p>
 </button>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- Trade now button -->
-      <section class="component">
-        <h1 class="component-title">Trade Now Button</h1>
-        <div>
-          <button class="trade-now-button">
-            <p class="text-cyan">Scambia ora</p>
-          </button>
-        </div>
-        <pre>
+    <!-- Trade now button -->
+    <section class="component">
+      <h1 class="component-title">Trade Now Button</h1>
+      <div>
+        <button class="trade-now-button">
+          <p class="text-cyan">Scambia ora</p>
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="trade-now-button">
   <p class="text-cyan">Scambia ora</p>
 </button>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- primary-icon-button-sm-->
-      <section class="component">
-        <h1 class="component-title">Primary Icon Button sm</h1>
-        <div>
-          <button class="primary-icon-button-sm">
-            <p>Acquista CAKE</p>
-            <img
-              class="icon"
-              src="assets/icons/arrow-right.svg"
-              width="20"
-              height="20"
-              alt="icon"
-              fill="currentColor"
-            />
-          </button>
-        </div>
-        <pre>
+    <!-- primary-icon-button-sm-->
+    <section class="component">
+      <h1 class="component-title">Primary Icon Button sm</h1>
+      <div>
+        <button class="primary-icon-button-sm">
+          <p>Acquista CAKE</p>
+          <img class="icon" src="assets/icons/arrow-right.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="primary-icon-button-sm">
   <p>Acquista CAKE</p>
@@ -600,47 +473,40 @@
 </button>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- primary square icon button -->
-      <section class="component">
-        <h1 class="component-title">Primary Square Icon Button</h1>
-        <div>
-          <button class="primary-square-icon-button">
-            <img
-              class="icon"
-              src="assets/icons/svgexport-52.svg"
-              width="20"
-              height="20"
-              alt="icon"
-              fill="cure
-        "
-            />
-          </button>
-        </div>
-        <pre>
+    <!-- primary square icon button -->
+    <section class="component">
+      <h1 class="component-title">Primary Square Icon Button</h1>
+      <div>
+        <button class="primary-square-icon-button">
+          <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="cure
+        " />
+        </button>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="primary-square-icon-button">
   <img class="icon" src="assets/icons/svgexport-52.svg" width="20" height="20" alt="icon" fill="currentColor">
 </button>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- modal button -->
-      <section class="component">
-        <h1 class="component-title">Modal button - switcher</h1>
-        <div>
-          <div class="modal-button-switcher">
-            <div class="modal-button active">
-              <p>Standard</p>
-            </div>
-            <div class="modal-button">
-              <p>Advanced</p>
-            </div>
+    <!-- modal button -->
+    <section class="component">
+      <h1 class="component-title">Modal button - switcher</h1>
+      <div>
+        <div class="modal-button-switcher">
+          <div class="modal-button active">
+            <p>Standard</p>
+          </div>
+          <div class="modal-button">
+            <p>Advanced</p>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
 <div class="modal-button-switcher">
   <div class="modal-button active">
@@ -652,24 +518,24 @@
 </div>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- light-dark switch -->
-      <section class="component">
-        <h1 class="component-title">Light - Dark - switch</h1>
-        <div>
-          <label class="switch">
-            <input type="checkbox" class="checkbox" id="light-switch" />
-            <span class="toggle-thumb">
-              <div class="toggle-thumb-switch">
-                <img src="assets/icons/svgexport-40.svg" />
-              </div>
-              <img src="/assets/icons/svgexport-41.svg" width="20px" />
-              <img src="/assets/icons/svgexport-42.svg" width="20px" />
-            </span>
-          </label>
-        </div>
-        <pre>
+    <!-- light-dark switch -->
+    <section class="component">
+      <h1 class="component-title">Light - Dark - switch</h1>
+      <div>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="light-switch" />
+          <span class="toggle-thumb">
+            <div class="toggle-thumb-switch">
+              <img src="assets/icons/svgexport-40.svg" />
+            </div>
+            <img src="/assets/icons/svgexport-41.svg" width="20px" />
+            <img src="/assets/icons/svgexport-42.svg" width="20px" />
+          </span>
+        </label>
+      </div>
+      <pre>
         <code class="language-html">
 <label class="switch">
   <input type="checkbox" class="checkbox" id="light-switch">
@@ -684,27 +550,19 @@
         </code>
       </pre>
 
-        <div>
-          <label class="switch">
-            <input type="checkbox" class="checkbox" id="light-switch" />
-            <span class="toggle-thumb-bg">
-              <div class="toggle-thumb-switch-bg">
-                <img src="assets/icons/svgexport-40.svg" />
-              </div>
-              <img
-                class="icon"
-                src="/assets/icons/svgexport-41.svg"
-                width="20px"
-              />
-              <img
-                class="icon"
-                src="/assets/icons/svgexport-42.svg"
-                width="20px"
-              />
-            </span>
-          </label>
-        </div>
-        <pre>
+      <div>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="light-switch" />
+          <span class="toggle-thumb-bg">
+            <div class="toggle-thumb-switch-bg">
+              <img src="assets/icons/svgexport-40.svg" />
+            </div>
+            <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+            <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
+          </span>
+        </label>
+      </div>
+      <pre>
         <code class="language-html">
 <label class="switch">
   <input type="checkbox" class="checkbox" id="light-switch">
@@ -718,20 +576,20 @@
 </label>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- normal-switch -->
-      <section class="component">
-        <h1 class="component-title">normal-switch</h1>
-        <div>
-          <label class="switch">
-            <input type="checkbox" class="checkbox" id="normal-switch" />
-            <span class="toggle-thumb-green">
-              <div class="toggle-thumb-switch-green active"></div>
-            </span>
-          </label>
-        </div>
-        <pre>
+    <!-- normal-switch -->
+    <section class="component">
+      <h1 class="component-title">normal-switch</h1>
+      <div>
+        <label class="switch">
+          <input type="checkbox" class="checkbox" id="normal-switch" />
+          <span class="toggle-thumb-green">
+            <div class="toggle-thumb-switch-green active"></div>
+          </span>
+        </label>
+      </div>
+      <pre>
         <code class="language-html">
 <label class="switch">
   <input type="checkbox" class="checkbox" id="normal-switch">
@@ -742,20 +600,20 @@
 </label>
         </code>
       </pre>
-      </section>
-      <!-- small-switch -->
-      <section class="component">
-        <h1 class="component-title">small-switch</h1>
-        <div class="staked-container">
-          <label class="switch-small">
-            <input type="checkbox" class="checkbox" id="normal-switch" />
-            <span class="toggle-thumb-small-green">
-              <div class="toggle-thumb-switch-small-green active"></div>
-            </span>
-          </label>
-          <div class="staked-text">Staked only</div>
-        </div>
-        <pre>
+    </section>
+    <!-- small-switch -->
+    <section class="component">
+      <h1 class="component-title">small-switch</h1>
+      <div class="staked-container">
+        <label class="switch-small">
+          <input type="checkbox" class="checkbox" id="normal-switch" />
+          <span class="toggle-thumb-small-green">
+            <div class="toggle-thumb-switch-small-green active"></div>
+          </span>
+        </label>
+        <div class="staked-text">Staked only</div>
+      </div>
+      <pre>
         <code class="language-html">
 <div class="staked-container">
     <label class="switch-small">
@@ -768,155 +626,120 @@
 </div>
         </code>
       </pre>
-      </section>
-      <!-- Navbar - settings - modal -->
-      <section class="component">
-        <h1 class="component-title">Navbar - settings - modal</h1>
-        <div>
-          <button class="icon-button" id="settings">
-            <img src="/assets/icons/svgexport-8.svg" width="20" height="20" />
-          </button>
-          <div
-            class="modal-background dismiss-modal"
-            id="modal-background"
-          ></div>
-          <div class="modal-settings">
-            <div class="modal-settings-content">
-              <div class="modal-settings-header">
-                <h2>Impostazioni</h2>
-                <img
-                  src="/assets/icons/svgexport-1-primary.svg"
-                  width="18"
-                  height="18"
-                  class="dismiss-modal"
-                />
+    </section>
+    <!-- Navbar - settings - modal -->
+    <section class="component">
+      <h1 class="component-title">Navbar - settings - modal</h1>
+      <div>
+        <button class="icon-button" id="settings">
+          <img src="/assets/icons/svgexport-8.svg" width="20" height="20" />
+        </button>
+        <div class="modal-background dismiss-modal" id="modal-background"></div>
+        <div class="modal-settings">
+          <div class="modal-settings-content">
+            <div class="modal-settings-header">
+              <h2>Impostazioni</h2>
+              <img src="/assets/icons/svgexport-1-primary.svg" width="18" height="18" class="dismiss-modal" />
+            </div>
+            <div class="modal-settings-body">
+              <h2>GLOBALE</h2>
+              <div class="modal-settings-body-item">
+                <p>Modalità scura</p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="light-switch" />
+                  <span class="toggle-thumb-bg">
+                    <div class="toggle-thumb-switch-bg">
+                      <img src="assets/icons/svgexport-40.svg" />
+                    </div>
+                    <img class="icon" src="/assets/icons/svgexport-41.svg" width="20px" />
+                    <img class="icon" src="/assets/icons/svgexport-42.svg" width="20px" />
+                  </span>
+                </label>
               </div>
-              <div class="modal-settings-body">
-                <h2>GLOBALE</h2>
-                <div class="modal-settings-body-item">
-                  <p>Modalità scura</p>
-                  <label class="switch">
-                    <input type="checkbox" class="checkbox" id="light-switch" />
-                    <span class="toggle-thumb-bg">
-                      <div class="toggle-thumb-switch-bg">
-                        <img src="assets/icons/svgexport-40.svg" />
-                      </div>
-                      <img
-                        class="icon"
-                        src="/assets/icons/svgexport-41.svg"
-                        width="20px"
-                      />
-                      <img
-                        class="icon"
-                        src="/assets/icons/svgexport-42.svg"
-                        width="20px"
-                      />
-                    </span>
-                  </label>
-                </div>
 
-                <div class="modal-settings-body-item">
-                  <p>
-                    Indicatore di salute del sottografo
-                    <img src="assets/icons/qmark.svg" />
-                    <span class="tooltip-text"
-                      >Attiva sempre l'indicatore di salute del sottografo.
-                      L'impostazione predefinita è mostrare l'indicatore solo
-                      quando la rete è in ritardo</span
-                    >
-                  </p>
-                  <label class="switch">
-                    <input
-                      type="checkbox"
-                      class="checkbox"
-                      id="normal-switch"
-                    />
-                    <span class="toggle-thumb-green">
-                      <div class="toggle-thumb-switch-green active"></div>
-                    </span>
-                  </label>
-                </div>
+              <div class="modal-settings-body-item">
+                <p>
+                  Indicatore di salute del sottografo
+                  <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Attiva sempre l'indicatore di salute del sottografo.
+                    L'impostazione predefinita è mostrare l'indicatore solo
+                    quando la rete è in ritardo</span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active"></div>
+                  </span>
+                </label>
+              </div>
 
-                <div class="modal-settings-body-item">
-                  <p>
-                    Mostra nome utente <img src="assets/icons/qmark.svg" />
-                    <span class="tooltip-text"
-                      >Mostra il nome utente del wallet invece dei
-                      coniglietti</span
-                    >
-                  </p>
-                  <label class="switch">
-                    <input
-                      type="checkbox"
-                      class="checkbox"
-                      id="normal-switch"
-                    />
-                    <span class="toggle-thumb-green">
-                      <div class="toggle-thumb-switch-green active"></div>
-                    </span>
-                  </label>
-                </div>
+              <div class="modal-settings-body-item">
+                <p>
+                  Mostra nome utente <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Mostra il nome utente del wallet invece dei
+                    coniglietti</span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active"></div>
+                  </span>
+                </label>
+              </div>
 
-                <div class="modal-settings-body-item">
-                  <p>
-                    Scansione rischio token
-                    <img class="tooltip-image" src="assets/icons/qmark.svg" />
-                    <span class="tooltip-text">
-                      Scansione automatica del rischio per il token selezionato
-                      I risultati della scansione del rischio sono forniti da
-                      una terza parte <a class="text-primary">AvengerDAO</a
-                      ><br /><br />
-                      È uno strumento a scopo puramente indicativo per
-                      consentire agli utenti di verificare il livello di rischio
-                      di riferimento di uno Smart Contract BNB Chain.
-                      Consigliamo di effettuare delle proprie ricerche: le
-                      interazioni con qualsiasi BNB Chain Smart Contract sono
-                      rischiose.
-                    </span>
-                  </p>
-                  <label class="switch">
-                    <input
-                      type="checkbox"
-                      class="checkbox"
-                      id="normal-switch"
-                    />
-                    <span class="toggle-thumb-green">
-                      <div class="toggle-thumb-switch-green active"></div>
-                    </span>
-                  </label>
-                </div>
+              <div class="modal-settings-body-item">
+                <p>
+                  Scansione rischio token
+                  <img class="tooltip-image" src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">
+                    Scansione automatica del rischio per il token selezionato
+                    I risultati della scansione del rischio sono forniti da
+                    una terza parte <a class="text-primary">AvengerDAO</a><br /><br />
+                    È uno strumento a scopo puramente indicativo per
+                    consentire agli utenti di verificare il livello di rischio
+                    di riferimento di uno Smart Contract BNB Chain.
+                    Consigliamo di effettuare delle proprie ricerche: le
+                    interazioni con qualsiasi BNB Chain Smart Contract sono
+                    rischiose.
+                  </span>
+                </p>
+                <label class="switch">
+                  <input type="checkbox" class="checkbox" id="normal-switch" />
+                  <span class="toggle-thumb-green">
+                    <div class="toggle-thumb-switch-green active"></div>
+                  </span>
+                </label>
+              </div>
 
-                <div class="modal-settings-body-item">
-                  <p>
-                    Velocità di transazione predefinita
-                    <img src="assets/icons/qmark.svg" />
-                    <span class="tooltip-text"
-                      >Adjusts the gas price (transaction fee) for your
-                      transaction. Higher GWEI = higher speed = higher fees.
-                      Choose “Default” to use the settings from your current
-                      blockchain RPC node.</span
-                    >
-                  </p>
+              <div class="modal-settings-body-item">
+                <p>
+                  Velocità di transazione predefinita
+                  <img src="assets/icons/qmark.svg" />
+                  <span class="tooltip-text">Adjusts the gas price (transaction fee) for your
+                    transaction. Higher GWEI = higher speed = higher fees.
+                    Choose “Default” to use the settings from your current
+                    blockchain RPC node.</span>
+                </p>
+              </div>
+              <div class="modal-button-switcher">
+                <div class="modal-button active">
+                  <p>Default</p>
                 </div>
-                <div class="modal-button-switcher">
-                  <div class="modal-button active">
-                    <p>Default</p>
-                  </div>
-                  <div class="modal-button">
-                    <p>Standard (5)</p>
-                  </div>
-                  <div class="modal-button">
-                    <p>Veloce (6)</p>
-                  </div>
-                  <div class="modal-button">
-                    <p>Istantanea (7)</p>
-                  </div>
+                <div class="modal-button">
+                  <p>Standard (5)</p>
+                </div>
+                <div class="modal-button">
+                  <p>Veloce (6)</p>
+                </div>
+                <div class="modal-button">
+                  <p>Istantanea (7)</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
 <button class="icon-button" id="settings">
   <img src="/assets/icons/svgexport-8.svg" width="20" height="20">
@@ -1016,47 +839,47 @@
 </div>
         </code>
       </pre>
-      </section>
-      <!-- Navbar-language-selection -->
-      <section class="component">
-        <h1 class="component-title">Navbar-language-select</h1>
-        <div>
-          <div class="icon-container">
-            <button class="icon-button-lenguage">
-              <img src="/assets/icons/svgexport-7.svg" />
-            </button>
-            <div class="button-list-container">
-              <button class="button-language">العربية</button>
-              <button class="button-language">বাংলা</button>
-              <button class="button-language">English</button>
-              <button class="button-language">Deutsch</button>
-              <button class="button-language">Ελληνικά</button>
-              <button class="button-language">Español</button>
-              <button class="button-language">Suomalainen</button>
-              <button class="button-language">Filipino</button>
-              <button class="button-language">Français</button>
-              <button class="button-language">हिंदी</button>
-              <button class="button-language">Magyar</button>
-              <button class="button-language">Bahasa Indonesia</button>
-              <button class="button-language">Italiano</button>
-              <button class="button-language">日本語</button>
-              <button class="button-language">한국어</button>
-              <button class="button-language">Nederlands</button>
-              <button class="button-language">Polski</button>
-              <button class="button-language">Português (Brazil)</button>
-              <button class="button-language">Română</button>
-              <button class="button-language">Русский</button>
-              <button class="button-language">Svenska</button>
-              <button class="button-language">தமிழ்</button>
-              <button class="button-language">Türkçe</button>
-              <button class="button-language">Українська</button>
-              <button class="button-language">Tiếng Việt</button>
-              <button class="button-language">简体中文</button>
-              <button class="button-language">繁體中文</button>
-            </div>
+    </section>
+    <!-- Navbar-language-selection -->
+    <section class="component">
+      <h1 class="component-title">Navbar-language-select</h1>
+      <div>
+        <div class="icon-container">
+          <button class="icon-button-lenguage">
+            <img src="/assets/icons/svgexport-7.svg" />
+          </button>
+          <div class="button-list-container">
+            <button class="button-language">العربية</button>
+            <button class="button-language">বাংলা</button>
+            <button class="button-language">English</button>
+            <button class="button-language">Deutsch</button>
+            <button class="button-language">Ελληνικά</button>
+            <button class="button-language">Español</button>
+            <button class="button-language">Suomalainen</button>
+            <button class="button-language">Filipino</button>
+            <button class="button-language">Français</button>
+            <button class="button-language">हिंदी</button>
+            <button class="button-language">Magyar</button>
+            <button class="button-language">Bahasa Indonesia</button>
+            <button class="button-language">Italiano</button>
+            <button class="button-language">日本語</button>
+            <button class="button-language">한국어</button>
+            <button class="button-language">Nederlands</button>
+            <button class="button-language">Polski</button>
+            <button class="button-language">Português (Brazil)</button>
+            <button class="button-language">Română</button>
+            <button class="button-language">Русский</button>
+            <button class="button-language">Svenska</button>
+            <button class="button-language">தமிழ்</button>
+            <button class="button-language">Türkçe</button>
+            <button class="button-language">Українська</button>
+            <button class="button-language">Tiếng Việt</button>
+            <button class="button-language">简体中文</button>
+            <button class="button-language">繁體中文</button>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
 <div>
   <div class="icon-container">
@@ -1096,50 +919,50 @@
 </div>
         </code>
       </pre>
-      </section>
-      <!-- Navbar - select -->
-<section class="component">
-  <h1 class="component-title">Navbar - select</h1>
-  <div class="navbar-select-container" id="main-item-img">
-    <div class="navbar-select">
-      <div class="first-item-container">
-        <div class="first-select-img-container" >
-          <img src="./assets/img/56.png" class="dropdown-img" id="main-img" style="height: 32px;
+    </section>
+    <!-- Navbar - select -->
+    <section class="component">
+      <h1 class="component-title">Navbar - select</h1>
+      <div class="navbar-select-container" id="main-item-img">
+        <div class="navbar-select">
+          <div class="first-item-container">
+            <div class="first-select-img-container">
+              <img src="./assets/img/56.png" class="dropdown-img" id="main-img" style="height: 32px;
           width: 32px;">
-        </div>
-        <div class="first-select-item-container">
-          <div class="bnb-smart-chain" id="main-item">BNB Smart Chain</div>
-        </div>
-        <svg viewBox="0 0 24 24" color="text" width="24px" xmlns="http://www.w3.org/2000/svg"
-          class="sc-4ba21b47-0 IIbzK">
-          <path
-            d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
-          </path>
-        </svg>
-      </div>
-      <div class="navbar-dropdown-container">
-        <div class="navbar-dropdown-content">
-          <div class="fixed-dropdown-item-container">
-            <div class="fixed-dropdown-item">Select a network</div>
+            </div>
+            <div class="first-select-item-container">
+              <div class="bnb-smart-chain" id="main-item">BNB Smart Chain</div>
+            </div>
+            <svg viewBox="0 0 24 24" color="text" width="24px" xmlns="http://www.w3.org/2000/svg"
+              class="sc-4ba21b47-0 IIbzK">
+              <path
+                d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+              </path>
+            </svg>
           </div>
-          <hr class="hr">
-          <button class="button-item item-js">
-            <img alt="chain-56" src="./assets/img/56.png" class="button-item-img">
-            <div class="first-dropdown-item">BNB Smart Chain</div>
-          </button>
-          <button class="button-item item-js" >
-            <img alt="chain-1" src="./assets/img/1.png" class="button-item-img">
-            <div class="second-dropdown-item">Ethereum</div>
-          </button>
-          <a href="" class="a-item">
-            <img alt="chain-aptos-1" src="./assets/img/apt.png" class="button-item-img">
-            <div class="third-dropdown-item">Aptos</div>
-          </a>
+          <div class="navbar-dropdown-container">
+            <div class="navbar-dropdown-content">
+              <div class="fixed-dropdown-item-container">
+                <div class="fixed-dropdown-item">Select a network</div>
+              </div>
+              <hr class="hr">
+              <button class="button-item item-js">
+                <img alt="chain-56" src="./assets/img/56.png" class="button-item-img">
+                <div class="first-dropdown-item">BNB Smart Chain</div>
+              </button>
+              <button class="button-item item-js">
+                <img alt="chain-1" src="./assets/img/1.png" class="button-item-img">
+                <div class="second-dropdown-item">Ethereum</div>
+              </button>
+              <a href="" class="a-item">
+                <img alt="chain-aptos-1" src="./assets/img/apt.png" class="button-item-img">
+                <div class="third-dropdown-item">Aptos</div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <pre>
+      <pre>
     <code class="language-html">
 <div class="navbar-select-container" id="main-item-img">
   <div class="navbar-select">
@@ -1187,23 +1010,23 @@
 </div>
     </code>
   </pre>
-</section>
+    </section>
 
-      <!-- Filter by-switch -->
-      <section class="component">
-        <h1 class="component-title">Filter by - switch</h1>
-        <div>
-          <div class="filter-switch-title">Filtra per</div>
-          <div class="filter-button-container">
-            <div class="filter-switched-button-wrapper">
-              <button class="filter-button-switched active">Attivo</button>
-              <button class="filter-button-switched terminato clicked">
-                Terminato
-              </button>
-            </div>
+    <!-- Filter by-switch -->
+    <section class="component">
+      <h1 class="component-title">Filter by - switch</h1>
+      <div>
+        <div class="filter-switch-title">Filtra per</div>
+        <div class="filter-button-container">
+          <div class="filter-switched-button-wrapper">
+            <button class="filter-button-switched active">Attivo</button>
+            <button class="filter-button-switched terminato clicked">
+              Terminato
+            </button>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
 <div class="filter-switch-title">Filtra per</div>
 <div class="filter-button-container">
@@ -1214,44 +1037,40 @@
 </div>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- sort by - dropdown -->
-      <section class="component">
-        <h1 class="component-title">Sort by - dropdown</h1>
-        <div class="dropdown-title-content-container">
-          <p class="dropdown-title">Ordina per</p>
-          <div class="dropdown-content-container" onclick="showDropdown(false)">
-            <div class="dropdown-item-container" id="dropdown-item-container">
-              <div class="dropdown-item" id="dropdown-title">Popolare</div>
-            </div>
-            <img
-              src="assets/icons/svgexport-18-2.svg"
-              alt="freccetta-dropdown"
-              class="icon"
-            />
-            <div class="dropdown-content">
-              <ul class="dropdown-content-ul">
-                <li class="dropdown-li">
-                  <div class="dropdown-item">APR</div>
-                </li>
-                <li class="dropdown-li">
-                  <div class="dropdown-item">Moltiplicatore</div>
-                </li>
-                <li class="dropdown-li">
-                  <div class="dropdown-item">Guadagni</div>
-                </li>
-                <li class="dropdown-li">
-                  <div class="dropdown-item">Liquidità</div>
-                </li>
-                <li class="dropdown-li">
-                  <div class="dropdown-item">Più recenti</div>
-                </li>
-              </ul>
-            </div>
+    <!-- sort by - dropdown -->
+    <section class="component">
+      <h1 class="component-title">Sort by - dropdown</h1>
+      <div class="dropdown-title-content-container">
+        <p class="dropdown-title">Ordina per</p>
+        <div class="dropdown-content-container" onclick="showDropdown(false)">
+          <div class="dropdown-item-container" id="dropdown-item-container">
+            <div class="dropdown-item" id="dropdown-title">Popolare</div>
+          </div>
+          <img src="assets/icons/svgexport-18-2.svg" alt="freccetta-dropdown" class="icon" />
+          <div class="dropdown-content">
+            <ul class="dropdown-content-ul">
+              <li class="dropdown-li">
+                <div class="dropdown-item">APR</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Moltiplicatore</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Guadagni</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Liquidità</div>
+              </li>
+              <li class="dropdown-li">
+                <div class="dropdown-item">Più recenti</div>
+              </li>
+            </ul>
           </div>
         </div>
-        <pre>
+      </div>
+      <pre>
         <code class="language-html">
 <div class="dropdown-title-content-container">
   <p class="dropdown-title">Ordina per</p>
@@ -1283,39 +1102,33 @@
 </div>
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- Sort by - input text -->
-      <section class="component">
-        <h1 class="component-title">Sort by - Input text</h1>
-        <div>
-          <div class="sort-by-title">Cerca</div>
-          <input placeholder="Cerca farm" class="sort-by-input" />
-        </div>
+    <!-- Sort by - input text -->
+    <section class="component">
+      <h1 class="component-title">Sort by - Input text</h1>
+      <div>
+        <div class="sort-by-title">Cerca</div>
+        <input placeholder="Cerca farm" class="sort-by-input" />
+      </div>
       <pre>
         <code class="language-html">
 <div class="sort-by-title">Cerca</div>
 <input placeholder="Cerca farm" font-weight="normal" class="sort-by-input">
         </code>
       </pre>
-      </section>
+    </section>
 
-      <!-- Button White -->
-      <section class="component">
-        <h1 class="component-title">Button White</h1>
-        <div>
-          <button class="button-white">
-            <p>Download Trust Wallet</p>
-            <img
-              src="assets/icons/svgexport-23.svg"
-              width="20"
-              height="20"
-              alt="icon"
-              fill="currentColor"
-            />
-          </button>
-        </div>
-        <pre>
+    <!-- Button White -->
+    <section class="component">
+      <h1 class="component-title">Button White</h1>
+      <div>
+        <button class="button-white">
+          <p>Download Trust Wallet</p>
+          <img src="assets/icons/svgexport-23.svg" width="20" height="20" alt="icon" fill="currentColor" />
+        </button>
+      </div>
+      <pre>
       <code class="language-html">
 <button class="button-white">
   <p>Download Trust Wallet</p>
@@ -1323,75 +1136,63 @@
 </button>
       </code>
     </pre>
-      </section>
-      
-        <!-- BIG CARDS -->
-      <section class="component">
-        <h1 class="component-title">Big Cards</h1>
+    </section>
 
-        <div class="big-cards-container">
-          <!-- YELLOW CARD -->
-          <div class="big-ps-card yellow-card">
-            <div class="big-card-icon">
-              <img src="./assets/icons/svgexport-26.svg" alt="icona-svg" />
-            </div>
-            <div class="big-card-title">
-              <p class="paragraph-bold">Prediction</p>
-              <h2 class="amount small-title">$840 million</h2>
-              <p class="paragraph-bold">in BNB + CAKE won so far</p>
-            </div>
-            <div class="caption">
-              <p class="paragraph-1">
-                Predict the price trend of BNB or CAKE to win
-              </p>
-              <div class="cta">
-                <a href="#">
-                  <button class="primary-icon-button-sm">
-                    <p>Play</p>
-                    <img
-                      class="icon"
-                      src="./assets/icons/arrow-right.svg"
-                      width="20"
-                      height="20"
-                      alt="icon"
-                      fill="currentColor"
-                    />
-                  </button>
-                </a>
-              </div>
-            </div>
+    <!-- BIG CARDS -->
+    <section class="component">
+      <h1 class="component-title">Big Cards</h1>
+
+      <div class="big-cards-container">
+        <!-- YELLOW CARD -->
+        <div class="big-ps-card yellow-card">
+          <div class="big-card-icon">
+            <img src="./assets/icons/svgexport-26.svg" alt="icona-svg" />
           </div>
-          <!-- PURPLE CARD -->
-          <div class="big-ps-card purple-card">
-            <div class="big-card-icon">
-              <img src="./assets/icons/svgexport-53.svg" alt="icona-svg" />
-            </div>
-            <div class="big-card-title">
-              <p class="paragraph-bold">Lottery</p>
-              <h2 class="amount small-title">$63,516</h2>
-              <p class="paragraph-bold">in CAKE prizes this round</p>
-            </div>
-            <div class="caption">
-              <p>Buy tickets with CAKE, win CAKE if your number matches</p>
-              <div class="cta">
-                <a href="#">
-                  <button class="primary-icon-button-sm">
-                    <p>Buy Tickets</p>
-                    <img
-                      class="icon"
-                      src="./assets/icons/arrow-right.svg"
-                      width="20"
-                      height="20"
-                      alt="icon"
-                      fill="currentColor"
-                    />
-                  </button>
-                </a>
-              </div>
+          <div class="big-card-title">
+            <p class="paragraph-bold">Prediction</p>
+            <h2 class="amount small-title">$840 million</h2>
+            <p class="paragraph-bold">in BNB + CAKE won so far</p>
+          </div>
+          <div class="caption">
+            <p class="paragraph-1">
+              Predict the price trend of BNB or CAKE to win
+            </p>
+            <div class="cta">
+              <a href="#">
+                <button class="primary-icon-button-sm">
+                  <p>Play</p>
+                  <img class="icon" src="./assets/icons/arrow-right.svg" width="20" height="20" alt="icon"
+                    fill="currentColor" />
+                </button>
+              </a>
             </div>
           </div>
         </div>
-        <pre>
+        <!-- PURPLE CARD -->
+        <div class="big-ps-card purple-card">
+          <div class="big-card-icon">
+            <img src="./assets/icons/svgexport-53.svg" alt="icona-svg" />
+          </div>
+          <div class="big-card-title">
+            <p class="paragraph-bold">Lottery</p>
+            <h2 class="amount small-title">$63,516</h2>
+            <p class="paragraph-bold">in CAKE prizes this round</p>
+          </div>
+          <div class="caption">
+            <p>Buy tickets with CAKE, win CAKE if your number matches</p>
+            <div class="cta">
+              <a href="#">
+                <button class="primary-icon-button-sm">
+                  <p>Buy Tickets</p>
+                  <img class="icon" src="./assets/icons/arrow-right.svg" width="20" height="20" alt="icon"
+                    fill="currentColor" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre>
         <code class="language-html">
           <div>
             <div class="big-ps-card yellow-card">
@@ -1439,25 +1240,79 @@
             </div>
      </code>
       </pre>
-      </section>
-
-      <!-- SECTION_DESCRIPTION -->
-      <section class="component">
-        <h1 class="component-title">COMPONENT_NAME</h1>
-        <div>COMPONENT_CODE</div>
-        <pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">Navbar - dropdown</h1>
+      <div>
+        <div class="navbar-dropdown">
+            <a class="navbar-dropdown-title text-subtle">Scambia</a>
+          <div class="navbar-dropdown-items">
+            <div class="navbar-dropdown-item">
+              <a class="text-subtle">Scambia</a>
+            </div>
+            <div class="navbar-dropdown-item">
+              <a class="text-subtle">Limite</a>
+            </div>
+            <div class="navbar-dropdown-item">
+              <a class="text-subtle">Liquidità</a>
+            </div>
+            <div class="navbar-dropdown-item">
+              <a class="text-subtle">Perpetuo</a>
+              <img src="/assets/icons/svgexport-4.svg">
+            </div>
+            <div class="navbar-dropdown-item">
+              <a class="text-subtle">Ponte</a>
+              <img src="/assets/icons/svgexport-4.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <pre>
+  <code class="language-html">
+<div class="navbar-dropdown">
+  <a class="navbar-dropdown-title text-subtle">Scambia</a>
+<div class="navbar-dropdown-items">
+  <div class="navbar-dropdown-item">
+    <a class="text-subtle">Scambia</a>
+  </div>
+  <div class="navbar-dropdown-item">
+    <a class="text-subtle">Limite</a>
+  </div>
+  <div class="navbar-dropdown-item">
+    <a class="text-subtle">Liquidità</a>
+  </div>
+  <div class="navbar-dropdown-item">
+    <a class="text-subtle">Perpetuo</a>
+    <img src="/assets/icons/svgexport-4.svg">
+  </div>
+  <div class="navbar-dropdown-item">
+    <a class="text-subtle">Ponte</a>
+    <img src="/assets/icons/svgexport-4.svg">
+  </div>
+</div>
+</div>
+  </code>
+</pre>
+    </section>
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <pre>
         <code class="language-html">
           COMPONENT_CODE
         </code>
       </pre>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
-    <script src="assets/js/components.js"></script>
-    <script src="assets/js/index.js"></script>
-    <script src="assets/js/dropdown.js"></script>
-    <script src="assets/js/navbar-select.js"></script>
-     <script src="assets/js/big-cards.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="assets/js/dropdown.js"></script>
+  <script src="assets/js/navbar-select.js"></script>
+  <script src="assets/js/big-cards.js"></script>
+</body>
+
 </html>

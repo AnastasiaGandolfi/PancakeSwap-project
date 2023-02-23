@@ -85,7 +85,8 @@ a {
   color: var(--text); }
 
 .text-subtle {
-  color: var(--textSubtle); }
+  color: var(--textSubtle);
+  font-weight: 300; }
 
 .text-white {
   color: var(--white); }
@@ -367,7 +368,8 @@ a {
   color: var(--text); }
 
 .text-subtle {
-  color: var(--textSubtle); }
+  color: var(--textSubtle);
+  font-weight: 300; }
 
 .text-white {
   color: var(--white); }
@@ -1665,6 +1667,60 @@ a {
   box-shadow: inset 0 0 5px var(--input);
   border-radius: 10px; }
 
+.navbar-dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background-color: var(--backgroundAlt);
+  cursor: pointer; }
+  .navbar-dropdown .navbar-dropdown-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+    color: var(--textSubtle);
+    border-radius: 16px;
+    font-size: 16px;
+    height: 48px;
+    opacity: 1;
+    pointer-events: inherit; }
+    .navbar-dropdown .navbar-dropdown-title:hover {
+      background-color: var(--tertiary); }
+  .navbar-dropdown:hover .navbar-dropdown-items {
+    display: flex;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    z-index: 100;
+    flex-direction: column;
+    background-color: var(--backgroundAlt);
+    width: 280px;
+    border-radius: 16px;
+    border: 1px solid var(--cardBorder); }
+    .navbar-dropdown:hover .navbar-dropdown-items .navbar-dropdown-item {
+      margin-left: 0;
+      margin-right: 0;
+      height: 48px;
+      padding: 0px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .navbar-dropdown:hover .navbar-dropdown-items .navbar-dropdown-item:hover {
+        background-color: var(--tertiary); }
+      .navbar-dropdown:hover .navbar-dropdown-items .navbar-dropdown-item:first-child {
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px; }
+      .navbar-dropdown:hover .navbar-dropdown-items .navbar-dropdown-item:last-child {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px; }
+  .navbar-dropdown .navbar-dropdown-items {
+    display: none; }
+
 .sort-by-title {
   color: var(--textSubtle);
   font-weight: 600;
@@ -1925,73 +1981,3 @@ a {
           margin-right: 0px; }
     .navbar-select-container .navbar-select .navbar-dropdown-container {
       display: none; }
-
-
-/* BIG CARDS */
-      .big-cards-container {
-        display: flex;
-        padding: 10px;
-        text-align: justify;
-        margin: 100px 0;
-        gap: 2rem;
-      }
-      .big-ps-card {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: 24px;
-        padding: 1.5rem;
-        width: 18rem;
-        height: 23rem;
-        font: 400 16px / 24px "Kanit";
-      }
-      
-      .big-ps-card .big-card-icon {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-      }
-      .big-ps-card .big-card-title {
-        display: flex;
-        flex-direction: column;
-      }
-      .big-ps-card .big-card-title .amount {
-        margin: 1.75rem 0;
-      }
-      .big-ps-card .caption {
-        margin: 0.7rem 0;
-      }
-      .big-ps-card .cta button {
-        width: 100%;
-        height: 48px;
-        will-change: opacity;
-        transition: opacity 0.2s ease 0s;
-      }
-      
-      .yellow-card {
-        float: left;
-        background: var(--gradientGold);
-        box-shadow: inset 0px -4px 0px 0px var(--warning);
-        transform: rotate(-3deg);
-      }
-      .yellow-card h2,p {
-        color: var(--text-reverse);
-      }
-      .yellow-card .paragraph-bold{
-        padding-top:45px;
-      }
-      
-      .purple-card {
-        background: var(--gradientViolet);
-        box-shadow: inset 0px -4px 0px 0px var(--overlay);
-        transform: rotate(3deg);
-      }
-      .purple-card .paragraph-bold {
-        padding-top: 45px;
-      
-      }
-      .purple-card.caption {
-        color:white;
-      
-      }
