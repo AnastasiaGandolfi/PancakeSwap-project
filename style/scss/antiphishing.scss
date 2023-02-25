@@ -1,0 +1,121 @@
+.top-bar-container {
+    height: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    width: 100vw;
+
+    .bar-container {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+
+        @media screen and (min-width: 852px) {
+            padding: 0px;
+            background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+        }
+
+        .antiphishing-banner {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            
+            .phishing-bunny-img {
+                height: auto;
+                width: 92px;
+                max-width: 100%;
+            }
+            
+            .antiphishing-text-container {
+                margin-left: 0;
+                margin-right: 0;
+                background: rgba(39, 38, 44, 0.4);
+                border-radius: 16px;
+                padding: 8px;
+                width: 60%;
+                height: 80%;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .warning-text {
+                    color: var(--warning);
+                    font-size: 14px;
+                    font-weight: 600;
+                    flex-shrink: 0;
+                    margin-right: 4px;
+                    line-height: 1.5;
+                    text-transform: uppercase;
+                }
+
+                .regular-text {
+                    color: #bdc2c4;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    margin-right: 4px;
+                }
+                
+                .link-text {
+                    margin-right: 4px;
+                    color: var(--white);
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .close-button {
+            padding: 0px;
+            width: 48px;
+            position: relative;
+            -webkit-box-align: center;
+            align-items: center;
+            border: 0px;
+            border-radius: 16px;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: inherit;
+            font-size: 16px;
+            font-weight: 600;
+            -webkit-box-pack: center;
+            justify-content: center;
+            letter-spacing: 0.03em;
+            line-height: 1;
+            opacity: 1;
+            outline: 0px;
+            transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+            height: 48px;
+            padding: 0px 24px;
+            background-color: transparent;
+            color: var(--white);
+            box-shadow: none;
+            &:hover {
+                opacity: 0.65;
+            }
+            &:active {
+                transform: translateY(1px);
+                opacity: 0.85;
+                box-shadow: none;
+            }
+
+            .x-icon {
+                width: 20px;
+                align-self: center;
+                flex-shrink: 0;
+                
+                filter: none !important;
+                
+                
+
+            }
+        }
+    }
+}
