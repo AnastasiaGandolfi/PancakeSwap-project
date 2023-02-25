@@ -1981,3 +1981,26 @@ a {
           margin-right: 0px; }
     .navbar-select-container .navbar-select .navbar-dropdown-container {
       display: none; }
+
+.section-number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .section-number-container .section-number-title {
+    margin-top: 30px;
+    margin-bottom: 31px; }
+    .section-number-container .section-number-title h2 {
+      line-height: 1.1;
+      font-size: 40px;
+      text-align: center;
+      color: var(--text);
+      font-weight: 400; }
+  .section-number-container .section-number-content div {
+    color: var(--textSubtle);
+    font-weight: 200;
+    text-align: center;
+    font-size: 16px; }
+  .section-number-container .section-number-content > :last-child {
+    margin-top: 30px;
+    font-weight: 600; }
