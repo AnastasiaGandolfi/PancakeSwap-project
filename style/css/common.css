@@ -2167,7 +2167,12 @@ a {
       .yellow-card h2,p {
         color: var(--text-reverse);
       }
+     .purple-card .cta {
+      width: 100%;
+      position: relative;
+      top:-15px;
     
+     }
       .purple-card {
         background: var(--gradientViolet);
         box-shadow: inset 0px -4px 0px 0px var(--overlay);
@@ -2184,10 +2189,7 @@ a {
       .purple-card .paragraph-1 {
         color:var(--white);
       }
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        flex-wrap: wrap; }
+       
         .top-bar-container .bar-container .antiphishing-banner .antiphishing-text-container .warning-text {
           color: var(--warning);
           font-size: 14px;
