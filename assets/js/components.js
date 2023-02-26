@@ -89,3 +89,10 @@ replaceAllCode();
 //     icons[i].style.filter = theme == "dark" ? "invert(1)" : "invert(0)";
 //   }
 // });
+
+// Hide the antiphishing banner by clicking the x icon
+let icon = document.getElementById("icon")
+icon.addEventListener("click", function() {
+  let banner = document.getElementById("antiphishing-banner")
+  banner.style.display = "none";
+})
