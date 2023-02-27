@@ -12,6 +12,9 @@
   <meta name="author" content="Fullstack Team 3" />
   <link rel="icon" type="image/x-icon" href="assets/icons/svgexport-6.svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-tomorrow.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -1137,11 +1140,11 @@
       </code>
     </pre>
 
-      </section>
-      
-  
+    </section>
 
-   <!-- BIG CARDS -->
+
+
+    <!-- BIG CARDS -->
     <section class="component">
       <h1 class="component-title">Big Cards</h1>
       <div class="big-cards-container">
@@ -1173,7 +1176,7 @@
         <!-- PURPLE CARD -->
         <div class="big-ps-card purple-card">
           <div class="big-card-icon">
-            <img src="./assets/icons/svgexport-28.svg"/>
+            <img src="./assets/icons/svgexport-28.svg" />
           </div>
           <div class="big-card-title">
             <p class="paragraph-bold">Lottery</p>
@@ -1363,9 +1366,8 @@
             </div>
           </div>
           <button class="close-button">
-            <svg viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" class="x-icon">
-              <path fill="currentColor"
-              d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="x-icon">
+              <path fill="currentColor" d="M18.3 5.70997C17.91 5.31997 17.28 5.31997 16.89 5.70997L12 10.59L7.10997
               5.69997C6.71997 5.30997 6.08997 5.30997 5.69997 5.69997C5.30997 6.08997 5.30997
               6.71997 5.69997 7.10997L10.59 12L5.69997 16.89C5.30997 17.28 5.30997 17.91 5.69997
               18.3C6.08997 18.69 6.71997 18.69 7.10997 18.3L12 13.41L16.89 18.3C17.28 18.69 17.91
@@ -1449,8 +1451,8 @@
             </div>
           </div>
         </div>
-        </div>
-     <pre>
+      </div>
+      <pre>
           <code class="language-html">
             <div class="section-market-container">
               <div class="section-market-col col-1">
@@ -1494,17 +1496,54 @@
         </pre>
     </section>
 
-<!-- SECTION_DESCRIPTION -->
-<section class="component">
-  <h1 class="component-title">COMPONENT_NAME</h1>
-  <div>COMPONENT_CODE</div>
-  <pre>
+    <!-- Card-swiper-header -->
+    <section class="" style="width:100%">
+      <h1 class="component-title">Card Swiper Header</h1>
+      <div class="swiper-container">
+        <div class="swiper-item-1">
+          <img class="swiper-bg" src="assets/img/trustwalletBg.png" />
+          <div class="swiper-title">
+            PancakeSwap x Trust Wallet
+          </div>
+          <div class="swiper-subtitle">
+            Trade and win 10.000$ Prize Pool
+          </div>
+          <div class="swiper-call-to-action">
+            <button class="primary-icon-button-lg">
+              <p style="color:white">Trade now using Trust Wallet</p>
+              <img src="assets/icons/arrow-right.svg" width="20" alt="icon" fill="currentColor"
+                style="filter:invert(1)">
+            </button>
+            <button class="button-white">
+              <p>Download Trust Wallet</p>
+              <img class="icon" src="assets/icons/svgexport-23.svg" width="20" height="20" alt="icon"
+                fill="currentColor">
+            </button>
+            <img class="swiper-bunny" src="assets/img/trustwalletBunny.png"/>
+          </div>
+          <div class="swiper-bullets"></div>
+        </div>
+
+
+      </div>
+      <pre>
       <code class="language-html">
         COMPONENT_CODE
       </code>
     </pre>
-</section>
-</main>
+    </section>
+
+    <!-- SECTION_DESCRIPTION -->
+    <section class="component">
+      <h1 class="component-title">COMPONENT_NAME</h1>
+      <div>COMPONENT_CODE</div>
+      <pre>
+      <code class="language-html">
+        COMPONENT_CODE
+      </code>
+    </pre>
+    </section>
+  </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/prism.min.js"></script>
   <script src="assets/js/components.js"></script>
@@ -1513,6 +1552,19 @@
   <script src="assets/js/navbar-select.js"></script>
   <script src="assets/js/big-cards.js"></script>
   <script src="assets/js/section-market-cap.js"></script>
+  <script>var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2400,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+    });</script>
 </body>
 
 </html>

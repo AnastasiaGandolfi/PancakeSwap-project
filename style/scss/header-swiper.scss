@@ -1,0 +1,77 @@
+@mixin swiper-item {
+  width: 100%;
+  height: 192px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  position: relative;
+  .swiper-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    font-feature-settings: "liga" 0;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    margin-bottom: 10px;
+  }
+  .swiper-subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+    margin-bottom: 24px;
+  }
+  .swiper-call-to-action {
+    display: flex;
+    gap: 8px;
+    z-index:10;
+  }
+  .swiper-bunny{
+    position: absolute;
+    bottom: -20px;
+    right: 55px;
+    height: 130%;
+    background-repeat: no-repeat;
+  }
+  .swiper-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:0;
+  }
+}
+.swiper-container {
+  width: 90%;
+  max-width: 1152px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  .swiper-item-1 {
+    @include swiper-item;
+    background: radial-gradient(
+      104.12% 231.19% at -4.12% -5.83%,
+      rgb(0, 87, 174) 0.52%,
+      rgb(102, 124, 198) 67.41%,
+      rgb(25, 229, 245) 100%
+    );
+    /*for  position image background-position: 0% 0%;*/
+  }
+  .swiper-item-2 {
+    background: linear-gradient(rgb(0, 191, 165) 0%, rgb(0, 90, 90) 100%);
+  }
+  .swiper-item3 {
+    background: inear-gradient(
+      top,
+      rgb(118, 69, 217) 0%,
+      rgb(69, 42, 122) 100%
+    );
+  }
+}
