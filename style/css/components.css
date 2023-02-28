@@ -293,6 +293,8 @@ body {
     position: fixed;
     bottom: 30px;
     right: 30px; }
+    body .fixed-switch .switch {
+      margin-left: 70%; }
   body .fixedBG {
     background: #08060b; }
   body h1 {
