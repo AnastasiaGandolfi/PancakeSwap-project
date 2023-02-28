@@ -1734,6 +1734,9 @@ a {
     justify-content: flex-start;
     align-items: center;
     gap: 14px; }
+    .navbar .navbar-left svg:hover .eye {
+      animation: Blink 320ms linear;
+      animation-delay: 180ms; }
   .navbar .navbar-right {
     display: flex;
     flex-direction: row;
@@ -1743,6 +1746,14 @@ a {
     .navbar .navbar-right .icon-currency-value-container a {
       display: flex;
       gap: 7px; }
+
+@keyframes Blink {
+  0% {
+    fill: #633001; }
+  40% {
+    fill: transparent; }
+  100% {
+    fill: #633001; } }
 
 .sort-by-title {
   color: var(--textSubtle);
@@ -4117,6 +4128,9 @@ a {
     justify-content: flex-start;
     align-items: center;
     gap: 14px; }
+    .navbar .navbar-left svg:hover .eye {
+      animation: Blink 320ms linear;
+      animation-delay: 180ms; }
   .navbar .navbar-right {
     display: flex;
     flex-direction: row;
@@ -4126,6 +4140,14 @@ a {
     .navbar .navbar-right .icon-currency-value-container a {
       display: flex;
       gap: 7px; }
+
+@keyframes Blink {
+  0% {
+    fill: #633001; }
+  40% {
+    fill: transparent; }
+  100% {
+    fill: #633001; } }
 
 .sort-by-title {
   color: var(--textSubtle);
@@ -4607,6 +4629,7 @@ a {
     color: #280d5f; }
 
 .purple-card {
+  background: linear-gradient(#7645d9 0%, #5121b1 100%);
   box-shadow: inset 0px -4px 0px 0px #3c1786;
   transform: rotate(2deg); }
   .purple-card h2 {

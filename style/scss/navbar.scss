@@ -291,6 +291,14 @@
     justify-content: flex-start;
     align-items: center;
     gap:14px;
+    svg{
+      &:hover{
+        .eye{
+          animation: Blink 320ms linear;
+          animation-delay:180ms;
+        }
+      }
+    }
   }
   .navbar-right{
     display:flex;
@@ -304,3 +312,9 @@
     }
   }
 }
+
+@keyframes Blink {
+  0% {fill:#633001}
+  40% {fill:transparent}
+  100% {fill:#633001}
+  }
