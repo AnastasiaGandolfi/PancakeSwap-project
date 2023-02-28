@@ -2101,94 +2101,105 @@ a {
         flex-shrink: 0;
         filter: none !important; }
 
+/* BIG CARDS */
+.big-cards-container {
+  display: flex;
+  /* padding: 10px; */
+  margin: 100px 0;
+  gap: 1.85rem;
+  height: 100%;
+}
 
-        /* BIG CARDS */
-      .big-cards-container {
-        display: flex;
-        /* padding: 10px; */
-        text-align: justify;
-        margin: 100px 0;
-        gap: 1.85rem;
-      }
-      .big-ps-card {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: space-between;
-        border-radius: 24px;
-        padding: 1.5rem;
-        width: 18rem;
-        height: 23rem;
-        font: 400 16px / 24px "Kanit";
-      }
-      
-     
-      .big-ps-card .big-card-icon {
-       position: absolute;
-        top: 20px;
-        right: 20px;
-      }
- 
-      .big-ps-card .big-card-title {
-        display: flex;
-        flex-direction: column;
-      }
-      .big-ps-card .big-card-title  {
-        margin: 2.5rem 0px 0px 0px;
-      }
+.big-ps-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 24px;
+  padding: 1.5rem;
+  width: 18rem;
+  height: 26rem;
+  font-size: 24px;
+}
+.big-ps-card.bigger {
+  height: 30rem;
+}
 
-      .big-ps-card .paragraph-bold {
-        margin: 15px 0px ;
-      }
-     
-      .big-ps-card .caption {
-        margin: 1rem 0;
-      }
-     
-    
-      .big-ps-card .cta button {
-        width: 100%;
-        height: 48px;
-        will-change: opacity;
-        transition: opacity 0.2s ease 0s;
-      }
-     
-      .big-ps-card .paragraph-1 {
-        font-weight: 200;
-        padding-bottom: 30px;
-      }
+.big-ps-card .big-card-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.big-ps-card .big-card-title {
+  display: flex;
+  flex-direction: column;
+}
+.big-ps-card .big-card-title h2 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 2.7rem;
+}
+
+.big-ps-card .big-card-title {
+  margin: 2.5rem 0px 0px 0px;
+}
+
+.big-ps-card .paragraph-bold {
+  margin: 15px 0px;
+}
+
+.big-ps-card .caption {
+  margin: 1rem 0;
+}
+
+.big-ps-card .cta button {
+  width: 100%;
+  height: 48px;
+  will-change: opacity;
+  transition: opacity 0.2s ease 0s;
+}
+
+.big-ps-card .paragraph-1 {
+  font-weight: 200;
+  padding-bottom: 30px;
+}
+
+.yellow-card {
+  /* float: left; */
+  background: linear-gradient(#ffb237 0%, #ffcd51 51.17%, #ffe76a 100%);
+  box-shadow: inset 0px -4px 0px 0px var(--warning);
+  transform: rotate(-2deg);
+}
+
+.yellow-card h2,
+p {
+  color: var(--text-reverse);
+}
+
+.purple-card {
+  background: linear-gradient(#7645d9 0%, #5121b1 100%);
+  box-shadow: inset 0px -4px 0px 0px #3c1786;
+  transform: rotate(2deg);
+}
+
+.purple-card h2 {
+  color: var(--gold);
+  color: linear-gradient(#ffb237, #ffe76a);
+}
+
+.purple-card .paragraph-bold {
+  color: var(--white);
+}
+
+.purple-card .paragraph-1 {
+  color: var(--white);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
       
-      .yellow-card {
-        /* float: left; */
-        background: var(--gradientGold);
-        box-shadow: inset 0px -4px 0px 0px var(--warning);
-        transform: rotate(-2.5deg);
-      }
-      .yellow-card h2,p {
-        color: var(--text-reverse);
-      }
-     .purple-card .cta {
-      width: 100%;
-      position: relative;
-      top:-15px;
-    
-     }
-      .purple-card {
-        background: var(--gradientViolet);
-        box-shadow: inset 0px -4px 0px 0px var(--overlay);
-        transform: rotate(2.5deg);
-      }
-      .purple-card h2 {
-        color:var(--warning)
-      }
-      .purple-card .paragraph-bold {
-        color:var(--white);
-      
-      }
-    
-      .purple-card .paragraph-1 {
-        color:var(--white);
-      }
        
         .top-bar-container .bar-container .antiphishing-banner .antiphishing-text-container .warning-text {
           color: var(--warning);
