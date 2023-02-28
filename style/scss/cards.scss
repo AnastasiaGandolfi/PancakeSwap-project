@@ -1,10 +1,8 @@
-
 /*colori che mancavano */
 $yellow: #ffcd51;
 $light-yellow: #ffe76a;
 $purple: #5121b1;
 $dark-purple: #3c1786;
-
 
 /* BIG CARDS */
 .big-cards-container {
@@ -13,9 +11,6 @@ $dark-purple: #3c1786;
   margin: 100px 0;
   gap: 1.85rem;
   height: 100%;
-  text-align: justify;
-  margin: 100px 0;
-  gap: 1.85rem;
 }
 .big-ps-card {
   display: flex;
@@ -63,42 +58,6 @@ $dark-purple: #3c1786;
     font-weight: 200;
     padding-bottom: 30px;
   }
-  height: 23rem;
-  font: 400 16px / 24px "Kanit";
-}
-
-.big-ps-card .big-card-icon {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.big-ps-card .big-card-title {
-  display: flex;
-  flex-direction: column;
-}
-.big-ps-card .big-card-title {
-  margin: 2.5rem 0px 0px 0px;
-}
-
-.big-ps-card .paragraph-bold {
-  margin: 15px 0px;
-}
-
-.big-ps-card .caption {
-  margin: 1rem 0;
-}
-
-.big-ps-card .cta button {
-  width: 100%;
-  height: 48px;
-  will-change: opacity;
-  transition: opacity 0.2s ease 0s;
-}
-
-.big-ps-card .paragraph-1 {
-  font-weight: 200;
-  padding-bottom: 30px;
 }
 
 .yellow-card {
@@ -136,34 +95,6 @@ $dark-purple: #3c1786;
     align-items: center;
     flex-wrap: wrap;
   }
-}
-  background: var(--gradientGold);
-  box-shadow: inset 0px -4px 0px 0px var(--warning);
-  transform: rotate(-2.5deg);
-}
-.yellow-card h2,
-p {
-  color: var(--text-reverse);
-}
-
-.purple-card {
-  background: var(--gradientViolet);
-  box-shadow: inset 0px -4px 0px 0px var(--overlay);
-  transform: rotate(2.5deg);
-}
-.purple-card h2 {
-  color: var(--warning);
-}
-.purple-card .paragraph-bold {
-  color: var(--white);
-}
-
-.purple-card .paragraph-1 {
-  color: var(--white);
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 .top-bar-container
   .bar-container
