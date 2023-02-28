@@ -132,3 +132,48 @@ finishedButton.addEventListener('click', function() {
   activeButton.classList.remove('clicked');
   activeButton.classList.add('active');
 });
+
+document.querySelector("#swiper-bullet-1").addEventListener('click', function() {
+  activateSwiper(1);
+})
+document.querySelector("#swiper-bullet-2").addEventListener('click', function() {
+  activateSwiper(2);
+})
+document.querySelector("#swiper-bullet-3").addEventListener('click', function() {
+  activateSwiper(3);
+})
+
+function activateSwiper(n){
+  document.querySelector("#swiper-bullet-1").classList.remove('swiper-bullet-active');
+  document.querySelector("#swiper-bullet-2").classList.remove('swiper-bullet-active');
+  document.querySelector("#swiper-bullet-3").classList.remove('swiper-bullet-active');
+  document.querySelector("#swiper-item-1").classList.remove('swiper-item-active');
+  document.querySelector("#swiper-item-2").classList.remove('swiper-item-active');
+  document.querySelector("#swiper-item-3").classList.remove('swiper-item-active');
+  document.querySelector(`#swiper-bullet-${n}`).classList.add("swiper-bullet-active");
+  document.querySelector(`#swiper-item-${n}`).classList.add("swiper-item-active");
+
+}
+
+let activeSwiper = 1;
+setInterval(() =>{
+  if(activeSwiper === 1){
+    activeSwiper = 2;
+    document.querySelector('#swiper-bullet-2').click();
+  }else if(activeSwiper === 2){
+    activeSwiper = 3;
+    document.querySelector('#swiper-bullet-3').click();
+  }else if(activeSwiper === 3){
+    activeSwiper = 1;
+    document.querySelector('#swiper-bullet-1').click();
+  }
+},3000)
+
+function standard(){
+  console.log("I");
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'block');
+}
+
+function compact(){
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'none');
+}
