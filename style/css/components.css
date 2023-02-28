@@ -60,6 +60,9 @@ a {
   font-weight: 400;
   text-decoration: none; }
 
+.text {
+  color: var(--text); }
+
 .text-warning {
   color: var(--warning); }
 
@@ -82,18 +85,21 @@ a {
   color: var(--text); }
 
 .text-subtle {
-  color: var(--textSubtle); }
+  color: var(--textSubtle);
+  font-weight: 300; }
 
 .text-white {
   color: var(--white); }
 
-.text-tertiary {
-  color: var(--tertiary); }
-
-.button-text-secondary {
+.button-text-white {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text); }
+  color: var(--white); }
+
+.button-text-inverted {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--invertedContrast); }
 
 .button-text-primary {
   font-size: 16px;
@@ -173,7 +179,9 @@ a {
   --gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
-  --gradientBold: linear-gradient(#53dee9, #9a6aff); }
+  --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
+  --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
 [data-theme="dark"] {
   --white: #fff;
@@ -278,6 +286,8 @@ body {
   background: var(--background);
   padding: 0;
   margin: 0; }
+  body pre {
+    display: none; }
   body .fixed-switch {
     z-index: 1000;
     position: fixed;

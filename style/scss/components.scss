@@ -5,6 +5,9 @@ body {
   background: var(--background);
   padding:0;
   margin:0;
+  pre{
+    display:none;
+  }
   .fixed-switch{
     z-index:1000;
     position: fixed;

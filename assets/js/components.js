@@ -96,3 +96,11 @@ replaceAllCode();
 //   let banner = document.getElementById("antiphishing-banner")
 //   banner.style.display = "none";
 // })
+function standard(){
+  console.log("I");
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'block');
+}
+
+function compact(){
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'none');
+}
