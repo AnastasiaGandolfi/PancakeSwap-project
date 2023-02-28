@@ -168,3 +168,12 @@ setInterval(() =>{
     document.querySelector('#swiper-bullet-1').click();
   }
 },3000)
+
+function standard(){
+  console.log("I");
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'block');
+}
+
+function compact(){
+  Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'none');
+}
