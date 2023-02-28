@@ -3,27 +3,27 @@
 body {
   font-family: Kanit;
   background: var(--background);
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   pre{
     display:none;
   }
-  .fixed-switch{
-    z-index:1000;
+  .fixed-switch {
+    z-index: 1000;
     position: fixed;
-    bottom:30px;
-    right:30px;
+    bottom: 30px;
+    right: 30px;
   }
 
-  .fixedBG{
+  .fixedBG {
     background: #08060b;
   }
 
   h1 {
     text-align: center;
   }
-  img{
-    cursor:pointer;
+  img {
+    cursor: pointer;
   }
 
   .container-components {
@@ -33,37 +33,17 @@ body {
     gap: 20px;
   }
 
-  #tooltip{
-    color:white;
+  #tooltip {
+    color: white;
     background-color: #673bb1;
     visibility: hidden;
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     text-align: center;
     transition: all 0.5s ease-in-out;
-    z-index:1000;
-     h1{
+    z-index: 1000;
+    h1 {
       font-size: 27px;
-     }
-  }
-
-  .component {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px dashed #fff;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 30px;
-    .component-title {
-      font-family: Kanit;
-      color: var(--warning);
-      font-size: 32px;
-    }
-
-    div {
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 
@@ -81,12 +61,34 @@ body {
     border-bottom: 2px dashed #673bb1;
     padding-top: 30px;
     padding-bottom: 30px;
+    gap:50px;
+    div {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .component-title {
       font-family: Kanit;
       color: var(--warning);
       font-size: 50px;
-      margin-left:auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .component-marginfree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #673bb1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap:30px;
+
+    .component-title {
+      font-family: Kanit;
+      color: var(--warning);
+      font-size: 50px;
+      margin-left: auto;
       margin-right: auto;
     }
   }

@@ -315,21 +315,6 @@ body {
     z-index: 1000; }
     body #tooltip h1 {
       font-size: 27px; }
-  body .component {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px dashed #fff;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 30px; }
-    body .component .component-title {
-      font-family: Kanit;
-      color: var(--warning);
-      font-size: 32px; }
-    body .component div {
-      margin-left: auto;
-      margin-right: auto; }
   body .container-components {
     display: flex;
     flex-direction: column;
@@ -341,8 +326,26 @@ body {
     justify-content: center;
     border-bottom: 2px dashed #673bb1;
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    gap: 50px; }
+    body .component div {
+      margin-left: auto;
+      margin-right: auto; }
     body .component .component-title {
+      font-family: Kanit;
+      color: var(--warning);
+      font-size: 50px;
+      margin-left: auto;
+      margin-right: auto; }
+  body .component-marginfree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #673bb1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px; }
+    body .component-marginfree .component-title {
       font-family: Kanit;
       color: var(--warning);
       font-size: 50px;
