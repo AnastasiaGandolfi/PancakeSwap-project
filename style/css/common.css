@@ -2052,7 +2052,7 @@ a {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
-  width: 100vw; }
+  width: 98vw; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -2346,3 +2346,70 @@ p {
   z-index: 10; }
   .fourth-trading-card-container .title-card-trading {
     margin-bottom: 8px; }
+
+.component-title-bar {
+  font-family: Kanit;
+  color: var(--warning);
+  font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.language-bar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 48px;
+  border-style: solid;
+  border-color: var(--cardBorder);
+  -webkit-box-pack: justify;
+  background-color: var(--backgroundAlt);
+  width: 98vw;
+  margin-bottom: 40px; }
+  .language-bar-container .light-language-switch-container {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding-left: 80px; }
+    .language-bar-container .light-language-switch-container .light-switch-container {
+      position: relative;
+      overflow: hidden; }
+    .language-bar-container .light-language-switch-container .language-switch-container {
+      position: relative; }
+      .language-bar-container .light-language-switch-container .language-switch-container .icon-container {
+        margin-top: 7px; }
+      .language-bar-container .light-language-switch-container .language-switch-container img {
+        margin-right: 0.5rem; }
+      .language-bar-container .light-language-switch-container .language-switch-container .language-text {
+        color: var(--textSubtle);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5; }
+  .language-bar-container .value-buy-button-container {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-right: 80px; }
+    .language-bar-container .value-buy-button-container .icon-currency-value-container {
+      margin-right: 20px; }
+      .language-bar-container .value-buy-button-container .icon-currency-value-container .link-icon-value {
+        display: flex;
+        color: inherit;
+        text-decoration: none;
+        align-items: center;
+        -webkit-box-align: center; }
+        .language-bar-container .value-buy-button-container .icon-currency-value-container .link-icon-value .pancake-icon {
+          align-self: center;
+          fill: var(--text);
+          flex-shrink: 0;
+          margin-right: 8px; }
+          .language-bar-container .value-buy-button-container .icon-currency-value-container .link-icon-value .pancake-icon:hover {
+            transform: scale(1.2);
+            transition: all 0.3s ease 0s;
+            z-index: 1; }
