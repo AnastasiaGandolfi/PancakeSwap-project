@@ -76,7 +76,7 @@ $dark-purple: #3c1786;
 }
 
 .purple-card {
-  background: linear-gradient($light-secondary: 0%, $purple 100%);
+  background: linear-gradient($light-secondary 0%, $purple 100%);
   box-shadow: inset 0px -4px 0px 0px $dark-purple;
   transform: rotate(2deg);
 

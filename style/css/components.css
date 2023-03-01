@@ -60,6 +60,9 @@ a {
   font-weight: 400;
   text-decoration: none; }
 
+.text {
+  color: var(--text); }
+
 .text-warning {
   color: var(--warning); }
 
@@ -82,18 +85,21 @@ a {
   color: var(--text); }
 
 .text-subtle {
-  color: var(--textSubtle); }
+  color: var(--textSubtle);
+  font-weight: 300; }
 
 .text-white {
   color: var(--white); }
 
-.text-tertiary {
-  color: var(--tertiary); }
-
-.button-text-secondary {
+.button-text-white {
   font-size: 16px;
   font-weight: 600;
-  color: var(--text); }
+  color: var(--white); }
+
+.button-text-inverted {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--invertedContrast); }
 
 .button-text-primary {
   font-size: 16px;
@@ -173,7 +179,9 @@ a {
   --gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
-  --gradientBold: linear-gradient(#53dee9, #9a6aff); }
+  --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
+  --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
 [data-theme="dark"] {
   --white: #fff;
@@ -278,11 +286,15 @@ body {
   background: var(--background);
   padding: 0;
   margin: 0; }
+  body pre {
+    display: none; }
   body .fixed-switch {
     z-index: 1000;
     position: fixed;
     bottom: 30px;
     right: 30px; }
+    body .fixed-switch .switch {
+      margin-left: 70%; }
   body .fixedBG {
     background: #08060b; }
   body h1 {
@@ -305,21 +317,6 @@ body {
     z-index: 1000; }
     body #tooltip h1 {
       font-size: 27px; }
-  body .component {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 1px dashed #fff;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 30px; }
-    body .component .component-title {
-      font-family: Kanit;
-      color: var(--warning);
-      font-size: 32px; }
-    body .component div {
-      margin-left: auto;
-      margin-right: auto; }
   body .container-components {
     display: flex;
     flex-direction: column;
@@ -331,8 +328,26 @@ body {
     justify-content: center;
     border-bottom: 2px dashed #673bb1;
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    gap: 50px; }
+    body .component div {
+      margin-left: auto;
+      margin-right: auto; }
     body .component .component-title {
+      font-family: Kanit;
+      color: var(--warning);
+      font-size: 50px;
+      margin-left: auto;
+      margin-right: auto; }
+  body .component-marginfree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 2px dashed #673bb1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px; }
+    body .component-marginfree .component-title {
       font-family: Kanit;
       color: var(--warning);
       font-size: 50px;
