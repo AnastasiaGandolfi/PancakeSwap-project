@@ -104,3 +104,11 @@ function standard(){
 function compact(){
   Array.from(document.querySelectorAll('pre')).forEach(el => el.style.display = 'none');
 }
+
+let previewTopB = false;
+
+function previewTop(){
+  document.querySelector('#previewTop p').textContent = previewTopB ? 'Preview base' : 'Preview top';
+  previewTopB = !previewTopB;
+  document.querySelector('.navbar').classList.toggle('navbar-fixed');
+}

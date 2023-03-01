@@ -1729,11 +1729,33 @@ a {
   background-color: var(--backgroundAlt);
   padding: 0px 16px;
   gap: 40px; }
+  .navbar.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 200ms ease 0s; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 14px; }
+    .navbar .navbar-left .navbar-logo {
+      display: block;
+      width: 160px;
+      height: 24px; }
+    .navbar .navbar-left .navbar-mobile-logo {
+      display: none; }
+    @media (max-width: 967px) {
+      .navbar .navbar-left .navbar-logo {
+        display: none; }
+      .navbar .navbar-left .navbar-mobile-logo {
+        height: 30px;
+        width: 30px;
+        display: block; } }
+    @media (max-width: 851px) {
+      .navbar .navbar-left .navbar-dropdown {
+        display: none; } }
     .navbar .navbar-left svg:hover .eye {
       animation: Blink 320ms linear;
       animation-delay: 180ms; }
@@ -1746,6 +1768,9 @@ a {
     .navbar .navbar-right .icon-currency-value-container a {
       display: flex;
       gap: 7px; }
+    @media (max-width: 967px) {
+      .navbar .navbar-right .icon-currency-value-container {
+        display: none; } }
 
 @keyframes Blink {
   0% {
@@ -4123,11 +4148,33 @@ a {
   background-color: var(--backgroundAlt);
   padding: 0px 16px;
   gap: 40px; }
+  .navbar.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 200ms ease 0s; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 14px; }
+    .navbar .navbar-left .navbar-logo {
+      display: block;
+      width: 160px;
+      height: 24px; }
+    .navbar .navbar-left .navbar-mobile-logo {
+      display: none; }
+    @media (max-width: 967px) {
+      .navbar .navbar-left .navbar-logo {
+        display: none; }
+      .navbar .navbar-left .navbar-mobile-logo {
+        height: 30px;
+        width: 30px;
+        display: block; } }
+    @media (max-width: 851px) {
+      .navbar .navbar-left .navbar-dropdown {
+        display: none; } }
     .navbar .navbar-left svg:hover .eye {
       animation: Blink 320ms linear;
       animation-delay: 180ms; }
@@ -4140,6 +4187,9 @@ a {
     .navbar .navbar-right .icon-currency-value-container a {
       display: flex;
       gap: 7px; }
+    @media (max-width: 967px) {
+      .navbar .navbar-right .icon-currency-value-container {
+        display: none; } }
 
 @keyframes Blink {
   0% {
