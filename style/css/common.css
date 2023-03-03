@@ -2416,60 +2416,14 @@ a {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2); }
-/* BIG CARDS */
-.wrapper {
-  /* border: 5px solid red; */
-box-shadow: inset 0px 1px 4px -2px #27262c;
-border-radius: 4.5rem;
-width: 100%;
-margin: 0 auto;
-padding: 2.5rem;
-gap: 2rem;
-pointer-events: all;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.text span {
-  color: var(--secondary);
-}
-.text h2 {
-  padding-top: 40px;
-  color:var(--text);
-}
-.description {
-  display: flex;
-  text-align: center;
-  color: var(--textSubtle);
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 16px;
-  padding-top: 20px;
-}
-.big-cards-container {
-  display: flex;
-  /* padding: 10px; */
-  margin: 40px 100px 0 100px;
-  gap: 1.85rem;
-  height: 100%;
-}
-.big-ps-card {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 24px;
-  padding: 1.5rem;
-  width: 18rem;
-  height: 26rem;
-  font-size: 24px;
-}
-.big-ps-card.bigger {
-  height: 30rem;
-}
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #ddd;
+  font-family: Kanit; }
 
 @font-face {
   font-family: Kanit;
@@ -4670,10 +4624,39 @@ a {
 
 /*colori che mancavano */
 /* BIG CARDS */
+.wrapper {
+  /* border: 5px solid red; */
+  box-shadow: inset 0px 1px 4px -2px #27262c;
+  border-radius: 4.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  gap: 2rem;
+  pointer-events: all; }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .text span {
+    color: var(--secondary); }
+  .text h2 {
+    padding-top: 40px;
+    color: var(--text); }
+
+.description {
+  display: flex;
+  text-align: center;
+  color: var(--textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  padding-top: 20px; }
+
 .big-cards-container {
   display: flex;
   /* padding: 10px; */
-  margin: 100px 0;
+  margin: 40px 100px 0 100px;
   gap: 1.85rem;
   height: 100%; }
 
@@ -4815,57 +4798,88 @@ a {
   flex-shrink: 0;
   filter: none !important; }
 
+.pool-section {
+  width: 920px;
+  height: 128px;
+  margin-top: 24px;
+  background: var(--gradientCardHeader); }
+
+.title-trading {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  display: flex; }
+  .title-trading .swap-button {
+    align-self: center;
+    width: 48px;
+    height: 24px;
+    background-color: transparent; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 32px; }
+
 .confine {
   position: relative;
   height: 90px;
-  width: 195px;
-  background: var(--gradientCardHeader);
-  padding-left: 8px; }
+  width: 158px; }
 
-.first-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 0px;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 1;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
-  .first-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
-.second-trading-card-container {
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10; }
-  .second-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
-.third-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 0;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
-  .third-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
+.first-trading-card-container,
 .fourth-trading-card-container {
   position: absolute;
   top: 0px;
-  opacity: 1;
+  height: 80px;
   margin-top: 0px;
   flex-direction: column;
-  padding-right: 16px;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10; }
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  opacity: 1;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .first-trading-card-container .title-card-trading,
   .fourth-trading-card-container .title-card-trading {
+    margin-bottom: 8px; }
+
+.second-trading-card-container,
+.third-trading-card-container {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .second-trading-card-container .title-card-trading,
+  .third-trading-card-container .title-card-trading {
+    margin-bottom: 8px; }
+
+.first-trading-card-container-not-border,
+.fourth-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  margin-top: 0px;
+  flex-direction: column;
+  padding-left: 16px;
+  opacity: 1;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .first-trading-card-container-not-border .title-card-trading,
+  .fourth-trading-card-container-not-border .title-card-trading {
+    margin-bottom: 8px; }
+
+.second-trading-card-container-not-border,
+.third-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .second-trading-card-container-not-border .title-card-trading,
+  .third-trading-card-container-not-border .title-card-trading {
     margin-bottom: 8px; }
 
 .component-title-bar {
@@ -4934,53 +4948,3 @@ a {
             transform: scale(1.2);
             transition: all 0.3s ease 0s;
             z-index: 1; }
-/*animations*/
-.animation-box {
-  height: 40vw;
-  width: 40vw;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.animation-layer {
-  max-height: 80%;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 80%;
-  width: 80%;
-  animation: float 2s ease-in-out alternate infinite; /*durata dell'animazione*/
-  pointer-events: none;
-}
-
-/*ritardi di animazione in modo che le immagini si muovano in momenti diversi*/
-.animation-layer:nth-child(1) {
-  animation: float 5s ease-in-out alternate infinite 0s;
-}
-
-.animation-layer:nth-child(2) {
-  animation: float 5s ease-in-out alternate infinite 1s;
-}
-
-.animation-layer:nth-child(3) {
-  animation: float 5s ease-in-out alternate infinite 2s;
-}
-
-@keyframes float {
-  /*regola che definisce l'animazione: sposta le immagini verso l'alto e verso il basso di una certa quantità in modo alternato*/
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(
-      calc(-50% + 3%), /*spostamento verso l'asse x*/
-      calc(-60% + 2%) /*spostamento verso l'asse y*/
-    );
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
