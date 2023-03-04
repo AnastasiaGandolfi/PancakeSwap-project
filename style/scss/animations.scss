@@ -6,9 +6,8 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-}
-
-.animation-layer {
+  
+  .animation-layer {
   max-height: 80%;
   width: auto;
   position: absolute;
@@ -16,35 +15,36 @@
   left: 50%;
   height: 80%;
   width: 80%;
-  animation: float 2s ease-in-out alternate infinite; /*durata dell'animazione*/
+  animation: float 2s ease-in-out alternate infinite;
   pointer-events: none;
+  
+  &:nth-child(1) {
+    animation: float 5s ease-in-out alternate infinite 0s;
+  }
+  
+  &:nth-child(2) {
+    animation: float 5s ease-in-out alternate infinite 1s;
+  }
+  
+  &:nth-child(3) {
+    animation: float 5s ease-in-out alternate infinite 2s;
+  }
 }
-
-/*ritardi di animazione in modo che le immagini si muovano in momenti diversi*/
-.animation-layer:nth-child(1) {
-  animation: float 5s ease-in-out alternate infinite 0s;
-}
-
-.animation-layer:nth-child(2) {
-  animation: float 5s ease-in-out alternate infinite 1s;
-}
-
-.animation-layer:nth-child(3) {
-  animation: float 5s ease-in-out alternate infinite 2s;
 }
 
 @keyframes float {
-  /*regola che definisce l'animazione: sposta le immagini verso l'alto e verso il basso di una certa quantità in modo alternato*/
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(
-      calc(-50% + 3%), /*spostamento verso l'asse x*/
-      calc(-60% + 2%) /*spostamento verso l'asse y*/
-    );
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
+0% {
+transform: translate(-50%, -50%);
 }
+
+50% {
+transform: translate(
+calc(-50% + 3%),
+calc(-60% + 2%)
+);
+}
+
+100% {
+transform: translate(-50%, -50%);
+}
+}  
