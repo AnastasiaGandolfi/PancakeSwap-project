@@ -180,6 +180,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -223,6 +224,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -276,6 +278,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -463,6 +466,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -506,6 +510,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -559,6 +564,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -1735,6 +1741,8 @@ a {
     left: 0;
     z-index: 100;
     transition: top 200ms ease 0s; }
+    .navbar.navbar-fixed.antiph {
+      top: 70px; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
@@ -2111,7 +2119,9 @@ a {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
-  width: 98vw; }
+  width: 100%;
+  position: fixed;
+  top: 0; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -2416,60 +2426,14 @@ a {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.2); }
-/* BIG CARDS */
-.wrapper {
-  /* border: 5px solid red; */
-box-shadow: inset 0px 1px 4px -2px #27262c;
-border-radius: 4.5rem;
-width: 100%;
-margin: 0 auto;
-padding: 2.5rem;
-gap: 2rem;
-pointer-events: all;
-}
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.text span {
-  color: var(--secondary);
-}
-.text h2 {
-  padding-top: 40px;
-  color:var(--text);
-}
-.description {
-  display: flex;
-  text-align: center;
-  color: var(--textSubtle);
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 16px;
-  padding-top: 20px;
-}
-.big-cards-container {
-  display: flex;
-  /* padding: 10px; */
-  margin: 40px 100px 0 100px;
-  gap: 1.85rem;
-  height: 100%;
-}
-.big-ps-card {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 24px;
-  padding: 1.5rem;
-  width: 18rem;
-  height: 26rem;
-  font-size: 24px;
-}
-.big-ps-card.bigger {
-  height: 30rem;
-}
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #ddd;
+  font-family: Kanit; }
 
 @font-face {
   font-family: Kanit;
@@ -2645,6 +2609,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -2688,6 +2653,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -2741,6 +2707,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -2928,6 +2895,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -2971,6 +2939,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -3024,6 +2993,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -4200,6 +4170,8 @@ a {
     left: 0;
     z-index: 100;
     transition: top 200ms ease 0s; }
+    .navbar.navbar-fixed.antiph {
+      top: 70px; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
@@ -4576,7 +4548,9 @@ a {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
-  width: 98vw; }
+  width: 100%;
+  position: fixed;
+  top: 0; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -4670,10 +4644,39 @@ a {
 
 /*colori che mancavano */
 /* BIG CARDS */
+.wrapper {
+  /* border: 5px solid red; */
+  box-shadow: inset 0px 1px 4px -2px #27262c;
+  border-radius: 4.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  gap: 2rem;
+  pointer-events: all; }
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .text span {
+    color: var(--secondary); }
+  .text h2 {
+    padding-top: 40px;
+    color: var(--text); }
+
+.description {
+  display: flex;
+  text-align: center;
+  color: var(--textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  padding-top: 20px; }
+
 .big-cards-container {
   display: flex;
   /* padding: 10px; */
-  margin: 100px 0;
+  margin: 40px 100px 0 100px;
   gap: 1.85rem;
   height: 100%; }
 
@@ -4934,53 +4937,3 @@ a {
             transform: scale(1.2);
             transition: all 0.3s ease 0s;
             z-index: 1; }
-/*animations*/
-.animation-box {
-  height: 40vw;
-  width: 40vw;
-  display: flex;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.animation-layer {
-  max-height: 80%;
-  width: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 80%;
-  width: 80%;
-  animation: float 2s ease-in-out alternate infinite; /*durata dell'animazione*/
-  pointer-events: none;
-}
-
-/*ritardi di animazione in modo che le immagini si muovano in momenti diversi*/
-.animation-layer:nth-child(1) {
-  animation: float 5s ease-in-out alternate infinite 0s;
-}
-
-.animation-layer:nth-child(2) {
-  animation: float 5s ease-in-out alternate infinite 1s;
-}
-
-.animation-layer:nth-child(3) {
-  animation: float 5s ease-in-out alternate infinite 2s;
-}
-
-@keyframes float {
-  /*regola che definisce l'animazione: sposta le immagini verso l'alto e verso il basso di una certa quantità in modo alternato*/
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(
-      calc(-50% + 3%), /*spostamento verso l'asse x*/
-      calc(-60% + 2%) /*spostamento verso l'asse y*/
-    );
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}

@@ -292,6 +292,8 @@
     left: 0;
     z-index: 100;
     transition: top 200ms ease 0s;
+    &.antiph{
+      top: 70px;}
   }
   .navbar-left {
     display: flex;

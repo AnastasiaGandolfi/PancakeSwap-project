@@ -2,7 +2,9 @@
     height: 70px;
     min-height: 70px;
     max-height: 70px;
-    width: 98vw;
+    width: 100%;
+    position:fixed;
+    top:0;
 
     .bar-container {
         height: 100%;

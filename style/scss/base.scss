@@ -269,6 +269,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1);
 }
@@ -313,6 +314,7 @@ a {
   --textDisabled: #{$dark-textDisabled};
   --textSubtle: #{$dark-textSubtle};
   --disabled: #{$dark-disabled};
+  --gradientHeader: #{$dark-gradientHeader};
   --gradientBubblegum: #{$dark-gradientBubblegum};
   --gradientInverseBubblegum: #{$dark-gradientInverseBubblegum};
   --gradientCardHeader: #{$dark-gradientCardHeader};
@@ -367,6 +369,7 @@ a {
   --gradientInverseBubblegum: #{$light-gradientInverseBubblegum};
   --gradientCardHeader: #{$light-gradientCardHeader};
   --gradientBlue: #{$light-gradientBlue};
+  --gradientHeader: #{$light-gradientHeader};
   --gradientViolet: #{$light-gradientViolet};
   --gradientVioletAlt: #{$light-gradientVioletAlt};
   --gradientGold: #{$light-gradientGold};
