@@ -127,6 +127,61 @@ h2 {
     flex-wrap: wrap;
   }
 }
+
+/* small card */
+.small-card {
+  background-color: var(--backgroundAlt);
+    position: relative;
+    border: 1px solid var(--cardBorder);
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px 0px var(--cardBorder);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 290px;
+    height: 280px;
+    justify-content: center;
+    border-radius: 24px;
+  }
+  .small-card-icon {
+ position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  }
+  .small-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 64px;
+  }
+  .small-card-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-right: 3rem;
+    color:var(--text);
+    line-height: 1.1;
+
+  span {
+    margin-bottom: 24px;
+  }
+}
+  
+  .small-card-paragraph {
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--textSubtle);
+    padding-top: 35px;
+  }
+
+  svg path,
+  span {
+    fill: var(--secondary);
+    color: var(--secondary);
+  }
 .top-bar-container
   .bar-container
   .antiphishing-banner
@@ -202,61 +257,89 @@ h2 {
   flex-shrink: 0;
   filter: none !important;
 }
-
+.pool-section {
+  width: 920px;
+  height: 128px;
+  margin-top: 24px;
+  background: var(--gradientCardHeader);
+}
+.title-trading {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  display: flex;
+  .swap-button {
+    align-self: center;
+    width: 48px;
+    height: 24px;
+    background-color: transparent;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 32px;
+}
 .confine {
   position: relative;
   height: 90px;
-  width: 195px;
-  background: var(--gradientCardHeader);
-  padding-left: 8px;
+  width: 158px;
 }
-.first-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 0px;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 1;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  .title-card-trading {
-    margin-bottom: 8px;
-  }
-}
-.second-trading-card-container {
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10;
-  .title-card-trading {
-    margin-bottom: 8px;
-  }
-}
-.third-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 0;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  .title-card-trading {
-    margin-bottom: 8px;
-  }
-}
+.first-trading-card-container,
 .fourth-trading-card-container {
   position: absolute;
   top: 0px;
-  opacity: 1;
+  height: 80px;
   margin-top: 0px;
   flex-direction: column;
-  padding-right: 16px;
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  opacity: 1;
   transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10;
   .title-card-trading {
     margin-bottom: 8px;
   }
 }
+.second-trading-card-container,
+.third-trading-card-container {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  .title-card-trading {
+    margin-bottom: 8px;
+  }
+}
+.first-trading-card-container-not-border,
+.fourth-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  margin-top: 0px;
+  flex-direction: column;
+  padding-left: 16px;
+  opacity: 1;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  .title-card-trading {
+    margin-bottom: 8px;
+  }
+}
+.second-trading-card-container-not-border,
+.third-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  .title-card-trading {
+    margin-bottom: 8px;
+  }
+}
+

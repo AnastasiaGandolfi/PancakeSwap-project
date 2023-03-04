@@ -4642,7 +4642,7 @@ a {
         flex-shrink: 0;
         filter: none !important; }
 
-/*colori che mancavano */
+
 /* BIG CARDS */
 .wrapper {
   /* border: 5px solid red; */
@@ -4743,6 +4743,68 @@ a {
     align-items: center;
     flex-wrap: wrap; }
 
+
+  /* Small Card */
+  .small-card {
+    background-color: var(--backgroundAlt);
+      position: relative;
+      border: 1px solid var(--cardBorder);
+      border-radius: 8px;
+      box-shadow: 0px 4px 0px 0px var(--cardBorder);
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      overflow: hidden;
+      width: 290px;
+      height: 280px;
+      justify-content: center;
+      border-radius: 24px;
+    }
+    
+    .small-card-icon {
+   position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    }
+    
+    .small-card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 64px;
+    }
+  
+    .small-card-title span {
+      margin-bottom: 24px;
+    }
+    
+    .small-card-title {
+      font-size: 40px;
+      font-weight: 600;
+      margin-top: 10px;
+      margin-right: 3rem;
+      color:var(--text);
+      line-height: 1.1;
+  
+    }
+    
+    .small-card-paragraph {
+      font-size: 16px;
+      font-weight: 200;
+      color: var(--textSubtle);
+      padding-top: 35px;
+    }
+
+    svg path,
+    span {
+      fill: var(--secondary);
+      color: var(--secondary);
+    }
+
+
+
 .top-bar-container
 .bar-container
 .antiphishing-banner
@@ -4818,57 +4880,88 @@ a {
   flex-shrink: 0;
   filter: none !important; }
 
+.pool-section {
+  width: 920px;
+  height: 128px;
+  margin-top: 24px;
+  background: var(--gradientCardHeader); }
+
+.title-trading {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  display: flex; }
+  .title-trading .swap-button {
+    align-self: center;
+    width: 48px;
+    height: 24px;
+    background-color: transparent; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 32px; }
+
 .confine {
   position: relative;
   height: 90px;
-  width: 195px;
-  background: var(--gradientCardHeader);
-  padding-left: 8px; }
+  width: 158px; }
 
-.first-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 0px;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 1;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
-  .first-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
-.second-trading-card-container {
-  position: absolute;
-  top: 0px;
-  opacity: 0;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10; }
-  .second-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
-.third-trading-card-container {
-  position: absolute;
-  top: 0px;
-  margin-top: 50%;
-  flex-direction: column;
-  padding-right: 16px;
-  opacity: 0;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
-  .third-trading-card-container .title-card-trading {
-    margin-bottom: 8px; }
-
+.first-trading-card-container,
 .fourth-trading-card-container {
   position: absolute;
   top: 0px;
-  opacity: 1;
+  height: 80px;
   margin-top: 0px;
   flex-direction: column;
-  padding-right: 16px;
-  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
-  z-index: 10; }
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  opacity: 1;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .first-trading-card-container .title-card-trading,
   .fourth-trading-card-container .title-card-trading {
+    margin-bottom: 8px; }
+
+.second-trading-card-container,
+.third-trading-card-container {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  border-left: 1px solid var(--inputSecondary);
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .second-trading-card-container .title-card-trading,
+  .third-trading-card-container .title-card-trading {
+    margin-bottom: 8px; }
+
+.first-trading-card-container-not-border,
+.fourth-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  margin-top: 0px;
+  flex-direction: column;
+  padding-left: 16px;
+  opacity: 1;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .first-trading-card-container-not-border .title-card-trading,
+  .fourth-trading-card-container-not-border .title-card-trading {
+    margin-bottom: 8px; }
+
+.second-trading-card-container-not-border,
+.third-trading-card-container-not-border {
+  position: absolute;
+  top: 0px;
+  height: 80px;
+  opacity: 0;
+  margin-top: 50%;
+  flex-direction: column;
+  padding-left: 16px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s; }
+  .second-trading-card-container-not-border .title-card-trading,
+  .third-trading-card-container-not-border .title-card-trading {
     margin-bottom: 8px; }
 
 .component-title-bar {
@@ -4937,3 +5030,63 @@ a {
             transform: scale(1.2);
             transition: all 0.3s ease 0s;
             z-index: 1; }
+
+.component-footer {
+  width: 100%; }
+
+.container-footer-list {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .container-footer-list ul {
+    list-style: none; }
+    .container-footer-list ul a {
+      line-height: 30px; }
+  .container-footer-list .footer-list-header {
+    color: var(--secondary); }
+  .container-footer-list .contatti {
+    color: var(--warning); }
+
+.container-svg-footer {
+  display: block; }
+
+.container-social-footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 2%;
+  margin-bottom: 2%; }
+
+.telegram-scroll {
+  position: relative; }
+  .telegram-scroll .telegram-channel {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s; }
+  .telegram-scroll:hover .telegram-channel {
+    opacity: 1;
+    padding: 16px;
+    width: max-content;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -460%;
+    bottom: 100%;
+    background-color: var(--backgroundAlt);
+    border-radius: 1%;
+    overflow-y: scroll; }
+  .telegram-scroll .telegram-ch {
+    color: var(--textSubtle); }
+    .telegram-scroll .telegram-ch:hover {
+      text-decoration: underline; }
