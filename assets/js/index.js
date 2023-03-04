@@ -208,10 +208,10 @@ function startSwiper() {
 
 startSwiper();
 setLightSwitchesEventListeners();
-setBulletsEventListeners();
-setFilterByEventListeners();
-setSmallSwitchesEventListeners();
 setDismissModalEventListeners();
+setBulletsEventListeners();
+//setFilterByEventListeners();
+setSmallSwitchesEventListeners();
 setNormalSwitchesEventListeners();
 
 let lastScrollTop; // This Varibale will store the top position

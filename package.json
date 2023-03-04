@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-sass": "node-sass -w style/scss/common.scss style/css/common.css --recursive",
-    "watch-components": "node-sass -w style/scss/components.scss style/css/components.css --recursive"
+    "watch-components": "node-sass -w style/scss/components.scss style/css/components.css --recursive",
+    "watch-index": "node-sass -w style/scss/index.scss style/css/index.css --recursive"
   },
   "repository": {
     "type": "git",

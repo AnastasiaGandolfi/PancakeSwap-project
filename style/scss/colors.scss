@@ -45,6 +45,7 @@ $dark-gradientInverseBubblegum: linear-gradient(
   #313d5c
 );
 $dark-gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
+$dark-gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%);
 $dark-gradientBlue: linear-gradient(180deg, #00707f, #19778c);
 $dark-gradientViolet: linear-gradient(180deg, #6c4999, #6d4db2);
 $dark-gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
@@ -98,6 +99,7 @@ $light-gradientInverseBubblegum: linear-gradient(139.73deg,#f3efff,#e5fdff
 );
 $light-gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
 $light-gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+$light-gradientHeader: linear-gradient(139.73deg,#e6fdff 0%,#f3efff 100%);
 $light-gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
 $light-gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
 $light-gradientGold: linear-gradient(180deg, #ffd800, #fdab32);

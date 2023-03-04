@@ -180,6 +180,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -223,6 +224,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -276,6 +278,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -463,6 +466,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -506,6 +510,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -559,6 +564,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -1735,6 +1741,8 @@ a {
     left: 0;
     z-index: 100;
     transition: top 200ms ease 0s; }
+    .navbar.navbar-fixed.antiph {
+      top: 70px; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
@@ -2111,7 +2119,9 @@ a {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
-  width: 98vw; }
+  width: 100%;
+  position: fixed;
+  top: 0; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -2599,6 +2609,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -2642,6 +2653,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -2695,6 +2707,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -2882,6 +2895,7 @@ a {
   --gradientVioletAlt: linear-gradient(180deg, #434575, #66578d);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
   --gradientBold: linear-gradient(#53dee9, #9a6aff);
+  --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1); }
 
@@ -2925,6 +2939,7 @@ a {
   --textDisabled: #666171;
   --textSubtle: #b8add2;
   --disabled: #524b63;
+  --gradientHeader: radial-gradient(103.12% 50% at 50% 50%, #21193a 0%, #191326 100%);
   --gradientBubblegum: linear-gradient(139.73deg, #313d5c, #3d2a54);
   --gradientInverseBubblegum: linear-gradient(139.73deg, #3d2a54, #313d5c);
   --gradientCardHeader: linear-gradient(166.77deg, #3b4155, #3a3045);
@@ -2978,6 +2993,7 @@ a {
   --gradientInverseBubblegum: linear-gradient(139.73deg, #f3efff, #e5fdff);
   --gradientCardHeader: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
   --gradientBlue: linear-gradient(180deg, #a7e8f1, #94e1f2);
+  --gradientHeader: linear-gradient(139.73deg, #e6fdff 0%, #f3efff 100%);
   --gradientViolet: linear-gradient(180deg, #e2c9fb, #cdb8fa);
   --gradientVioletAlt: linear-gradient(180deg, #cbd7ef, #9a9fd0);
   --gradientGold: linear-gradient(180deg, #ffd800, #fdab32);
@@ -4154,6 +4170,8 @@ a {
     left: 0;
     z-index: 100;
     transition: top 200ms ease 0s; }
+    .navbar.navbar-fixed.antiph {
+      top: 70px; }
   .navbar .navbar-left {
     display: flex;
     justify-content: flex-start;
@@ -4530,7 +4548,9 @@ a {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
-  width: 98vw; }
+  width: 100%;
+  position: fixed;
+  top: 0; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
