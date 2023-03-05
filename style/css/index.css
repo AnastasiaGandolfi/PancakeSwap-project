@@ -1,8 +1,63 @@
 .container {
   width: 100%;
   height: 100%;
-  margin-top: 125px; }
-  .container section {
+  margin-top: 125px;
+}
+.container section {
+  width: 100%;
+  padding: 100px 12.5%;
+  background: var(--gradientHeader);
+}
+.container .hero-section-container {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+}
+@media (min-width: 576px) {
+  .container .hero-section-container {
+    margin-top: 0;
+  }
+}
+@media (min-width: 852px) {
+  .container .hero-section-container {
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}
+.container .hero-section-container .hero-text-container {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+}
+.container .hero-section-container .hero-text-container .hero-text-head {
+  font-size: 64px;
+  color: var(--secondary);
+  margin-bottom: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.container .hero-section-container .hero-text-container .hero-text-subtle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.container .hero-section-container .hero-text-container .hero-button-container {
+  display: flex;
+}
+.container .hero-section-container .hero-img-container {
+  display: flex;
+  position: relative;
+}
+@media (min-width: 852px) {
+  .container .hero-section-container .hero-img-container {
+    flex: 1 1 0%;
+    margin-bottom: 0px;
+    height: 100%;
     width: 100%;
-    padding: 100px 12.5%;
-    background: var(--gradientHeader); }
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
