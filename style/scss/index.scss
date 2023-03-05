@@ -50,16 +50,120 @@
                 display: flex;
             }
         }
+
         .hero-img-container {
             display: flex;
             position: relative;
+
             @media (min-width: 852px) {
                 flex: 1 1 0%;
                 margin-bottom: 0px;
                 height: 100%;
                 width: 100%;
             }
-                
+
+        }
+    }
+
+    .cake-section-container {
+        position: relative;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        z-index: 1;
+        padding: 48px 0px;
+
+        .cake-section-content {
+            min-height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media screen and (min-width: 968px) {
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+
+            @media screen and (min-width: 852px) {
+                flex-direction: row;
+                -webkit-box-align: center;
+                align-items: center;
+            }
+
+            @media screen and (min-width: 370px) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .cake-text-button {
+                display: flex;
+                flex-direction: column;
+                flex: 1 1 0%;
+
+                @media screen and (min-width: 852px) {
+                    margin-right: 64px;
+                    align-self: center;
+                }
+
+                .cake-text-container {
+
+                    @media screen and (min-width: 852px) {
+                        align-self: center;
+                    }
+
+                    .cake-text-head {
+                        font-weight: 600;
+                        line-height: 1.1;
+                        margin-bottom: 24px;
+
+                        @media screen and (min-width: 968px) {
+                            font-size: 40px;
+                        }
+
+                        span {
+                            color: var(--secondary);
+                        }
+                    }
+
+                    .cake-text-subtle {
+                        color: var(--textSubtle);
+                        font-weight: 400;
+                        line-height: 1.5;
+                        margin-bottom: 24px;
+                        font-size: 16px;
+                    }
+
+                    .cake-button-container {
+                        display: flex;
+
+                        a {
+                            display: flex;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            width: fit-content;
+                            font-weight: 600;
+                            line-height: 1.5;
+                            font-size: 16px;
+                            color: var(--primary);
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cake-img-container {
+                display: flex;
+
+                @media screen and (min-width: 852px) {
+                    flex: 1 1 0%;
+                    margin-bottom: 0px;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
         }
     }
 }

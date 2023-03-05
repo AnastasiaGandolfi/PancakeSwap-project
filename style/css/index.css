@@ -59,5 +59,101 @@
     width: 100%;
   }
 }
+.container .cake-section-container {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  padding: 48px 0px;
+}
+.container .cake-section-container .cake-section-content {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 968px) {
+  .container .cake-section-container .cake-section-content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 852px) {
+  .container .cake-section-container .cake-section-content {
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 370px) {
+  .container .cake-section-container .cake-section-content {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+.container .cake-section-container .cake-section-content .cake-text-button {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+@media screen and (min-width: 852px) {
+  .container .cake-section-container .cake-section-content .cake-text-button {
+    margin-right: 64px;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 852px) {
+  .container .cake-section-container .cake-section-content .cake-text-button .cake-text-container {
+    align-self: center;
+  }
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-text-head {
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 968px) {
+  .container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-text-head {
+    font-size: 40px;
+  }
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-text-head span {
+  color: var(--secondary);
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-text-subtle {
+  color: var(--textSubtle);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-button-container {
+  display: flex;
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-button-container a {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: fit-content;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--primary);
+}
+.container .cake-section-container .cake-section-content .cake-text-button .cake-text-container .cake-button-container a:hover {
+  text-decoration: underline;
+}
+.container .cake-section-container .cake-section-content .cake-img-container {
+  display: flex;
+}
+@media screen and (min-width: 852px) {
+  .container .cake-section-container .cake-section-content .cake-img-container {
+    flex: 1 1 0%;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
