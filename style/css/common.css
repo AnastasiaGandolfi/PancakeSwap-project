@@ -723,7 +723,8 @@ a {
   outline: 0px;
   transition: opacity 0.2s ease 0s;
   opacity: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 8px; }
   .primary-button:hover {
     transition: opacity 0.2s ease 0s;
     opacity: 0.65; }
@@ -3152,7 +3153,8 @@ a {
   outline: 0px;
   transition: opacity 0.2s ease 0s;
   opacity: 1;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 8px; }
   .primary-button:hover {
     transition: opacity 0.2s ease 0s;
     opacity: 0.65; }
@@ -4642,7 +4644,7 @@ a {
         flex-shrink: 0;
         filter: none !important; }
 
-
+/*colori che mancavano */
 /* BIG CARDS */
 .wrapper {
   /* border: 5px solid red; */
@@ -4743,67 +4745,55 @@ a {
     align-items: center;
     flex-wrap: wrap; }
 
+/* small card */
+.small-card {
+  background-color: var(--backgroundAlt);
+  position: relative;
+  border: 1px solid var(--cardBorder);
+  border-radius: 8px;
+  box-shadow: 0px 4px 0px 0px var(--cardBorder);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 290px;
+  height: 280px;
+  justify-content: center;
+  border-radius: 24px; }
 
-  /* Small Card */
-  .small-card {
-    background-color: var(--backgroundAlt);
-      position: relative;
-      border: 1px solid var(--cardBorder);
-      border-radius: 8px;
-      box-shadow: 0px 4px 0px 0px var(--cardBorder);
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px;
-      overflow: hidden;
-      width: 290px;
-      height: 280px;
-      justify-content: center;
-      border-radius: 24px;
-    }
-    
-    .small-card-icon {
-   position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-    }
-    
-    .small-card-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 64px;
-    }
-  
-    .small-card-title span {
-      margin-bottom: 24px;
-    }
-    
-    .small-card-title {
-      font-size: 40px;
-      font-weight: 600;
-      margin-top: 10px;
-      margin-right: 3rem;
-      color:var(--text);
-      line-height: 1.1;
-  
-    }
-    
-    .small-card-paragraph {
-      font-size: 16px;
-      font-weight: 200;
-      color: var(--textSubtle);
-      padding-top: 35px;
-    }
+.small-card-icon {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px; }
 
-    svg path,
-    span {
-      fill: var(--secondary);
-      color: var(--secondary);
-    }
+.small-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 64px; }
 
+.small-card-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-right: 3rem;
+  color: var(--text);
+  line-height: 1.1; }
+  .small-card-title span {
+    margin-bottom: 24px; }
 
+.small-card-paragraph {
+  font-size: 16px;
+  font-weight: 200;
+  color: var(--textSubtle);
+  padding-top: 35px; }
+
+svg path,
+span {
+  fill: var(--secondary);
+  color: var(--secondary); }
 
 .top-bar-container
 .bar-container
