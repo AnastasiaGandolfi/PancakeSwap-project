@@ -1,4 +1,4 @@
-window.addEventListener("scroll", function() {
+window.addEventListener("load", function() {
   numAnimation(190880140, ".numbers-1");
   numAnimation(371882681, ".numbers-2");
   numAnimation(737187243, ".numbers-3");

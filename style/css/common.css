@@ -2048,6 +2048,104 @@ a {
     border-left: 1px solid var(--inputSecondary);
     padding: 0px 16px; }
 
+.start-now-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(#7645d9 0%, #5121b1 100%);
+  height: 472px;
+  width: 100vw; }
+  .start-now-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/icons/raysbg.svg) no-repeat center;
+    background-size: cover;
+    pointer-events: none; }
+  .start-now-container .start-now-section-wrapper {
+    position: relative;
+    max-width: 80rem;
+    padding: 6rem 0;
+    margin: 0 auto; }
+  .start-now-container .start-now-pancakes-l {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: -4rem; }
+  .start-now-container .start-now-pancakes-r {
+    position: absolute;
+    pointer-events: none;
+    right: -4rem;
+    top: 220px; }
+
+.start-now-pancakes-l,
+.start-now-pancakes-r {
+  max-width: 16rem;
+  max-height: 16rem; }
+
+.start-now-animation-box {
+  height: 40vw;
+  width: 40vw;
+  display: flex;
+  position: relative; }
+
+.start-now-animation-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  animation: float 2s ease-in-out alternate infinite;
+  pointer-events: none; }
+
+.start-now-text-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 117px; }
+  .start-now-text-box .start-now-title {
+    font-size: 32px;
+    font-weight: 200;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 42px; }
+  .start-now-text-box .start-now-content {
+    color: var(--white);
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px; }
+  .start-now-text-box .start-now-registration {
+    color: var(--white);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 42px; }
+  .start-now-text-box .start-now-link {
+    display: flex;
+    align-items: center; }
+    .start-now-text-box .start-now-link .start-now-link-1 {
+      color: var(--primary);
+      font-weight: 600;
+      line-height: 1.5;
+      font-size: 16px; }
+    .start-now-text-box .start-now-link a {
+      text-decoration: none;
+      text-align: center; }
+      .start-now-text-box .start-now-link a:hover {
+        text-decoration: underline solid var(--primary); }
+  .start-now-text-box #start-now-button {
+    margin-top: 32px; }
+
 .top-bar-container {
   height: 70px;
   min-height: 70px;
