@@ -9,6 +9,62 @@
         background: var(--gradientHeader);
     }
 
+    .hero-section-container {
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        position: relative;
+
+        @media (min-width: 576px) {
+            margin-top: 0;
+        }
+
+        @media (min-width: 852px) {
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .hero-text-container {
+            display: flex;
+            flex: 1 1 0%;
+            flex-direction: column;
+
+            .hero-text-head {
+                font-size: 64px;
+                color: var(--secondary);
+                margin-bottom: 24px;
+                font-weight: 600;
+                line-height: 1.1;
+            }
+
+            .hero-text-subtle {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.1;
+                color: var(--text);
+                margin-bottom: 24px;
+
+            }
+
+            .hero-button-container {
+                display: flex;
+            }
+        }
+
+        .hero-img-container {
+            display: flex;
+            position: relative;
+
+            @media (min-width: 852px) {
+                flex: 1 1 0%;
+                margin-bottom: 0px;
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
     .cake-section {
         background: var(--background);
 
