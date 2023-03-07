@@ -217,6 +217,7 @@ setNormalSwitchesEventListeners();
 let lastScrollTop; // This Varibale will store the top position
 
 let navbar = document.getElementById('navbar'); // Get The NavBar
+let antiphishing = document.getElementById('antiphishing-banner');
 
 window.addEventListener('scroll',function(){
  //on every scroll this funtion will be called
@@ -224,13 +225,15 @@ window.addEventListener('scroll',function(){
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   //This line will get the location on scroll
   
-  if(scrollTop > lastScrollTop){ //if it will be greater than the previous
-    navbar.style.top='-55px';
+  if(scrollTop > lastScrollTop && scrollTop > '125'){ //if it will be greater than the previous
+    navbar.style.top='-70px';
+    antiphishing.style.top='-70px'
     //set the value to the negetive of height of navbar 
   }
   
   else{
-    navbar.style.top='0';
+    antiphishing.style.top='0px'
+    navbar.style.top='70px';
   }
   lastScrollTop = scrollTop;
 })

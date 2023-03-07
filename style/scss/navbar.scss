@@ -286,6 +286,7 @@
   background-color: var(--backgroundAlt);
   padding: 0px 16px;
   gap: 40px;
+  z-index:1000;
   &.navbar-fixed {
     position: fixed;
     top: 0;

@@ -1735,7 +1735,8 @@ a {
   height: 55px;
   background-color: var(--backgroundAlt);
   padding: 0px 16px;
-  gap: 40px; }
+  gap: 40px;
+  z-index: 1000; }
   .navbar.navbar-fixed {
     position: fixed;
     top: 0;
@@ -2120,7 +2121,7 @@ a {
   position: relative;
   overflow: hidden;
   background: linear-gradient(#7645d9 0%, #5121b1 100%);
-  height: 472px;
+  height: 428px;
   width: 100vw; }
   .start-now-container::after {
     content: "";
@@ -2141,12 +2142,12 @@ a {
     position: absolute;
     pointer-events: none;
     top: 0;
-    left: -4rem; }
+    left: 50px; }
   .start-now-container .start-now-pancakes-r {
     position: absolute;
     pointer-events: none;
-    right: -4rem;
-    top: 220px; }
+    right: 50px;
+    top: 169px; }
 
 .start-now-pancakes-l,
 .start-now-pancakes-r {
@@ -2158,6 +2159,15 @@ a {
   width: 40vw;
   display: flex;
   position: relative; }
+  .start-now-animation-box img:nth-child(1) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 1s infinite normal none running; }
+  .start-now-animation-box img:nth-child(2) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 0.66s infinite normal none running; }
+  .start-now-animation-box img:nth-child(3) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 0.33s infinite normal none running; }
 
 .start-now-animation-layer {
   position: absolute;
@@ -2166,7 +2176,6 @@ a {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  animation: float 2s ease-in-out alternate infinite;
   pointer-events: none; }
 
 .start-now-text-box {
@@ -2180,9 +2189,9 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 117px; }
-  .start-now-text-box .start-now-title {
-    font-size: 32px;
-    font-weight: 200;
+  .start-now-text-box .start-now-title h2 {
+    font-size: 40px;
+    font-weight: 400;
     line-height: 1.1;
     color: var(--white);
     margin-bottom: 42px; }
@@ -2214,13 +2223,23 @@ a {
   .start-now-text-box #start-now-button {
     margin-top: 32px; }
 
+@keyframes floatx {
+  0% {
+    transform: translate(0%, 0%); }
+  50% {
+    transform: translate(1%, 5%); }
+  100% {
+    transform: translate(0%, 0%); } }
+
 .top-bar-container {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 1000;
+  transition: all 0.2s; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -2313,7 +2332,7 @@ a {
         filter: none !important; }
 
 .swiper-container {
-  width: 90%;
+  width: 100%;
   max-width: 1152px;
   height: 200px;
   margin-left: auto;
@@ -4263,7 +4282,8 @@ a {
   height: 55px;
   background-color: var(--backgroundAlt);
   padding: 0px 16px;
-  gap: 40px; }
+  gap: 40px;
+  z-index: 1000; }
   .navbar.navbar-fixed {
     position: fixed;
     top: 0;
@@ -4578,6 +4598,42 @@ a {
     .navbar-select-container .navbar-select .navbar-dropdown-container {
       display: none; }
 
+/*animations*/
+.animation-box {
+  height: 40vw;
+  width: 40vw;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+  .animation-box .animation-layer {
+    max-height: 80%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+    animation: float 2s ease-in-out alternate infinite;
+    pointer-events: none; }
+  .animation-box img:nth-child(1) {
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out 1s infinite normal none running; }
+  .animation-box img:nth-child(2) {
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out 0.66s infinite normal none running; }
+  .animation-box img:nth-child(3) {
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out 0.33s infinite normal none running; }
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -50%); }
+  50% {
+    transform: translate(-51%, -53%); }
+  100% {
+    transform: translate(-50%, -50%); } }
+
 .section-number-container {
   display: flex;
   justify-content: center;
@@ -4648,7 +4704,7 @@ a {
   position: relative;
   overflow: hidden;
   background: linear-gradient(#7645d9 0%, #5121b1 100%);
-  height: 472px;
+  height: 428px;
   width: 100vw; }
   .start-now-container::after {
     content: "";
@@ -4669,12 +4725,12 @@ a {
     position: absolute;
     pointer-events: none;
     top: 0;
-    left: -4rem; }
+    left: 50px; }
   .start-now-container .start-now-pancakes-r {
     position: absolute;
     pointer-events: none;
-    right: -4rem;
-    top: 220px; }
+    right: 50px;
+    top: 169px; }
 
 .start-now-pancakes-l,
 .start-now-pancakes-r {
@@ -4686,6 +4742,15 @@ a {
   width: 40vw;
   display: flex;
   position: relative; }
+  .start-now-animation-box img:nth-child(1) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 1s infinite normal none running; }
+  .start-now-animation-box img:nth-child(2) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 0.66s infinite normal none running; }
+  .start-now-animation-box img:nth-child(3) {
+    width: 80%;
+    animation: floatx 3s ease-in-out 0.33s infinite normal none running; }
 
 .start-now-animation-layer {
   position: absolute;
@@ -4694,7 +4759,6 @@ a {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  animation: float 2s ease-in-out alternate infinite;
   pointer-events: none; }
 
 .start-now-text-box {
@@ -4708,9 +4772,9 @@ a {
   align-items: center;
   flex-direction: column;
   margin-top: 117px; }
-  .start-now-text-box .start-now-title {
-    font-size: 32px;
-    font-weight: 200;
+  .start-now-text-box .start-now-title h2 {
+    font-size: 40px;
+    font-weight: 400;
     line-height: 1.1;
     color: var(--white);
     margin-bottom: 42px; }
@@ -4742,13 +4806,23 @@ a {
   .start-now-text-box #start-now-button {
     margin-top: 32px; }
 
+@keyframes floatx {
+  0% {
+    transform: translate(0%, 0%); }
+  50% {
+    transform: translate(1%, 5%); }
+  100% {
+    transform: translate(0%, 0%); } }
+
 .top-bar-container {
   height: 70px;
   min-height: 70px;
   max-height: 70px;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 1000;
+  transition: all 0.2s; }
   .top-bar-container .bar-container {
     height: 100%;
     overflow: hidden;
@@ -4956,6 +5030,10 @@ a {
   height: 280px;
   justify-content: center;
   border-radius: 24px; }
+  .small-card svg path,
+  .small-card span {
+    fill: var(--secondary);
+    color: var(--secondary); }
 
 .small-card-icon {
   position: absolute;
@@ -4985,11 +5063,6 @@ a {
   font-weight: 200;
   color: var(--textSubtle);
   padding-top: 35px; }
-
-svg path,
-span {
-  fill: var(--secondary);
-  color: var(--secondary); }
 
 .top-bar-container
 .bar-container
