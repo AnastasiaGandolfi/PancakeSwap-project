@@ -1,124 +1,158 @@
 .container {
+  width: 100%;
+  height: 100%;
+  margin-top: 125px;
+
+  section {
     width: 100%;
-    height: 100%;
-    margin-top: 125px;
+    padding: 100px 12.5%;
+    background: var(--gradientHeader);
+  }
 
-    section {
-        width: 100%;
-        padding: 100px 12.5%;
-        background: var(--gradientHeader);
-    }
+  .cake-section {
+    background: var(--background);
 
-    .cake-section {
-        background: var(--background);
+    .cake-section-container {
+      position: relative;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      z-index: 1;
+      padding: 48px 0px;
 
-        .cake-section-container {
-            position: relative;
-            flex-direction: column;
-            -webkit-box-align: center;
-            align-items: center;
-            z-index: 1;
-            padding: 48px 0px;
+      .cake-section-text-img {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-            .cake-section-text-img {
-                min-height: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                @media screen and (min-width: 968px) {
-                    padding-top: 48px;
-                    padding-bottom: 48px;
-                }
-
-                @media screen and (min-width: 852px) {
-                    flex-direction: row;
-                    -webkit-box-align: center;
-                    align-items: center;
-                }
-
-                @media screen and (min-width: 370px) {
-                    padding-left: 24px;
-                    padding-right: 24px;
-                }
-
-                .cake-text-button {
-                    display: flex;
-                    flex-direction: column;
-                    flex: 1 1 0%;
-
-                    @media screen and (min-width: 852px) {
-                        margin-right: 64px;
-                        align-self: center;
-                    }
-
-                    .cake-text-container {
-
-                        @media screen and (min-width: 852px) {
-                            align-self: center;
-                        }
-
-                        .cake-text-head {
-                            font-weight: 600;
-                            line-height: 1.1;
-                            margin-bottom: 24px;
-
-                            @media screen and (min-width: 968px) {
-                                font-size: 40px;
-                            }
-
-                            span {
-                                color: var(--secondary);
-                            }
-                        }
-
-                        .cake-text-subtle {
-                            color: var(--textSubtle);
-                            font-weight: 400;
-                            line-height: 1.5;
-                            margin-bottom: 24px;
-                            font-size: 16px;
-                        }
-
-                        .cake-button-container {
-                            display: flex;
-
-                            a {
-                                display: flex;
-                                -webkit-box-align: center;
-                                align-items: center;
-                                width: fit-content;
-                                font-weight: 600;
-                                line-height: 1.5;
-                                font-size: 16px;
-                                color: var(--primary);
-
-                                img {
-                                    align-self: center;
-                                    fill: var(--primary);
-                                    flex-shrink: 0;
-                                    margin-left: 4px;
-                                }
-
-                                &:hover {
-                                    text-decoration: underline;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .cake-img-container {
-                display: flex;
-
-                @media screen and (min-width: 852px) {
-                    flex: 1 1 0%;
-                    margin-bottom: 0px;
-                    height: 100%;
-                    width: 100%;
-                }
-            }
+        @media screen and (min-width: 968px) {
+          padding-top: 48px;
+          padding-bottom: 48px;
         }
+
+        @media screen and (min-width: 852px) {
+          flex-direction: row;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+
+        @media screen and (min-width: 370px) {
+          padding-left: 24px;
+          padding-right: 24px;
+        }
+
+        .cake-text-button {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 0%;
+
+          @media screen and (min-width: 852px) {
+            margin-right: 64px;
+            align-self: center;
+          }
+
+          .cake-text-container {
+
+            @media screen and (min-width: 852px) {
+              align-self: center;
+            }
+
+            .cake-text-head {
+              font-weight: 600;
+              line-height: 1.1;
+              margin-bottom: 24px;
+
+              @media screen and (min-width: 968px) {
+                font-size: 40px;
+              }
+
+              span {
+                color: var(--secondary);
+              }
+            }
+
+            .cake-text-subtle {
+              color: var(--textSubtle);
+              font-weight: 400;
+              line-height: 1.5;
+              margin-bottom: 24px;
+              font-size: 16px;
+            }
+
+            .cake-button-container {
+              display: flex;
+
+              a {
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                width: fit-content;
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 16px;
+                color: var(--primary);
+
+                img {
+                  align-self: center;
+                  fill: var(--primary);
+                  flex-shrink: 0;
+                  margin-left: 4px;
+                }
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+
+        .cake-img-container {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+
+          @media screen and (min-width: 852px) {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 0px;
+            flex: 1 1 0%;
+          }
+
+          .bottom-right {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            animation: blink 2.5s ease-in-out 1s infinite normal none running;
+          }
+
+          .coin {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            animation: blink 5s ease-in-out 0.66s infinite normal none running;
+          }
+
+          .top-left {
+            width: auto;
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            animation: blink 2.5s ease-in-out 0.33s infinite normal none running;
+
+            @media screen and (min-width: 852px) {
+              flex: 1 1 0%;
+              margin-bottom: 0px;
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+      }
     }
+  }
 }

@@ -8,57 +8,6 @@
   padding: 100px 12.5%;
   background: var(--gradientHeader);
 }
-.container .hero-section-container {
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  position: relative;
-}
-@media (min-width: 576px) {
-  .container .hero-section-container {
-    margin-top: 0;
-  }
-}
-@media (min-width: 852px) {
-  .container .hero-section-container {
-    -webkit-box-align: center;
-    align-items: center;
-  }
-}
-.container .hero-section-container .hero-text-container {
-  display: flex;
-  flex: 1 1 0%;
-  flex-direction: column;
-}
-.container .hero-section-container .hero-text-container .hero-text-head {
-  font-size: 64px;
-  color: var(--secondary);
-  margin-bottom: 24px;
-  font-weight: 600;
-  line-height: 1.1;
-}
-.container .hero-section-container .hero-text-container .hero-text-subtle {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.1;
-  color: var(--text);
-  margin-bottom: 24px;
-}
-.container .hero-section-container .hero-text-container .hero-button-container {
-  display: flex;
-}
-.container .hero-section-container .hero-img-container {
-  display: flex;
-  position: relative;
-}
-@media (min-width: 852px) {
-  .container .hero-section-container .hero-img-container {
-    flex: 1 1 0%;
-    margin-bottom: 0px;
-    height: 100%;
-    width: 100%;
-  }
-}
 .container .cake-section {
   background: var(--background);
 }
@@ -153,11 +102,43 @@
 .container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a:hover {
   text-decoration: underline;
 }
-.container .cake-section .cake-section-container .cake-img-container {
-  display: flex;
+.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-img-container {
+  .container .cake-section .cake-section-container .cake-section-text-img .cake-img-container {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    flex: 1 1 0%;
+  }
+}
+.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .bottom-right {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  animation: blink 2.5s ease-in-out 1s infinite normal none running;
+}
+.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .coin {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  animation: blink 5s ease-in-out 0.66s infinite normal none running;
+}
+.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .top-left {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  animation: blink 2.5s ease-in-out 0.33s infinite normal none running;
+}
+@media screen and (min-width: 852px) {
+  .container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .top-left {
     flex: 1 1 0%;
     margin-bottom: 0px;
     height: 100%;
