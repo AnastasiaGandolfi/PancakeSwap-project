@@ -109,66 +109,9 @@
         }
 
         .cake-img-container {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 512px;
-          width: 100%;
-
-          @media screen and (min-width: 852px) {
-            height: 100%;
-            width: 100%;
-            margin-bottom: 0px;
-            flex: 1 1 0%;
-          }
-
-          .cake-img {
-            position: relative;
-            max-height: 512px;
-            height: 100%;
-            width: 100%;
-
-            .div {
-              position: absolute;
-              height: 100%;
-              top: 0;
-              left: 0;
-
-              .bottom-right {
-                width: auto;
-                height: auto;
-                max-height: 100%;
-                max-width: 100%;
-              }
-              .top-right {
-                width: auto;
-                height: auto;
-                max-height: 100%;
-                max-width: 100%;
-              }
-              .coin {
-                width: auto;
-                height: auto;
-                max-height: 100%;
-                max-width: 100%;
-              }
-
-              .top-left {
-                width: auto;
-                height: auto;
-                max-height: 100%;
-                max-width: 100%;
-
-                @media screen and (min-width: 852px) {
-                  flex: 1 1 0%;
-                  margin-bottom: 0px;
-                  height: 100%;
-                  width: 100%;
-                }
-              }
-            }
-          }
+          display: flex;
         }
+
       }
     }
   }

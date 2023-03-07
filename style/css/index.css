@@ -103,63 +103,7 @@
   text-decoration: underline;
 }
 .container .cake-section-container .cake-section .cake-section-text-img .cake-img-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 512px;
-  width: 100%;
-}
-@media screen and (min-width: 852px) {
-  .container .cake-section-container .cake-section .cake-section-text-img .cake-img-container {
-    height: 100%;
-    width: 100%;
-    margin-bottom: 0px;
-    flex: 1 1 0%;
-  }
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img {
-  position: relative;
-  max-height: 512px;
-  height: 100%;
-  width: 100%;
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .bottom-right {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-right {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .coin {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-left {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-}
-@media screen and (min-width: 852px) {
-  .container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-left {
-    flex: 1 1 0%;
-    margin-bottom: 0px;
-    height: 100%;
-    width: 100%;
-  }
+  display: flex;
 }
 
 /*# sourceMappingURL=index.css.map */
