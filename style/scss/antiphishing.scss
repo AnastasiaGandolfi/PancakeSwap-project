@@ -5,6 +5,8 @@
     width: 100%;
     position:fixed;
     top:0;
+    z-index:1000;
+    transition: all 0.2s;
 
     .bar-container {
         height: 100%;
