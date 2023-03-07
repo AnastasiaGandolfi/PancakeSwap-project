@@ -9,10 +9,10 @@
     background: var(--gradientHeader);
   }
 
-  .cake-section {
+  .cake-section-container {
     background: var(--background);
 
-    .cake-section-container {
+    .cake-section {
       position: relative;
       flex-direction: column;
       -webkit-box-align: center;
@@ -110,9 +110,10 @@
 
         .cake-img-container {
           position: absolute;
-          height: 100%;
           top: 0;
           left: 0;
+          height: 512px;
+          width: 100%;
 
           @media screen and (min-width: 852px) {
             height: 100%;
@@ -121,34 +122,50 @@
             flex: 1 1 0%;
           }
 
-          .bottom-right {
-            width: auto;
-            height: auto;
-            max-height: 100%;
-            max-width: 100%;
-            animation: blink 2.5s ease-in-out 1s infinite normal none running;
-          }
+          .cake-img {
+            position: relative;
+            max-height: 512px;
+            height: 100%;
+            width: 100%;
 
-          .coin {
-            width: auto;
-            height: auto;
-            max-height: 100%;
-            max-width: 100%;
-            animation: blink 5s ease-in-out 0.66s infinite normal none running;
-          }
-
-          .top-left {
-            width: auto;
-            height: auto;
-            max-height: 100%;
-            max-width: 100%;
-            animation: blink 2.5s ease-in-out 0.33s infinite normal none running;
-
-            @media screen and (min-width: 852px) {
-              flex: 1 1 0%;
-              margin-bottom: 0px;
+            .div {
+              position: absolute;
               height: 100%;
-              width: 100%;
+              top: 0;
+              left: 0;
+
+              .bottom-right {
+                width: auto;
+                height: auto;
+                max-height: 100%;
+                max-width: 100%;
+              }
+              .top-right {
+                width: auto;
+                height: auto;
+                max-height: 100%;
+                max-width: 100%;
+              }
+              .coin {
+                width: auto;
+                height: auto;
+                max-height: 100%;
+                max-width: 100%;
+              }
+
+              .top-left {
+                width: auto;
+                height: auto;
+                max-height: 100%;
+                max-width: 100%;
+
+                @media screen and (min-width: 852px) {
+                  flex: 1 1 0%;
+                  margin-bottom: 0px;
+                  height: 100%;
+                  width: 100%;
+                }
+              }
             }
           }
         }

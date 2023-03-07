@@ -8,10 +8,10 @@
   padding: 100px 12.5%;
   background: var(--gradientHeader);
 }
-.container .cake-section {
+.container .cake-section-container {
   background: var(--background);
 }
-.container .cake-section .cake-section-container {
+.container .cake-section-container .cake-section {
   position: relative;
   flex-direction: column;
   -webkit-box-align: center;
@@ -19,71 +19,71 @@
   z-index: 1;
   padding: 48px 0px;
 }
-.container .cake-section .cake-section-container .cake-section-text-img {
+.container .cake-section-container .cake-section .cake-section-text-img {
   min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 @media screen and (min-width: 968px) {
-  .container .cake-section .cake-section-container .cake-section-text-img {
+  .container .cake-section-container .cake-section .cake-section-text-img {
     padding-top: 48px;
     padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-section-text-img {
+  .container .cake-section-container .cake-section .cake-section-text-img {
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
   }
 }
 @media screen and (min-width: 370px) {
-  .container .cake-section .cake-section-container .cake-section-text-img {
+  .container .cake-section-container .cake-section .cake-section-text-img {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button {
   display: flex;
   flex-direction: column;
   flex: 1 1 0%;
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-section-text-img .cake-text-button {
+  .container .cake-section-container .cake-section .cake-section-text-img .cake-text-button {
     margin-right: 64px;
     align-self: center;
   }
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container {
+  .container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container {
     align-self: center;
   }
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head {
   font-weight: 600;
   line-height: 1.1;
   margin-bottom: 24px;
 }
 @media screen and (min-width: 968px) {
-  .container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head {
+  .container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head {
     font-size: 40px;
   }
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head span {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-text-head span {
   color: var(--secondary);
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-text-subtle {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-text-subtle {
   color: var(--textSubtle);
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 24px;
   font-size: 16px;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container {
   display: flex;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -93,52 +93,68 @@
   font-size: 16px;
   color: var(--primary);
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a img {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a img {
   align-self: center;
   fill: var(--primary);
   flex-shrink: 0;
   margin-left: 4px;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a:hover {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-text-button .cake-text-container .cake-button-container a:hover {
   text-decoration: underline;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container {
   position: absolute;
-  height: 100%;
   top: 0;
   left: 0;
+  height: 512px;
+  width: 100%;
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-section-text-img .cake-img-container {
+  .container .cake-section-container .cake-section .cake-section-text-img .cake-img-container {
     height: 100%;
     width: 100%;
     margin-bottom: 0px;
     flex: 1 1 0%;
   }
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .bottom-right {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  animation: blink 2.5s ease-in-out 1s infinite normal none running;
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img {
+  position: relative;
+  max-height: 512px;
+  height: 100%;
+  width: 100%;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .coin {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  animation: blink 5s ease-in-out 0.66s infinite normal none running;
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
-.container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .top-left {
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .bottom-right {
   width: auto;
   height: auto;
   max-height: 100%;
   max-width: 100%;
-  animation: blink 2.5s ease-in-out 0.33s infinite normal none running;
+}
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-right {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .coin {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+.container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-left {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 @media screen and (min-width: 852px) {
-  .container .cake-section .cake-section-container .cake-section-text-img .cake-img-container .top-left {
+  .container .cake-section-container .cake-section .cake-section-text-img .cake-img-container .cake-img .div .top-left {
     flex: 1 1 0%;
     margin-bottom: 0px;
     height: 100%;
