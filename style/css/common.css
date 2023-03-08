@@ -2252,122 +2252,13 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 117px; }
+  margin-top: 120px; }
   .start-now-text-box .start-now-title h2 {
     font-size: 40px;
     font-weight: 400;
     line-height: 1.1;
     color: var(--white);
-    margin-bottom: 42px; }
-    .start-now-text-box .start-now-title h2 .start-now-container {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(#7645d9 0%, #5121b1 100%);
-      height: 428px;
-      width: 100vw; }
-      .start-now-text-box .start-now-title h2 .start-now-container::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../../assets/icons/raysbg.svg) no-repeat center;
-        background-size: cover;
-        pointer-events: none; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-section-wrapper {
-        position: relative;
-        max-width: 80rem;
-        padding: 6rem 0;
-        margin: 0 auto; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-pancakes-l {
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        left: 50px; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-pancakes-r {
-        position: absolute;
-        pointer-events: none;
-        right: 50px;
-        top: 169px; }
-    .start-now-text-box .start-now-title h2 .start-now-pancakes-l,
-    .start-now-text-box .start-now-title h2 .start-now-pancakes-r {
-      max-width: 16rem;
-      max-height: 16rem; }
-    .start-now-text-box .start-now-title h2 .start-now-animation-box {
-      height: 40vw;
-      width: 40vw;
-      display: flex;
-      position: relative; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(1) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 1s infinite normal none running; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(2) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 0.66s infinite normal none running; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(3) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 0.33s infinite normal none running; }
-    .start-now-text-box .start-now-title h2 .start-now-animation-layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      pointer-events: none; }
-    .start-now-text-box .start-now-title h2 .start-now-text-box {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 117px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-title h2 {
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 1.1;
-        color: var(--white);
-        margin-bottom: 42px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-content {
-        color: var(--white);
-        font-weight: 200;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 18px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-registration {
-        color: var(--white);
-        font-weight: 600;
-        line-height: 1.5;
-        font-size: 16px;
-        margin-bottom: 42px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link {
-        display: flex;
-        align-items: center; }
-        .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link .start-now-link-1 {
-          color: var(--primary);
-          font-weight: 600;
-          line-height: 1.5;
-          font-size: 16px; }
-        .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link a {
-          text-decoration: none;
-          text-align: center; }
-          .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link a:hover {
-            text-decoration: underline solid var(--primary); }
-      .start-now-text-box .start-now-title h2 .start-now-text-box #start-now-button {
-        margin-top: 32px; }
-
-@keyframes floatx {
-  0% {
-    transform: translate(0%, 0%); }
-  50% {
-    transform: translate(1%, 5%); }
-  100% {
-    transform: translate(0%, 0%); } }
+    margin-bottom: 30px; }
   .start-now-text-box .start-now-content {
     color: var(--white);
     font-weight: 200;
@@ -2378,11 +2269,11 @@ a {
     color: var(--white);
     font-weight: 600;
     line-height: 1.5;
-    font-size: 16px;
-    margin-bottom: 42px; }
+    font-size: 16px; }
   .start-now-text-box .start-now-link {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 30px; }
     .start-now-text-box .start-now-link .start-now-link-1 {
       color: var(--primary);
       font-weight: 600;
@@ -5013,122 +4904,13 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 117px; }
+  margin-top: 120px; }
   .start-now-text-box .start-now-title h2 {
     font-size: 40px;
     font-weight: 400;
     line-height: 1.1;
     color: var(--white);
-    margin-bottom: 42px; }
-    .start-now-text-box .start-now-title h2 .start-now-container {
-      position: relative;
-      overflow: hidden;
-      background: linear-gradient(#7645d9 0%, #5121b1 100%);
-      height: 428px;
-      width: 100vw; }
-      .start-now-text-box .start-now-title h2 .start-now-container::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../../assets/icons/raysbg.svg) no-repeat center;
-        background-size: cover;
-        pointer-events: none; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-section-wrapper {
-        position: relative;
-        max-width: 80rem;
-        padding: 6rem 0;
-        margin: 0 auto; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-pancakes-l {
-        position: absolute;
-        pointer-events: none;
-        top: 0;
-        left: 50px; }
-      .start-now-text-box .start-now-title h2 .start-now-container .start-now-pancakes-r {
-        position: absolute;
-        pointer-events: none;
-        right: 50px;
-        top: 169px; }
-    .start-now-text-box .start-now-title h2 .start-now-pancakes-l,
-    .start-now-text-box .start-now-title h2 .start-now-pancakes-r {
-      max-width: 16rem;
-      max-height: 16rem; }
-    .start-now-text-box .start-now-title h2 .start-now-animation-box {
-      height: 40vw;
-      width: 40vw;
-      display: flex;
-      position: relative; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(1) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 1s infinite normal none running; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(2) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 0.66s infinite normal none running; }
-      .start-now-text-box .start-now-title h2 .start-now-animation-box img:nth-child(3) {
-        width: 80%;
-        animation: floatx 3s ease-in-out 0.33s infinite normal none running; }
-    .start-now-text-box .start-now-title h2 .start-now-animation-layer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      pointer-events: none; }
-    .start-now-text-box .start-now-title h2 .start-now-text-box {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin-top: 117px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-title h2 {
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 1.1;
-        color: var(--white);
-        margin-bottom: 42px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-content {
-        color: var(--white);
-        font-weight: 200;
-        line-height: 1.5;
-        text-align: center;
-        font-size: 18px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-registration {
-        color: var(--white);
-        font-weight: 600;
-        line-height: 1.5;
-        font-size: 16px;
-        margin-bottom: 42px; }
-      .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link {
-        display: flex;
-        align-items: center; }
-        .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link .start-now-link-1 {
-          color: var(--primary);
-          font-weight: 600;
-          line-height: 1.5;
-          font-size: 16px; }
-        .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link a {
-          text-decoration: none;
-          text-align: center; }
-          .start-now-text-box .start-now-title h2 .start-now-text-box .start-now-link a:hover {
-            text-decoration: underline solid var(--primary); }
-      .start-now-text-box .start-now-title h2 .start-now-text-box #start-now-button {
-        margin-top: 32px; }
-
-@keyframes floatx {
-  0% {
-    transform: translate(0%, 0%); }
-  50% {
-    transform: translate(1%, 5%); }
-  100% {
-    transform: translate(0%, 0%); } }
+    margin-bottom: 30px; }
   .start-now-text-box .start-now-content {
     color: var(--white);
     font-weight: 200;
@@ -5139,11 +4921,11 @@ a {
     color: var(--white);
     font-weight: 600;
     line-height: 1.5;
-    font-size: 16px;
-    margin-bottom: 42px; }
+    font-size: 16px; }
   .start-now-text-box .start-now-link {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 30px; }
     .start-now-text-box .start-now-link .start-now-link-1 {
       color: var(--primary);
       font-weight: 600;
