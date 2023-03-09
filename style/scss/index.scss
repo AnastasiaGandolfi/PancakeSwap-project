@@ -6,11 +6,14 @@
   section:first-child {
     padding-top: 90px;
   }
+
   section {
     width: 100%;
-    padding: 30px 20%;
+    padding: 30px 16%;
     background: var(--gradientHeader);
     position: relative;
+
+
     .hero-waves {
       position: absolute;
       width: 100%;
@@ -25,6 +28,7 @@
     -webkit-box-pack: center;
     align-items: center;
     width: 100%;
+
     @media (min-width: 576px) {
       margin-top: 0;
     }
@@ -67,10 +71,12 @@
       z-index: 1;
       padding-bottom: 100px;
       position: relative;
-      .hero-bunny{
+
+      .hero-bunny {
         width: 100%;
         animation: space 3.5s ease-in-out 0s infinite normal none running;
       }
+
       .hero-stars-container {
         position: absolute;
         top: 0;
@@ -83,11 +89,13 @@
           max-height: 512px;
           height: 100%;
           width: 100%;
+
           div {
             position: absolute;
             height: 100%;
             top: 0;
             left: 0;
+
             .first-star {
               width: auto;
               height: auto;
@@ -95,6 +103,7 @@
               max-width: 100%;
               animation: blink 2.5s ease-in-out 1s infinite normal none running;
             }
+
             .second-star {
               width: auto;
               height: auto;
@@ -102,26 +111,29 @@
               max-width: 100%;
               animation: blink 5s ease-in-out 0.66s infinite normal none running;
             }
+
             .third-star {
               width: auto;
               height: auto;
               max-height: 100%;
               max-width: 100%;
-              animation: blink 2.5s ease-in-out 0.33s infinite normal none
-                running;
+              animation: blink 2.5s ease-in-out 0.33s infinite normal none running;
             }
           }
         }
       }
     }
   }
+
   @keyframes blink {
     0% {
       opacity: 1;
     }
+
     50% {
       opacity: 0;
     }
+
     100% {
       opacity: 1;
     }
@@ -131,11 +143,13 @@
     0% {
       transform: translate(0%, 0%);
     }
+
     50% {
-        transform: translate(1%, 3%);
+      transform: translate(1%, 3%);
     }
+
     100% {
-        transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
     }
   }
 
@@ -158,7 +172,6 @@
 
         @media screen and (min-width: 968px) {
           padding-top: 48px;
-          padding-bottom: 48px;
         }
 
         @media screen and (min-width: 852px) {
@@ -167,10 +180,7 @@
           align-items: center;
         }
 
-        @media screen and (min-width: 370px) {
-          padding-left: 24px;
-          padding-right: 24px;
-        }
+        
 
         .cake-text-button {
           display: flex;
@@ -222,7 +232,7 @@
                 font-size: 16px;
                 color: var(--primary);
 
-                img {
+                .svg {
                   align-self: center;
                   fill: var(--primary);
                   flex-shrink: 0;
@@ -239,13 +249,50 @@
       }
 
       .cake-img-container {
+        position: relative;
+        z-index: 1;
+        flex: 1 1 0%;
         display: flex;
+        height: 428px;
+        width: 400px;
 
         @media screen and (min-width: 852px) {
-          flex: 1 1 0%;
           margin-bottom: 0px;
-          height: 100%;
-          width: 100%;
+        }
+
+        .cake-animation-box {
+          height: 100vw;
+          width: 100vw;
+          display: flex;
+          max-width: 20rem;
+          max-height: 20rem;
+          position: absolute;
+          pointer-events: none;
+          top: 0px;
+          left: 0px;
+
+          .cake-animation-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 428px;
+            width: 400px;
+            pointer-events: none;
+          }
+
+          .bottom-right {
+            animation: space 3s ease-in-out 1s infinite normal none running;
+          }
+          .top-right {
+            animation: space 3s ease-in-out 0.66s infinite normal none running;
+          }
+          .top-left {
+            animation: space 3s ease-in-out 0s infinite normal none running;
+          }
+          .coin {
+            animation: space 3s ease-in-out 0.33s infinite normal none running;
+          }
         }
       }
     }
