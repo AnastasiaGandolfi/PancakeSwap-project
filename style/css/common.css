@@ -3274,3 +3274,33 @@ a {
   position: absolute;
   bottom: -150px;
   left: 16%; }
+
+.exchange-image-container {
+  display: flex;
+  flex: 1 1 0%;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%; }
+  .exchange-image-container .image-container {
+    position: relative;
+    max-height: 512px; }
+    .exchange-image-container .image-container .image-earn-section:nth-child(2) img {
+      animation: space 3s ease-in-out 1s infinite normal none running; }
+    .exchange-image-container .image-container .image-earn-section:nth-child(3) img {
+      animation: space 3s ease-in-out 0.33s infinite normal none running;
+      z-index: 10;
+      position: relative; }
+    .exchange-image-container .image-container .image-earn-section:nth-child(4) img {
+      animation: space 3s ease-in-out 0.66s infinite normal none running; }
+    .exchange-image-container .image-container .hidden-pie-image {
+      max-height: 512px;
+      visibility: hidden;
+      max-width: 100%; }
+    .exchange-image-container .image-container .image-earn-section {
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+      .exchange-image-container .image-container .image-earn-section img {
+        max-height: 100%;
+        width: auto; }

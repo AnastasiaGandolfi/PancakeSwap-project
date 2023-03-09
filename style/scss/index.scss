@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   margin-top: 125px;
+  overflow-x: hidden;
 
   section:first-child {
     padding-top: 90px;
@@ -298,3 +299,30 @@
     }
   }
 }
+
+.exchange-section{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  .exchange-description{
+    max-width:450px;
+  }
+  .click-container{
+    display:flex;
+  }
+  .animation-box {
+    height: 40vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .animation-layer {
+      max-height: 80%;
+      height: 60%;
+      width: 60%;
+      pointer-events: none;
+    }
+    }
+  }
