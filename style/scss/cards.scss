@@ -12,7 +12,7 @@ $dark-purple: #3c1786;
   width: 100%;
   margin: 0 auto;
   padding: 2.5rem;
-  gap: 2rem;
+  gap: 1rem;
   pointer-events: all;
 }
 .text {
@@ -23,8 +23,7 @@ $dark-purple: #3c1786;
     color: var(--secondary);
   }
   h2 {
-    padding-top: 40px;
-    color: var(--text);
+    color: var(--textSubtle);
   }
 }
 .description {
@@ -68,6 +67,7 @@ $dark-purple: #3c1786;
       font-size: 38px;
       font-weight: 600;
       line-height: 2.7rem;
+      
     }
   }
   .big-card-title {
