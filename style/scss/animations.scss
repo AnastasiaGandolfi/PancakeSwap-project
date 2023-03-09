@@ -33,6 +33,10 @@
       transform: translate(-50%, -50%);
       animation: float 3s ease-in-out 0.33s infinite normal none running;
     }
+    &:nth-child(4) {
+      transform: translate(-50%, -50%);
+      animation: float 3s ease-in-out 0.11s infinite normal none running;
+    }
   }
 }
 
