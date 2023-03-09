@@ -2355,11 +2355,11 @@ a {
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(2) img {
             animation: space 3s ease-in-out 1s infinite normal none running; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(3) img {
-            animation: space 3s ease-in-out 0.33s infinite normal none running;
+            animation: space 3s ease-in-out 0.33s infinite normal none running;
             z-index: 10;
             position: relative; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(4) img {
-            animation: space 3s ease-in-out 0.66s infinite normal none running; }
+            animation: space 3s ease-in-out 0.66s infinite normal none running; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .hidden-pie-image {
             max-height: 512px;
             visibility: hidden;
@@ -2803,10 +2803,9 @@ a {
   height: 280px;
   justify-content: center;
   border-radius: 24px; }
-  .small-card svg path,
-  .small-card span {
-    fill: var(--secondary);
-    color: var(--secondary); }
+
+#small-card-fit {
+  width: 310px; }
 
 .small-card-icon {
   position: absolute;
@@ -2821,6 +2820,10 @@ a {
   justify-content: center;
   margin-top: 64px; }
 
+.small-card-container1:last-child .small-card-content {
+  margin-left: 80px;
+  margin-right: 30px; }
+
 .small-card-title {
   font-size: 40px;
   font-weight: 600;
@@ -2828,7 +2831,7 @@ a {
   margin-right: 3rem;
   color: var(--text);
   line-height: 1.1; }
-  .small-card-title span {
+  .small-card-title .span {
     margin-bottom: 24px; }
 
 .small-card-paragraph {
@@ -2836,6 +2839,38 @@ a {
   font-weight: 200;
   color: var(--textSubtle);
   padding-top: 35px; }
+
+.first-color span {
+  color: var(--secondary); }
+
+.second-color span {
+  color: var(--primary); }
+
+.third-color span {
+  color: var(--failure); }
+
+.white-space {
+  white-space: nowrap; }
+
+.small-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 42px;
+  gap: 16px; }
+
+@media only screen and (max-width: 375px) {
+  .small-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 768px) {
+  .small-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; } }
 
 .top-bar-container
 .bar-container
