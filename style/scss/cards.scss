@@ -261,7 +261,6 @@ $dark-purple: #3c1786;
   width: 920px;
   height: 128px;
   margin-top: 24px;
-  background: var(--gradientCardHeader);
 }
 .title-trading {
   margin-bottom: 8px;
@@ -269,6 +268,7 @@ $dark-purple: #3c1786;
   display: flex;
   .swap-button {
     align-self: center;
+    cursor: pointer;
     width: 48px;
     height: 24px;
     background-color: transparent;
