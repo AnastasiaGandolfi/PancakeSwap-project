@@ -30,7 +30,10 @@
       .container .exchange-section .exchange-description h2 {
         color: var(--text); }
     .container .exchange-section .click-container {
-      display: flex; }
+      display: flex;
+      align-items: center; }
+      .container .exchange-section .click-container a {
+        display: flex; }
     .container .exchange-section .exchange-animation {
       height: 400px;
       position: relative;

@@ -33,11 +33,14 @@
       max-width: 420px;
       h2{
         color: var(--text);
-
       }
     }
     .click-container {
       display: flex;
+      align-items: center;
+      a{
+        display: flex;
+      }
     }
     .exchange-animation {
       height: 400px;
