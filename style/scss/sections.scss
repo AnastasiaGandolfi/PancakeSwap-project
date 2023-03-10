@@ -3,7 +3,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background: var(--gradientSection);
+  position: relative;
+  .dcAtSD {
+    position: absolute;
+    display: flex;
+    width: 180%;
+    bottom: -30px;
+    rotate: 180deg;
+    path {
+      fill: var(--background);
+    }
+  }
   .section-number-title {
     margin-top: 30px;
     margin-bottom: 31px;
@@ -278,6 +289,9 @@
     display: flex;
     width: 180%;
     top: 0px;
+    path {
+      fill: var(--background);
+    }
   }
   .earn-picture {
     margin: 0px;
@@ -298,6 +312,7 @@
         flex: 1 1 0%;
         h2 {
           line-height: 1.1;
+          color: var(--text);
         }
         p {
           line-height: 1.5;
@@ -368,28 +383,24 @@
 
 .section-5 {
   position: relative;
-  background: linear-gradient(180deg,#0b4576 0%,#091115 100%);
+  background: linear-gradient(180deg, #0b4576 0%, #091115 100%);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-right:4%;
+  padding-right: 4%;
 }
-
 
 .section-5-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- }
- 
-  
+}
 
 .glass {
-
   background-color: rgba(8, 6, 11, 0.592);
   padding: 2rem;
   border-radius: 72px;
@@ -398,23 +409,22 @@
   width: 108%;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  z-index:2;
-  pointer-events: all; 
+  z-index: 2;
+  pointer-events: all;
 }
 
 .glass-text {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
-  .glass-text span {
-    color: var(--secondary); 
-  }
-
+.glass-text span {
+  color: var(--secondary);
+}
 
 .glass-text h2 {
   font-size: 2rem;
@@ -423,7 +433,6 @@
   color: var(--textSubtle);
 }
 
-
 .glass-text p {
   display: flex;
   text-align: center;
@@ -431,7 +440,7 @@
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
-  padding-top: 20px; 
+  padding-top: 20px;
 
   font-size: 1.2rem;
   font-weight: 400;
@@ -441,11 +450,57 @@
 .animation-box.balls {
   position: absolute;
   top: -150px;
-  left:84%;
+  left: 84%;
 }
 
 .animation-box.tickets {
   position: absolute;
   bottom: -150px;
   left: 16%;
+}
+
+.exchange-image-container {
+  display: flex;
+  flex: 1 1 0%;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  .image-container {
+    position: relative;
+    max-height: 512px;
+    .image-earn-section {
+      &:nth-child(2) {
+        img {
+          animation: space 3s ease-in-out 1s infinite normal none running;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          animation: space 3s ease-in-out 0.33s infinite normal none running;
+          z-index: 10;
+          position: relative;
+        }
+      }
+      &:nth-child(4) {
+        img {
+          animation: space 3s ease-in-out 0.66s infinite normal none running;
+        }
+      }
+    }
+    .hidden-pie-image {
+      max-height: 512px;
+      visibility: hidden;
+      max-width: 100%;
+    }
+    .image-earn-section {
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      img {
+        max-height: 100%;
+        width: auto;
+      }
+    }
+  }
 }

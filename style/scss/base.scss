@@ -272,6 +272,7 @@ a {
   --gradientHeader: radial-gradient(103.12%50%at 50%50%,#21193a 0%,#191326 100%)
   --shadows-tooltip: 0px 0px 2px rgba(0, 0, 0, .2), 0px 4px 12px -8px rgba(14, 14, 44, .1);
   --shadows-inset: inset 0px 2px 2px -1px rgba(74, 74, 104, .1);
+  --gradientSection: linear-gradient(180deg,#09070c 22%,#201335 100%);
 }
 
 [data-theme="dark"] {
@@ -323,6 +324,8 @@ a {
   --gradientVioletAlt: #{$dark-gradientVioletAlt};
   --gradientGold: #{$dark-gradientGold};
   --gradientBold: #{$dark-gradientBold};
+  --gradientSection: #{$dark-gradientSection};
+
 }
 
 [data-theme="light"] {
@@ -374,4 +377,5 @@ a {
   --gradientVioletAlt: #{$light-gradientVioletAlt};
   --gradientGold: #{$light-gradientGold};
   --gradientBold: #{$dark-gradientBold};
+  --gradientSection: #{$light-gradientSection};
 }

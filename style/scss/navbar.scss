@@ -44,7 +44,7 @@
     line-height: 1.5;
     width: 100%;
     min-width: 340px;
-    z-index: 9999;
+    z-index: 99999;
     letter-spacing: 0.03em;
     bottom: 40px;
     left: 85%;
@@ -62,7 +62,7 @@
     border-style: solid;
     border-color: var(--background-reverse) transparent transparent transparent;
   }
-  z-index: 100;
+  z-index: 99999;
   .modal-settings-content {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
     border: 1px solid var(--cardBorder);
     border-radius: 32px;
     position: fixed;
-    z-index: 9999;
+    z-index: 99999;
     min-width: 350px;
     min-height: 300px;
     .modal-settings-header {
@@ -418,6 +418,9 @@
     .icon-currency-value-container a {
       display: flex;
       gap: 7px;
+      .coin-value{
+        color: var(--textSubtle);
+      }
     }
     @media (max-width: 967px) {
       .icon-currency-value-container{
