@@ -2951,7 +2951,16 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: var(--gradientSection); }
+  background: var(--gradientSection);
+  position: relative; }
+  .section-number-container .dcAtSD {
+    position: absolute;
+    display: flex;
+    width: 180%;
+    bottom: -30px;
+    rotate: 180deg; }
+    .section-number-container .dcAtSD path {
+      fill: var(--background); }
   .section-number-container .section-number-title {
     margin-top: 30px;
     margin-bottom: 31px; }
@@ -3146,6 +3155,8 @@ a {
     display: flex;
     width: 180%;
     top: 0px; }
+    .earn-section-container .dcAtSD path {
+      fill: var(--background); }
   .earn-section-container .earn-picture {
     margin: 0px;
     width: 100%;
@@ -3163,7 +3174,8 @@ a {
         flex-direction: column;
         flex: 1 1 0%; }
         .earn-section-container .earn-picture .description-container .title-and-button-section h2 {
-          line-height: 1.1; }
+          line-height: 1.1;
+          color: var(--text); }
         .earn-section-container .earn-picture .description-container .title-and-button-section p {
           line-height: 1.5; }
         .earn-section-container .earn-picture .description-container .title-and-button-section .click-container {
