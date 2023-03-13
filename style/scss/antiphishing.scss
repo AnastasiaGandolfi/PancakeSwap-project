@@ -15,9 +15,9 @@
         -webkit-box-align: center;
         align-items: center;
 
+        background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
         @media screen and (min-width: 852px) {
             padding: 0px;
-            background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
         }
 
         .antiphishing-banner {

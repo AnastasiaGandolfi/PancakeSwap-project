@@ -39,11 +39,22 @@
         color: var(--text);
         display: none;
         font-weight: 600;
-
+        #main-item-2{
+          display:none;
+        }
         @media (min-width: 576px) {
           display: block;
           margin-left: 8px;
           margin-right: 4px;
+        }
+        @media screen and (max-width: 1080px) {
+          #main-item{
+           display:none;
+          }
+  
+          #main-item-2{
+            display:block;
+          }
         }
 
         .bnb-smart-chain {
