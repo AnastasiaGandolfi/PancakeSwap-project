@@ -2007,11 +2007,18 @@ a {
         color: var(--text);
         display: none;
         font-weight: 600; }
+        .navbar-select-container .navbar-select .first-item-container .first-select-item-container #main-item-2 {
+          display: none; }
         @media (min-width: 576px) {
           .navbar-select-container .navbar-select .first-item-container .first-select-item-container {
             display: block;
             margin-left: 8px;
             margin-right: 4px; } }
+        @media screen and (max-width: 1080px) {
+          .navbar-select-container .navbar-select .first-item-container .first-select-item-container #main-item {
+            display: none; }
+          .navbar-select-container .navbar-select .first-item-container .first-select-item-container #main-item-2 {
+            display: block; } }
         .navbar-select-container .navbar-select .first-item-container .first-select-item-container .bnb-smart-chain {
           display: block;
           margin-left: 32px;
@@ -2137,11 +2144,11 @@ a {
     overflow: hidden;
     display: flex;
     -webkit-box-align: center;
-    align-items: center; }
+    align-items: center;
+    background: linear-gradient(#8051d6 0%, #492286 100%); }
     @media screen and (min-width: 852px) {
       .top-bar-container .bar-container {
-        padding: 0px;
-        background: linear-gradient(#8051d6 0%, #492286 100%); } }
+        padding: 0px; } }
     .top-bar-container .bar-container .antiphishing-banner {
       display: flex;
       width: 100%;
@@ -2448,15 +2455,14 @@ a {
   padding: 2.5rem;
   gap: 1rem;
   pointer-events: all; }
-
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .text span {
-    color: var(--secondary); }
-  .text h2 {
-    color: var(--textSubtle); }
+  .wrapper .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .wrapper .text span {
+      color: var(--secondary); }
+    .wrapper .text h2 {
+      color: var(--textSubtle); }
 
 .description {
   display: flex;
@@ -2797,16 +2803,16 @@ a {
   border-style: solid;
   border-color: var(--cardBorder);
   -webkit-box-pack: justify;
-  background-color: var(--backgroundAlt);
-  width: 122%;
+  background-color: #27262c;
   margin-bottom: 40px;
   position: relative;
-  right: 60px; }
+  right: 20px;
+  width: 100vw; }
   @media screen and (max-width: 575px) {
     .language-bar-container {
       height: 140px;
       position: relative;
-      right: -2px;
+      right: 0px;
       bottom: 700px;
       border-bottom: 1px solid var(--cardBorder);
       display: flex;
@@ -2884,7 +2890,6 @@ a {
       border-bottom: 1px solid var(--cardBorder); } }
 
 .container-footer-list {
-  width: 122%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -2940,7 +2945,7 @@ a {
   gap: 24px;
   margin-top: 2%;
   padding-bottom: 2%;
-  border-bottom: 1px solid var(--cardBorder); }
+  border-bottom: 1px solid #383241; }
   @media screen and (max-width: 575px) {
     .container-social-footer {
       position: relative;
@@ -2968,7 +2973,7 @@ a {
     position: absolute;
     right: -460%;
     bottom: 100%;
-    background-color: var(--backgroundAlt);
+    background-color: #27262c;
     border-radius: 1%;
     overflow-y: scroll; }
   .telegram-scroll .telegram-ch {
@@ -3268,11 +3273,11 @@ a {
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(2) img {
             animation: space 3s ease-in-out 1s infinite normal none running; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(3) img {
-            animation: space 3s ease-in-out 0.33s infinite normal none running;
+            animation: space 3s ease-in-out 0.33s infinite normal none running;
             z-index: 10;
             position: relative; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .image-earn-section:nth-child(4) img {
-            animation: space 3s ease-in-out 0.66s infinite normal none running; }
+            animation: space 3s ease-in-out 0.66s infinite normal none running; }
           .earn-section-container .earn-picture .description-container .earn-image-container .image-container .hidden-pie-image {
             max-height: 512px;
             visibility: hidden;
@@ -3328,21 +3333,21 @@ a {
   color: var(--secondary); }
 
 .glass-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 500;
   margin-bottom: 1rem;
-  color: var(--textSubtle); }
+  color: var(--text); }
 
 .glass-text p {
   display: flex;
   text-align: center;
   color: var(--textSubtle);
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 12px;
   padding-top: 20px;
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 200;
   margin-bottom: 0;
   line-height: 1.5; }
 
